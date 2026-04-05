@@ -1,0 +1,2 @@
+-- Generated seed file header.
+-- Sync pair catalog data is appended below by scripts/generate-sync-pairs-seed.mjs.

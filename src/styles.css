@@ -1,0 +1,571 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f6f1e8;
+  background:
+    radial-gradient(circle at top, rgba(84, 193, 255, 0.16), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(255, 154, 90, 0.14), transparent 28%),
+    linear-gradient(180deg, #11171d 0%, #171313 100%);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.shell {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 48px;
+}
+
+.shell-centered {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  border: 1px solid rgba(151, 202, 255, 0.16);
+  border-radius: 24px;
+  background: rgba(20, 27, 34, 0.82);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+  padding: 22px;
+}
+
+.compact-panel {
+  padding: 20px;
+}
+
+.layout,
+.import-card,
+.login-form,
+.member-list,
+.dev-creds,
+.challenge-form,
+.challenge-list,
+.coverage-list,
+.assignment-list,
+.bench-list,
+.compact-assignments {
+  display: grid;
+  gap: 14px;
+}
+
+.layout {
+  gap: 18px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.compact-header {
+  margin-bottom: 14px;
+}
+
+.eyebrow,
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #83d0ff;
+  margin: 0 0 10px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.lede,
+.helper,
+.member-card p,
+.empty-state {
+  color: rgba(246, 241, 232, 0.76);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(246, 241, 232, 0.72);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(151, 202, 255, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #f6f1e8;
+  padding: 12px 14px;
+}
+
+.field select {
+  color-scheme: dark;
+}
+
+.field select option {
+  background: #18212a;
+  color: #f6f1e8;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 92px;
+}
+
+.file-field input {
+  padding: 10px 12px;
+}
+
+.login-panel {
+  width: min(520px, 100%);
+}
+
+.primary-button {
+  border: 0;
+  border-radius: 16px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #52c6ff, #4f8dff);
+  color: #08111b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.dev-creds {
+  margin-top: 16px;
+}
+
+.dev-creds code {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.member-card,
+.leader-card,
+.leader-editor,
+.challenge-list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 20px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.member-card {
+  align-items: center;
+}
+
+.status-pill,
+.ghost-button {
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.85rem;
+}
+
+.status-pill {
+  max-width: min(100%, 360px);
+  background: rgba(108, 212, 154, 0.16);
+  color: #c5f4d8;
+}
+
+.status-pill.error {
+  background: rgba(255, 120, 120, 0.16);
+  color: #ffd2d2;
+}
+
+.ghost-button {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #f6f1e8;
+  cursor: pointer;
+}
+
+.ghost-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.compact-signout {
+  justify-self: start;
+}
+
+.tab-row,
+.button-row,
+.badge-row,
+.admin-toolbar,
+.pair-picker-row,
+.important-pairs,
+.recommendation-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.important-pairs {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.recommendation-block {
+  display: grid;
+  gap: 14px;
+  width: 100%;
+}
+
+.tab-button {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: transparent;
+  color: #f6f1e8;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: rgba(82, 198, 255, 0.16);
+  border-color: rgba(82, 198, 255, 0.28);
+}
+
+.leader-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.leader-tab {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #f6f1e8;
+  text-align: left;
+  cursor: pointer;
+}
+
+.leader-tab.active {
+  background: rgba(82, 198, 255, 0.14);
+  border-color: rgba(82, 198, 255, 0.28);
+}
+
+.admin-toolbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-grid,
+.leaders-grid,
+.modifier-grid,
+.recommendation-list,
+.workspace-grid,
+.workspace-columns {
+  display: grid;
+  gap: 14px;
+}
+
+.admin-grid {
+  grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1.4fr);
+}
+
+.leaders-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.modifier-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.workspace-grid {
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+}
+
+.workspace-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.challenge-list-item,
+.leader-card,
+.leader-editor,
+.coverage-item,
+.assignment-card,
+.subpanel {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subpanel {
+  display: flex;
+  gap: 12px;
+  border-radius: 20px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.compact-subpanel {
+  padding: 12px;
+}
+
+.workspace-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.assignment-card,
+.coverage-item {
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bench-item {
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bench-item p {
+  margin-bottom: 0;
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.assignment-section {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.compact-field {
+  width: 100%;
+}
+
+.compact-assignments {
+  width: 100%;
+}
+
+.setup-pair-groups,
+.setup-duty-picker {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+}
+
+.setup-duty-picker {
+  max-height: 240px;
+  overflow: auto;
+}
+
+.setup-duty-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.leader-slot {
+  margin-bottom: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(246, 241, 232, 0.65);
+}
+
+.recommendation-item {
+  border-radius: 16px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.recommendation-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommendation-reasons {
+  margin-bottom: 0;
+  color: rgba(246, 241, 232, 0.76);
+  font-size: 0.9rem;
+}
+
+.recommendation-score {
+  background: rgba(82, 198, 255, 0.18);
+}
+
+.panel-subsection {
+  display: grid;
+  gap: 12px;
+}
+
+.round-control {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.round-control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.round-control input[type="range"] {
+  width: 100%;
+}
+
+.round-helper {
+  margin: 0;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: rgba(82, 198, 255, 0.12);
+  border: 1px solid rgba(82, 198, 255, 0.16);
+  color: #d7f3ff;
+  font-size: 0.85rem;
+}
+
+.muted-badge {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #f6f1e8;
+}
+
+.removable-badge {
+  border: 0;
+  cursor: pointer;
+}
+
+.challenge-notes {
+  margin-bottom: 18px;
+}
+
+.warning {
+  color: #ffcb8c;
+}
+
+.empty-state {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.compact-empty {
+  padding: 12px 14px;
+}
+
+.helper {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .shell {
+    width: min(100% - 20px, 840px);
+    padding-top: 20px;
+  }
+
+  .panel {
+    border-radius: 20px;
+  }
+
+  .panel-header,
+  .member-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status-pill {
+    max-width: 100%;
+  }
+
+  .admin-grid,
+  .leaders-grid,
+  .modifier-grid,
+  .leader-tabs,
+  .workspace-grid,
+  .workspace-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-toolbar {
+    align-items: flex-start;
+  }
+
+  .round-control-header,
+  .workspace-summary,
+  .assignment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
