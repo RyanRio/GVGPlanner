@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+.env.seed.local
+
+# TypeScript / tooling cache
+*.tsbuildinfo
+.vite/
+
+# Supabase local development state
+.supabase/
+supabase/.branches/
+supabase/.temp/
+
+# Generated exports / ad hoc local workbooks
+exports/
+*.xlsx
+
+# Local roster dumps / private member data
+mastersofdiscord/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
