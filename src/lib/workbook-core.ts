@@ -467,7 +467,8 @@ function appendSetupSheet(workbook: XLSX.WorkBook, challenge: GymChallenge, memb
   const globalSections = [
     buildSingleSectionMatrix("Physical breaks", challenge.setupPairs.physicalBreakPairs, members),
     buildSingleSectionMatrix("Special breaks", challenge.setupPairs.specialBreakPairs, members),
-    buildSingleSectionMatrix("Debuffs / chip", challenge.setupPairs.debuffChipPairs, members)
+    buildSingleSectionMatrix("Debuffs / chip", challenge.setupPairs.debuffChipPairs, members),
+    buildSingleSectionMatrix("Off-type", challenge.setupPairs.offTypePairs, members)
   ].filter((section) => section.rows.length > 1);
 
   globalSections.forEach((section) => {

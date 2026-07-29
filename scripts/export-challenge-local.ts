@@ -97,6 +97,20 @@ type RawCatalogPair = {
   premium_category: PremiumCategory;
 };
 
+type RawRoundStat = {
+  round_number: number;
+  points: number;
+  cumulative_points: number;
+  middle_hp: number;
+  middle_offenses: number;
+  middle_defenses: number;
+  middle_speed: number;
+  side_hp: number;
+  side_offenses: number;
+  side_defenses: number;
+  side_speed: number;
+};
+
 function mapCatalogPair(pair: RawCatalogPair | null | undefined): CatalogPair | null {
   if (!pair) return null;
   return {
@@ -129,7 +143,11 @@ function mapChallenge(record: {
         id: string;
         slot_number: number;
         leader_name: string;
+        boss_type: string | null;
         weakness_type: string;
+        battle_1_effect: string | null;
+        battle_2_effect: string | null;
+        battle_3_effect: string | null;
         gym_challenge_leader_pairs: Array<{ sync_pairs: RawCatalogPair | RawCatalogPair[] | null }> | null;
         gym_challenge_leader_setup_pairs: Array<{ sync_pairs: RawCatalogPair | RawCatalogPair[] | null }> | null;
       }>
@@ -144,6 +162,7 @@ function mapChallenge(record: {
   gym_challenge_setup_duty_members:
     | Array<{ member_slug: string }>
     | null;
+  gym_challenge_round_stats: RawRoundStat[] | null;
   gym_challenge_manual_assignments:
     | Array<{
         leader_slot_number: number;
@@ -186,7 +205,11 @@ function mapChallenge(record: {
         id: leader.id,
         slotNumber: leader.slot_number,
         leaderName: leader.leader_name,
+        bossType: leader.boss_type ?? "",
         weaknessType: leader.weakness_type,
+        battle1Effect: leader.battle_1_effect ?? "",
+        battle2Effect: leader.battle_2_effect ?? "",
+        battle3Effect: leader.battle_3_effect ?? "",
         importantPairs: (leader.gym_challenge_leader_pairs ?? [])
           .map((entry) => mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs))
           .filter((pair): pair is CatalogPair => Boolean(pair))
@@ -202,10 +225,26 @@ function mapChallenge(record: {
       modifier2: modifiers?.modifier_2 ?? "",
       modifier3: modifiers?.modifier_3 ?? ""
     },
+    roundStats: (record.gym_challenge_round_stats ?? [])
+      .map((round) => ({
+        roundNumber: round.round_number,
+        points: round.points,
+        cumulativePoints: round.cumulative_points,
+        middleHp: round.middle_hp,
+        middleOffenses: round.middle_offenses,
+        middleDefenses: round.middle_defenses,
+        middleSpeed: round.middle_speed,
+        sideHp: round.side_hp,
+        sideOffenses: round.side_offenses,
+        sideDefenses: round.side_defenses,
+        sideSpeed: round.side_speed
+      }))
+      .sort((a, b) => a.roundNumber - b.roundNumber),
     setupPairs: {
       physicalBreakPairs: filterSetupPairs("physical_breaks"),
       specialBreakPairs: filterSetupPairs("special_breaks"),
-      debuffChipPairs: filterSetupPairs("debuffs_chip")
+      debuffChipPairs: filterSetupPairs("debuffs_chip"),
+      offTypePairs: filterSetupPairs("off_type")
     },
     setupDutyMemberIds: (record.gym_challenge_setup_duty_members ?? [])
       .map((entry) => entry.member_slug)
@@ -226,7 +265,11 @@ const challengeSelect = `
     id,
     slot_number,
     leader_name,
+    boss_type,
     weakness_type,
+    battle_1_effect,
+    battle_2_effect,
+    battle_3_effect,
     gym_challenge_leader_pairs (
       sync_pairs (
         id,
@@ -290,6 +333,19 @@ const challengeSelect = `
   ),
   gym_challenge_setup_duty_members (
     member_slug
+  ),
+  gym_challenge_round_stats (
+    round_number,
+    points,
+    cumulative_points,
+    middle_hp,
+    middle_offenses,
+    middle_defenses,
+    middle_speed,
+    side_hp,
+    side_offenses,
+    side_defenses,
+    side_speed
   ),
   gym_challenge_manual_assignments (
     leader_slot_number,

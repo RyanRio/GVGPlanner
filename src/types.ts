@@ -24,6 +24,7 @@ export interface CatalogPair {
   region: string;
   acquisition: string;
   premiumCategory: PremiumCategory;
+  imagePaths?: string[];
 }
 
 export interface ImportedPair {
@@ -70,7 +71,11 @@ export interface GymChallengeLeader {
   id?: string;
   slotNumber: number;
   leaderName: string;
+  bossType: string;
   weaknessType: string;
+  battle1Effect: string;
+  battle2Effect: string;
+  battle3Effect: string;
   importantPairs: CatalogPair[];
   rebuffPairs: CatalogPair[];
 }
@@ -95,15 +100,31 @@ export interface GymChallenge {
   isCurrent: boolean;
   leaders: GymChallengeLeader[];
   modifiers: GymChallengeModifiers;
+  roundStats: GymChallengeRoundStat[];
   setupPairs: {
     physicalBreakPairs: CatalogPair[];
     specialBreakPairs: CatalogPair[];
     debuffChipPairs: CatalogPair[];
+    offTypePairs: CatalogPair[];
   };
   setupDutyMemberIds: string[];
   manualAssignments: ManualLeaderAssignments;
   createdAt: string;
   updatedAt: string;
+}
+
+export interface GymChallengeRoundStat {
+  roundNumber: number;
+  points: number;
+  cumulativePoints: number;
+  middleHp: number;
+  middleOffenses: number;
+  middleDefenses: number;
+  middleSpeed: number;
+  sideHp: number;
+  sideOffenses: number;
+  sideDefenses: number;
+  sideSpeed: number;
 }
 
 export interface ChallengeRoundPreview {

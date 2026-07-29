@@ -3,6 +3,15 @@ import { normalizeMemberSlug } from "./gvg-data";
 
 const SYNC_LEVELS = [1, 2, 3, 4, 5, 5, 5, 5, 5, 5];
 
+function deriveIsEx(rawValue: string, imagePaths: string[] = []) {
+  const values = rawValue.split("|");
+  const imageIndex = Number.parseInt(values[1] ?? "0", 10);
+  if (Number.isNaN(imageIndex) || imageIndex < 0) return false;
+
+  const selectedImagePath = imagePaths[imageIndex] ?? "";
+  return selectedImagePath.includes("_EX");
+}
+
 function buildPremiumCounts(pairs: ImportedPair[]) {
   return pairs.reduce<Record<PremiumCategory | "all", number>>(
     (counts, pair) => {
@@ -42,13 +51,12 @@ export function parseSyncPairsTrackerExport(
 
     const values = rawValue.split("|");
     const syncLevelIndex = Number.parseInt(values[0] ?? "0", 10);
-    const exState = Number.parseInt(values[1] ?? "0", 10);
 
     importedPairs.push({
       pairId: pair.pairId,
       label: pair.label,
       syncLevel: Number.isNaN(syncLevelIndex) ? 1 : SYNC_LEVELS[syncLevelIndex] ?? 1,
-      isEx: Number.isNaN(exState) ? false : exState > 0,
+      isEx: deriveIsEx(rawValue, pair.imagePaths),
       rawValue,
       roleCategory: pair.roleCategory,
       roleLabel: pair.roleLabel,

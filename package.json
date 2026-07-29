@@ -11,7 +11,12 @@
     "seed:auth-local": "node scripts/seed-local-auth.mjs",
     "sync:catalog-local": "node scripts/sync-catalog-local.mjs",
     "import:rosters-local": "node scripts/import-rosters-local.mjs",
-    "export:challenge-local": "tsx scripts/export-challenge-local.ts"
+    "apply:gvg-meta-local": "tsx scripts/apply-current-gvg-metadata.ts",
+    "export:challenge-local": "tsx scripts/export-challenge-local.ts",
+    "browser:data": "node scripts/build-static-roster-browser-data.mjs",
+    "browser:dev": "npm --prefix gym-roster-browser run dev",
+    "browser:build": "npm --prefix gym-roster-browser run build",
+    "browser:deploy": "npm --prefix gym-roster-browser run deploy"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",

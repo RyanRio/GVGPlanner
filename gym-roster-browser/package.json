@@ -1,0 +1,17 @@
+{
+  "name": "gvg-roster-browser",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:data": "node ../scripts/build-static-roster-browser-data.mjs --input mastersofdiscord --out gym-roster-browser/public/data/rosters.json",
+    "deploy": "npm run build:data && npm run build && gh-pages -d dist -b gh-pages"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^6.2.0"
+  }
+}

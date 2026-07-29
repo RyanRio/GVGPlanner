@@ -58,7 +58,7 @@ export async function fetchCatalog() {
   const { data, error } = await supabase
     .from("sync_pairs")
     .select(
-      "id, display_label, trainer_name, trainer_alt, pokemon_name, pokemon_form, role_category, role_label, ex_role_category, ex_role_label, type, region, acquisition, premium_category"
+      "id, display_label, trainer_name, trainer_alt, pokemon_name, pokemon_form, role_category, role_label, ex_role_category, ex_role_label, type, region, acquisition, premium_category, image_paths"
     )
     .order("display_label");
 
@@ -81,7 +81,10 @@ export async function fetchCatalog() {
       type: pair.type,
       region: pair.region,
       acquisition: pair.acquisition,
-      premiumCategory: pair.premium_category
+      premiumCategory: pair.premium_category,
+      imagePaths: Array.isArray(pair.image_paths)
+        ? pair.image_paths.filter((value): value is string => typeof value === "string")
+        : []
     });
   });
 
@@ -230,7 +233,11 @@ function mapChallenge(record: {
     id: string;
     slot_number: number;
     leader_name: string;
+    boss_type: string | null;
     weakness_type: string;
+    battle_1_effect: string | null;
+    battle_2_effect: string | null;
+    battle_3_effect: string | null;
     gym_challenge_leader_pairs:
       | Array<{
           sync_pairs:
@@ -361,6 +368,21 @@ function mapChallenge(record: {
         member_slug: string;
       }>
     | null;
+  gym_challenge_round_stats:
+    | Array<{
+        round_number: number;
+        points: number;
+        cumulative_points: number;
+        middle_hp: number;
+        middle_offenses: number;
+        middle_defenses: number;
+        middle_speed: number;
+        side_hp: number;
+        side_offenses: number;
+        side_defenses: number;
+        side_speed: number;
+      }>
+    | null;
   gym_challenge_manual_assignments:
     | Array<{
         leader_slot_number: number;
@@ -440,6 +462,11 @@ function mapChallenge(record: {
     .map((entry) => mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs))
     .filter((pair): pair is CatalogPair => Boolean(pair))
     .sort((a, b) => a.label.localeCompare(b.label));
+  const offTypePairs = setupEntries
+    .filter((entry) => entry.setup_category === "off_type")
+    .map((entry) => mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs))
+    .filter((pair): pair is CatalogPair => Boolean(pair))
+    .sort((a, b) => a.label.localeCompare(b.label));
 
   return {
     id: record.id,
@@ -453,7 +480,11 @@ function mapChallenge(record: {
         id: leader.id,
         slotNumber: leader.slot_number,
         leaderName: leader.leader_name,
+        bossType: leader.boss_type ?? "",
         weaknessType: leader.weakness_type,
+        battle1Effect: leader.battle_1_effect ?? "",
+        battle2Effect: leader.battle_2_effect ?? "",
+        battle3Effect: leader.battle_3_effect ?? "",
         importantPairs: (leader.gym_challenge_leader_pairs ?? [])
           .map((entry) =>
             mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs)
@@ -473,10 +504,26 @@ function mapChallenge(record: {
       modifier2: modifiers?.modifier_2 ?? "",
       modifier3: modifiers?.modifier_3 ?? ""
     },
+    roundStats: (record.gym_challenge_round_stats ?? [])
+      .map((round) => ({
+        roundNumber: round.round_number,
+        points: round.points,
+        cumulativePoints: round.cumulative_points,
+        middleHp: round.middle_hp,
+        middleOffenses: round.middle_offenses,
+        middleDefenses: round.middle_defenses,
+        middleSpeed: round.middle_speed,
+        sideHp: round.side_hp,
+        sideOffenses: round.side_offenses,
+        sideDefenses: round.side_defenses,
+        sideSpeed: round.side_speed
+      }))
+      .sort((a, b) => a.roundNumber - b.roundNumber),
     setupPairs: {
       physicalBreakPairs,
       specialBreakPairs,
-      debuffChipPairs
+      debuffChipPairs,
+      offTypePairs
     },
     setupDutyMemberIds: (record.gym_challenge_setup_duty_members ?? [])
       .map((entry) => entry.member_slug)
@@ -497,7 +544,11 @@ const challengeSelect = `
       id,
       slot_number,
       leader_name,
+      boss_type,
       weakness_type,
+      battle_1_effect,
+      battle_2_effect,
+      battle_3_effect,
     gym_challenge_leader_pairs (
       sync_pairs (
         id,
@@ -562,6 +613,19 @@ const challengeSelect = `
   gym_challenge_setup_duty_members (
     member_slug
   ),
+  gym_challenge_round_stats (
+    round_number,
+    points,
+    cumulative_points,
+    middle_hp,
+    middle_offenses,
+    middle_defenses,
+    middle_speed,
+    side_hp,
+    side_offenses,
+    side_defenses,
+    side_speed
+  ),
   gym_challenge_manual_assignments (
     leader_slot_number,
     primary_member_slug,
@@ -606,6 +670,7 @@ export async function saveGymChallenge(challenge: {
   notes: string;
   leaders: GymChallenge["leaders"];
   modifiers: GymChallenge["modifiers"];
+  roundStats: GymChallenge["roundStats"];
   setupPairs: GymChallenge["setupPairs"];
 }) {
   if (!supabase) throw new Error("Supabase is not configured.");
@@ -617,7 +682,11 @@ export async function saveGymChallenge(challenge: {
     p_leaders: challenge.leaders.map((leader) => ({
       slot_number: leader.slotNumber,
       leader_name: leader.leaderName,
+      boss_type: leader.bossType,
       weakness_type: leader.weaknessType,
+      battle_1_effect: leader.battle1Effect,
+      battle_2_effect: leader.battle2Effect,
+      battle_3_effect: leader.battle3Effect,
       important_pair_ids: leader.importantPairs.map((pair) => pair.pairId),
       rebuff_pair_ids: leader.rebuffPairs.map((pair) => pair.pairId)
     })),
@@ -627,8 +696,25 @@ export async function saveGymChallenge(challenge: {
     p_setup_pairs: {
       physical_breaks: challenge.setupPairs.physicalBreakPairs.map((pair) => pair.pairId),
       special_breaks: challenge.setupPairs.specialBreakPairs.map((pair) => pair.pairId),
-      debuffs_chip: challenge.setupPairs.debuffChipPairs.map((pair) => pair.pairId)
-    }
+      debuffs_chip: challenge.setupPairs.debuffChipPairs.map((pair) => pair.pairId),
+      off_type: challenge.setupPairs.offTypePairs.map((pair) => pair.pairId)
+    },
+    p_round_stats:
+      challenge.roundStats.length > 0
+        ? challenge.roundStats.map((round) => ({
+            round_number: round.roundNumber,
+            points: round.points,
+            cumulative_points: round.cumulativePoints,
+            middle_hp: round.middleHp,
+            middle_offenses: round.middleOffenses,
+            middle_defenses: round.middleDefenses,
+            middle_speed: round.middleSpeed,
+            side_hp: round.sideHp,
+            side_offenses: round.sideOffenses,
+            side_defenses: round.sideDefenses,
+            side_speed: round.sideSpeed
+          }))
+        : null
   });
 
   if (error) throw error;

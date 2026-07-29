@@ -61,7 +61,7 @@ function normalizeMemberSlug(displayName) {
 async function fetchCatalog(client) {
   const { data, error } = await client
     .from("sync_pairs")
-    .select("id, display_label, premium_category");
+    .select("id, display_label, premium_category, image_paths");
 
   if (error) throw error;
 
@@ -71,10 +71,20 @@ async function fetchCatalog(client) {
       {
         pairId: pair.id,
         label: pair.display_label,
-        premiumCategory: pair.premium_category
+        premiumCategory: pair.premium_category,
+        imagePaths: Array.isArray(pair.image_paths) ? pair.image_paths.filter((value) => typeof value === "string") : []
       }
     ])
   );
+}
+
+function deriveIsEx(rawValue, imagePaths = []) {
+  const values = String(rawValue).split("|");
+  const imageIndex = Number.parseInt(values[1] ?? "0", 10);
+  if (Number.isNaN(imageIndex) || imageIndex < 0) return false;
+
+  const selectedImagePath = imagePaths[imageIndex] ?? "";
+  return selectedImagePath.includes("_EX");
 }
 
 function parseRoster(displayName, payload, catalog) {
@@ -90,12 +100,11 @@ function parseRoster(displayName, payload, catalog) {
 
     const values = String(rawValue).split("|");
     const syncLevelIndex = Number.parseInt(values[0] ?? "0", 10);
-    const exState = Number.parseInt(values[1] ?? "0", 10);
 
     importedPairs.push({
       pair_id: pair.pairId,
       sync_level: Number.isNaN(syncLevelIndex) ? 1 : SYNC_LEVELS[syncLevelIndex] ?? 1,
-      is_ex: Number.isNaN(exState) ? false : exState > 0,
+      is_ex: deriveIsEx(rawValue, pair.imagePaths),
       raw_value: String(rawValue)
     });
   }

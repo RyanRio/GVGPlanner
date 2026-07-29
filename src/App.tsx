@@ -28,7 +28,7 @@ import type {
 } from "./types";
 
 type AppView = "roster" | "gym-challenge" | "challenge-admin";
-type SetupPairBucket = "physicalBreakPairs" | "specialBreakPairs" | "debuffChipPairs";
+type SetupPairBucket = "physicalBreakPairs" | "specialBreakPairs" | "debuffChipPairs" | "offTypePairs";
 
 interface ChallengeDraft {
   id: string;
@@ -36,10 +36,12 @@ interface ChallengeDraft {
   notes: string;
   leaders: GymChallengeLeader[];
   modifiers: GymChallengeModifiers;
+  roundStats: GymChallenge["roundStats"];
   setupPairs: {
     physicalBreakPairs: GymChallengeLeader["importantPairs"];
     specialBreakPairs: GymChallengeLeader["importantPairs"];
     debuffChipPairs: GymChallengeLeader["importantPairs"];
+    offTypePairs: GymChallengeLeader["importantPairs"];
   };
 }
 
@@ -77,7 +79,11 @@ function createEmptyChallengeDraft(): ChallengeDraft {
     leaders: Array.from({ length: 8 }, (_, index) => ({
       slotNumber: index + 1,
       leaderName: "",
+      bossType: "",
       weaknessType: "",
+      battle1Effect: "",
+      battle2Effect: "",
+      battle3Effect: "",
       importantPairs: [],
       rebuffPairs: []
     })),
@@ -86,10 +92,12 @@ function createEmptyChallengeDraft(): ChallengeDraft {
       modifier2: "",
       modifier3: ""
     },
+    roundStats: [],
     setupPairs: {
       physicalBreakPairs: [],
       specialBreakPairs: [],
-      debuffChipPairs: []
+      debuffChipPairs: [],
+      offTypePairs: []
     }
   };
 }
@@ -105,10 +113,12 @@ function challengeToDraft(challenge: GymChallenge): ChallengeDraft {
       rebuffPairs: [...leader.rebuffPairs]
     })),
     modifiers: { ...challenge.modifiers },
+    roundStats: challenge.roundStats.map((round) => ({ ...round })),
     setupPairs: {
       physicalBreakPairs: [...challenge.setupPairs.physicalBreakPairs],
       specialBreakPairs: [...challenge.setupPairs.specialBreakPairs],
-      debuffChipPairs: [...challenge.setupPairs.debuffChipPairs]
+      debuffChipPairs: [...challenge.setupPairs.debuffChipPairs],
+      offTypePairs: [...challenge.setupPairs.offTypePairs]
     }
   };
 }
@@ -129,6 +139,27 @@ function getLeaderModifier(modifiers: GymChallengeModifiers, roundNumber: number
   return cycle[modifierIndex];
 }
 
+function getLeaderRoundEffect(leader: GymChallengeLeader, modifiers: GymChallengeModifiers, roundNumber: number) {
+  if (roundNumber === 1) return leader.battle1Effect.trim();
+  if (roundNumber === 2) return leader.battle2Effect.trim();
+  if (roundNumber === 3) return leader.battle3Effect.trim();
+  return getLeaderModifier(modifiers, roundNumber, leader.slotNumber).trim();
+}
+
+function getRoundStats(challenge: GymChallenge | null, roundNumber: number) {
+  if (!challenge?.roundStats.length) return null;
+  const exact = challenge.roundStats.find((round) => round.roundNumber === roundNumber);
+  if (exact) return exact;
+  const eligible = challenge.roundStats
+    .filter((round) => round.roundNumber <= roundNumber)
+    .sort((a, b) => b.roundNumber - a.roundNumber)[0];
+  return eligible ?? challenge.roundStats[challenge.roundStats.length - 1] ?? null;
+}
+
+function formatNumber(value: number) {
+  return value.toLocaleString();
+}
+
 function buildLeaderPairInputs() {
   return Array.from({ length: 8 }, (_, index) => index + 1).reduce<LeaderPairInputs>((inputs, slotNumber) => {
     inputs[slotNumber] = "";
@@ -147,7 +178,8 @@ function buildSetupPairInputs(): SetupPairInputs {
   return {
     physicalBreakPairs: "",
     specialBreakPairs: "",
-    debuffChipPairs: ""
+    debuffChipPairs: "",
+    offTypePairs: ""
   };
 }
 
@@ -225,21 +257,48 @@ function ChallengeReadOnly({
         <input
           type="range"
           min="1"
-          max="12"
+          max="30"
           step="1"
           value={selectedRound}
           onChange={(event) => onRoundChange(Number(event.target.value))}
         />
       </div>
 
+      {(() => {
+        const roundStats = getRoundStats(challenge, selectedRound);
+        if (!roundStats) return null;
+
+        return (
+          <section className="subpanel compact-subpanel">
+            <div className="panel-header">
+              <div>
+                <p className="section-kicker">Round stats</p>
+                <h3>Round {selectedRound}</h3>
+              </div>
+              <span className="badge recommendation-score">{formatNumber(roundStats.points)} pts</span>
+            </div>
+            <div className="badge-row">
+              <span className="badge muted-badge">Total {formatNumber(roundStats.cumulativePoints)}</span>
+              <span className="badge muted-badge">Middle HP {formatNumber(roundStats.middleHp)}</span>
+              <span className="badge muted-badge">Sides HP {formatNumber(roundStats.sideHp)}</span>
+              <span className="badge muted-badge">Middle Atk {formatNumber(roundStats.middleOffenses)}</span>
+              <span className="badge muted-badge">Sides Atk {formatNumber(roundStats.sideOffenses)}</span>
+            </div>
+          </section>
+        );
+      })()}
+
       <div className="leaders-grid">
         {challenge.leaders.map((leader) => (
           <article className="leader-card" key={leader.slotNumber}>
             <p className="leader-slot">Leader {leader.slotNumber}</p>
             <h3>{leader.leaderName}</h3>
-            <p>{leader.weaknessType} weak</p>
-            {selectedRound >= 4 ? (
-              <span className="badge">{getLeaderModifier(challenge.modifiers, selectedRound, leader.slotNumber)}</span>
+            <p>
+              {leader.bossType ? `${leader.bossType} | ` : ""}
+              {leader.weaknessType} weak
+            </p>
+            {getLeaderRoundEffect(leader, challenge.modifiers, selectedRound) ? (
+              <span className="badge">{getLeaderRoundEffect(leader, challenge.modifiers, selectedRound)}</span>
             ) : (
               <span className="helper">No special modifier</span>
             )}
@@ -366,12 +425,36 @@ function GymChallengeWorkspace({
         <input
           type="range"
           min="1"
-          max="12"
+          max="30"
           step="1"
           value={selectedRound}
           onChange={(event) => onRoundChange(Number(event.target.value))}
         />
       </div>
+
+      {(() => {
+        const roundStats = getRoundStats(challenge, selectedRound);
+        if (!roundStats) return null;
+
+        return (
+          <section className="subpanel compact-subpanel">
+            <div className="panel-header">
+              <div>
+                <p className="section-kicker">Round stats</p>
+                <h3>Round {selectedRound}</h3>
+              </div>
+              <span className="badge recommendation-score">{formatNumber(roundStats.points)} pts</span>
+            </div>
+            <div className="badge-row">
+              <span className="badge muted-badge">Total {formatNumber(roundStats.cumulativePoints)}</span>
+              <span className="badge muted-badge">Middle HP {formatNumber(roundStats.middleHp)}</span>
+              <span className="badge muted-badge">Sides HP {formatNumber(roundStats.sideHp)}</span>
+              <span className="badge muted-badge">Middle Atk {formatNumber(roundStats.middleOffenses)}</span>
+              <span className="badge muted-badge">Sides Atk {formatNumber(roundStats.sideOffenses)}</span>
+            </div>
+          </section>
+        );
+      })()}
 
       <div className="leader-tabs">
         {challenge.leaders.map((leader) => (
@@ -396,8 +479,9 @@ function GymChallengeWorkspace({
             </div>
             <div className="badge-row">
               <span className="badge muted-badge">{selectedLeader.weaknessType} weak</span>
-              {selectedRound >= 4 ? (
-                <span className="badge">{getLeaderModifier(challenge.modifiers, selectedRound, selectedLeader.slotNumber)}</span>
+              {selectedLeader.bossType ? <span className="badge muted-badge">{selectedLeader.bossType}</span> : null}
+              {getLeaderRoundEffect(selectedLeader, challenge.modifiers, selectedRound) ? (
+                <span className="badge">{getLeaderRoundEffect(selectedLeader, challenge.modifiers, selectedRound)}</span>
               ) : (
                 <span className="badge muted-badge">No special modifier</span>
               )}
@@ -473,6 +557,20 @@ function GymChallengeWorkspace({
                     </div>
                   ) : (
                     <p className="helper">No debuff or chip setup pairs listed.</p>
+                  )}
+                </div>
+                <div>
+                  <strong>Off-type</strong>
+                  {challenge.setupPairs.offTypePairs.length ? (
+                    <div className="badge-row">
+                      {challenge.setupPairs.offTypePairs.map((pair) => (
+                        <span className="badge muted-badge" key={`off-type-${pair.pairId}`}>
+                          {pair.label}
+                        </span>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="helper">No off-type pairs listed.</p>
                   )}
                 </div>
               </div>
@@ -901,7 +999,11 @@ function App() {
     }));
   }
 
-  function handleLeaderChange(slotNumber: number, field: "leaderName" | "weaknessType", value: string) {
+  function handleLeaderChange(
+    slotNumber: number,
+    field: "leaderName" | "bossType" | "weaknessType" | "battle1Effect" | "battle2Effect" | "battle3Effect",
+    value: string
+  ) {
     setChallengeDraft((current) => ({
       ...current,
       leaders: current.leaders.map((leader) =>
@@ -1202,13 +1304,18 @@ function App() {
         leaders: challengeDraft.leaders.map((leader) => ({
           ...leader,
           leaderName: leader.leaderName.trim(),
-          weaknessType: leader.weaknessType.trim()
+          bossType: leader.bossType.trim(),
+          weaknessType: leader.weaknessType.trim(),
+          battle1Effect: leader.battle1Effect.trim(),
+          battle2Effect: leader.battle2Effect.trim(),
+          battle3Effect: leader.battle3Effect.trim()
         })),
         modifiers: {
           modifier1: challengeDraft.modifiers.modifier1.trim(),
           modifier2: challengeDraft.modifiers.modifier2.trim(),
           modifier3: challengeDraft.modifiers.modifier3.trim()
         },
+        roundStats: challengeDraft.roundStats,
         setupPairs: challengeDraft.setupPairs
       });
 
@@ -1664,6 +1771,38 @@ function App() {
                         <p className="helper">No debuff/chip pairs chosen yet.</p>
                       )}
                     </div>
+
+                    <div className="field">
+                      <span>Off-type</span>
+                      <div className="pair-picker-row">
+                        <input
+                          list="sync-pair-options"
+                          type="text"
+                          value={setupPairInputs.offTypePairs}
+                          onChange={(event) => handleSetupPairInputChange("offTypePairs", event.target.value)}
+                          placeholder="Search by pair name"
+                        />
+                        <button className="ghost-button" onClick={() => handleAddSetupPair("offTypePairs")} type="button">
+                          Add
+                        </button>
+                      </div>
+                      {challengeDraft.setupPairs.offTypePairs.length ? (
+                        <div className="badge-row">
+                          {challengeDraft.setupPairs.offTypePairs.map((pair) => (
+                            <button
+                              className="badge removable-badge"
+                              key={`off-type-${pair.pairId}`}
+                              onClick={() => handleRemoveSetupPair("offTypePairs", pair.pairId)}
+                              type="button"
+                            >
+                              {pair.label} x
+                            </button>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="helper">No off-type pairs chosen yet.</p>
+                      )}
+                    </div>
                   </div>
                 </section>
 
@@ -1696,6 +1835,51 @@ function App() {
                             </option>
                           ))}
                         </select>
+                      </label>
+
+                      <label className="field">
+                        <span>Boss type</span>
+                        <select
+                          value={leader.bossType}
+                          onChange={(event) => handleLeaderChange(leader.slotNumber, "bossType", event.target.value)}
+                        >
+                          <option value="">Select type</option>
+                          {weaknessTypes.map((type) => (
+                            <option key={`${leader.slotNumber}-boss-${type}`} value={type}>
+                              {type}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+
+                      <label className="field">
+                        <span>Battle 1 effect</span>
+                        <input
+                          type="text"
+                          value={leader.battle1Effect}
+                          onChange={(event) => handleLeaderChange(leader.slotNumber, "battle1Effect", event.target.value)}
+                          placeholder="Acuity"
+                        />
+                      </label>
+
+                      <label className="field">
+                        <span>Battle 2 effect</span>
+                        <input
+                          type="text"
+                          value={leader.battle2Effect}
+                          onChange={(event) => handleLeaderChange(leader.slotNumber, "battle2Effect", event.target.value)}
+                          placeholder="Bedazzle 1"
+                        />
+                      </label>
+
+                      <label className="field">
+                        <span>Battle 3 effect</span>
+                        <input
+                          type="text"
+                          value={leader.battle3Effect}
+                          onChange={(event) => handleLeaderChange(leader.slotNumber, "battle3Effect", event.target.value)}
+                          placeholder="Discombobulate 9"
+                        />
                       </label>
 
                       <div className="field">
