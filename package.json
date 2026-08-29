@@ -13,6 +13,8 @@
     "import:rosters-local": "node scripts/import-rosters-local.mjs",
     "apply:gvg-meta-local": "tsx scripts/apply-current-gvg-metadata.ts",
     "export:challenge-local": "tsx scripts/export-challenge-local.ts",
+    "export:challenge-move-levels-local": "tsx scripts/export-challenge-move-levels-local.ts",
+    "export:ticket-plan-local": "tsx scripts/export-ticket-plan-local.ts",
     "browser:data": "node scripts/build-static-roster-browser-data.mjs",
     "browser:dev": "npm --prefix gym-roster-browser run dev",
     "browser:build": "npm --prefix gym-roster-browser run build",
