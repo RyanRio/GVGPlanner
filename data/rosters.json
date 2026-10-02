@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-02T04:21:49.314Z",
+  "generatedAt": "2026-10-02T04:24:30.580Z",
   "gymName": "mastersofdiscord",
   "memberCount": 20,
-  "pairCount": 9080,
+  "pairCount": 9170,
   "currentChallenge": {
     "id": "f202db01-9e41-4d33-be7b-5b3d65826b56",
     "name": "Pasio Gym Battle No. 4",
@@ -30323,7 +30323,7 @@
     {
       "id": "chereyumi",
       "displayName": "ChereYumi",
-      "pairCount": 285,
+      "pairCount": 312,
       "unmatchedKeys": [],
       "pairs": [
         {
@@ -30448,9 +30448,9 @@
             "icons/Akari_0503_5.png",
             "icons/Akari_0503_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 5,
           "isEx": false,
-          "rawValue": "1|0|0|000|0|0"
+          "rawValue": "4|0|0|000|0|0"
         },
         {
           "pairId": "142|0094",
@@ -30523,9 +30523,9 @@
             "icons/Argenta_0227_5.png",
             "icons/Argenta_0227_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 2,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "1|0|0|000|0|0"
         },
         {
           "pairId": "178|0024",
@@ -30626,6 +30626,56 @@
           "syncLevel": 2,
           "isEx": false,
           "rawValue": "1|0|0|000|0|0"
+        },
+        {
+          "pairId": "165|0101",
+          "label": "Ball Guy (Sygna Suit) & Electrode Regional Form Dynamax",
+          "trainerName": "Ball Guy",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Electrode",
+          "pokemonForm": "Regional Form Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ball Guy_0101_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ball Guy_0101_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Grass",
+          "region": "Galar",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Ball Guy_0101_5.png",
+            "icons/Ball Guy_0101_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "029|0214",
+          "label": "Barry (Special Costume) & Heracross Mega Evolution",
+          "trainerName": "Barry",
+          "trainerAlt": "Special Costume",
+          "pokemonName": "Heracross",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Barry_0214_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Barry_0214_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Bug",
+          "region": "Sinnoh",
+          "acquisition": "Special Costume Scout",
+          "acquisitionCategory": "special_costume",
+          "imagePaths": [
+            "icons/Barry_0214_5.png",
+            "icons/Barry_0214_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
         },
         {
           "pairId": "029|0395",
@@ -30857,6 +30907,31 @@
           "rawValue": "2|0|0|000|0|0"
         },
         {
+          "pairId": "065|0149",
+          "label": "Blue (Anniversary 2026) & Dragonite Mega Evolution",
+          "trainerName": "Blue",
+          "trainerAlt": "Anniversary 2026",
+          "pokemonName": "Dragonite",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Blue_0149_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Blue_0149_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Flying",
+          "region": "Kanto",
+          "acquisition": "EX Master Fair Scout",
+          "acquisitionCategory": "ex_master_fair",
+          "imagePaths": [
+            "icons/Blue_0149_5.png",
+            "icons/Blue_0149_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "065|0145",
           "label": "Blue (Champion) & Zapdos",
           "trainerName": "Blue",
@@ -30880,6 +30955,31 @@
           "syncLevel": 3,
           "isEx": true,
           "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "065|0142",
+          "label": "Blue (Classic) & Aerodactyl Mega Evolution",
+          "trainerName": "Blue",
+          "trainerAlt": "Classic",
+          "pokemonName": "Aerodactyl",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Blue_0142_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Blue_0142_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Rock",
+          "region": "Kanto",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Blue_0142_5.png",
+            "icons/Blue_0142_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "065|0006",
@@ -30927,9 +31027,9 @@
             "icons/Blue_0009_5.png",
             "icons/Blue_0009_EX.png"
           ],
-          "syncLevel": 1,
-          "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "syncLevel": 2,
+          "isEx": true,
+          "rawValue": "1|1|0|000|1|0"
         },
         {
           "pairId": "065|0018",
@@ -31371,6 +31471,31 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "193|0133",
+          "label": "Chase & Eevee",
+          "trainerName": "Chase",
+          "trainerAlt": "",
+          "pokemonName": "Eevee",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Chase_0133_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Chase_0133_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Normal",
+          "region": "Kanto",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Chase_0133_5.png",
+            "icons/Chase_0133_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "064|0508",
           "label": "Cheren & Stoutland",
           "trainerName": "Cheren",
@@ -31653,6 +31778,56 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "078|0445|2",
+          "label": "Cynthia (Arc Suit) & Garchomp Mega Evolution",
+          "trainerName": "Cynthia",
+          "trainerAlt": "Arc Suit",
+          "pokemonName": "Garchomp",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0445_2_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0445_2_EX.png",
+          "roleCategory": "multi",
+          "roleLabel": "Multi",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Ground",
+          "region": "Sinnoh",
+          "acquisition": "Arc Suit Fair Scout",
+          "acquisitionCategory": "arc_suit_fair",
+          "imagePaths": [
+            "icons/Cynthia_0445_2_5.png",
+            "icons/Cynthia_0445_2_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "078|0350",
+          "label": "Cynthia (Summer 2025) & Milotic",
+          "trainerName": "Cynthia",
+          "trainerAlt": "Summer 2025",
+          "pokemonName": "Milotic",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0350_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0350_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Water",
+          "region": "Sinnoh",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Cynthia_0350_5.png",
+            "icons/Cynthia_0350_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|1|0"
+        },
+        {
           "pairId": "078|0487",
           "label": "Cynthia (Sygna Suit (Renegade)) & Giratina Other Form",
           "trainerName": "Cynthia",
@@ -31697,6 +31872,31 @@
           "imagePaths": [
             "icons/Cynthia_0784_5.png",
             "icons/Cynthia_0784_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "078|0471",
+          "label": "Cynthia & Glaceon",
+          "trainerName": "Cynthia",
+          "trainerAlt": "",
+          "pokemonName": "Glaceon",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0471_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0471_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Ice",
+          "region": "Sinnoh",
+          "acquisition": "Event Reward",
+          "acquisitionCategory": "event_reward",
+          "imagePaths": [
+            "icons/Cynthia_0471_5.png",
+            "icons/Cynthia_0471_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -31853,6 +32053,56 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "219|0196",
+          "label": "Dexio & Espeon",
+          "trainerName": "Dexio",
+          "trainerAlt": "",
+          "pokemonName": "Espeon",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Dexio_0196_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Dexio_0196_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Psychic",
+          "region": "Kalos",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Dexio_0196_5.png",
+            "icons/Dexio_0196_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "120|0282|2",
+          "label": "Diantha (Arc Suit) & Gardevoir Mega Evolution",
+          "trainerName": "Diantha",
+          "trainerAlt": "Arc Suit",
+          "pokemonName": "Gardevoir",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Diantha_0282_2_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Diantha_0282_2_EX.png",
+          "roleCategory": "multi",
+          "roleLabel": "Multi",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Special)",
+          "type": "Fairy",
+          "region": "Kalos",
+          "acquisition": "Arc Suit Fair Scout",
+          "acquisitionCategory": "arc_suit_fair",
+          "imagePaths": [
+            "icons/Diantha_0282_2_5.png",
+            "icons/Diantha_0282_2_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
           "pairId": "120|0719",
           "label": "Diantha (Sygna Suit) & Diancie Mega Evolution",
           "trainerName": "Diantha",
@@ -31873,9 +32123,9 @@
             "icons/Diantha_0719_5.png",
             "icons/Diantha_0719_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "3|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "120|0282",
@@ -33065,6 +33315,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "054|0785",
+          "label": "Hau (Sygna Suit) & Tapu Koko",
+          "trainerName": "Hau",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Tapu Koko",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hau_0785_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hau_0785_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Special)",
+          "type": "Electric",
+          "region": "Alola",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Hau_0785_5.png",
+            "icons/Hau_0785_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "054|0026",
           "label": "Hau & Raichu Regional Form",
           "trainerName": "Hau",
@@ -33160,6 +33435,31 @@
           "imagePaths": [
             "icons/Hilbert_0503_5.png",
             "icons/Hilbert_0503_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "067|0642",
+          "label": "Hilbert & Thundurus Other Form",
+          "trainerName": "Hilbert",
+          "trainerAlt": "",
+          "pokemonName": "Thundurus",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hilbert_0642_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hilbert_0642_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Electric",
+          "region": "Unova",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Hilbert_0642_5.png",
+            "icons/Hilbert_0642_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -33570,6 +33870,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "206|0851",
+          "label": "Kabu & Centiskorch Dynamax Gigantamax",
+          "trainerName": "Kabu",
+          "trainerAlt": "",
+          "pokemonName": "Centiskorch",
+          "pokemonForm": "Dynamax Gigantamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Kabu_0851_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Kabu_0851_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Fire",
+          "region": "Galar",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Kabu_0851_5.png",
+            "icons/Kabu_0851_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "206|0038",
           "label": "Kabu & Ninetales",
           "trainerName": "Kabu",
@@ -33974,6 +34299,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "077|0006",
+          "label": "Lance & Charizard Mega Evolution",
+          "trainerName": "Lance",
+          "trainerAlt": "",
+          "pokemonName": "Charizard",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lance_0006_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lance_0006_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Flying",
+          "region": "Kanto",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Lance_0006_5.png",
+            "icons/Lance_0006_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "077|0148",
           "label": "Lance & Dragonair",
           "trainerName": "Lance",
@@ -33993,6 +34343,31 @@
           "imagePaths": [
             "icons/Lance_0148_5.png",
             "icons/Lance_0148_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "205|0982",
+          "label": "Larry & Dudunsparce Other Form",
+          "trainerName": "Larry",
+          "trainerAlt": "",
+          "pokemonName": "Dudunsparce",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Larry_0982_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Larry_0982_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Normal",
+          "region": "Paldea",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Larry_0982_5.png",
+            "icons/Larry_0982_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -34149,6 +34524,31 @@
           "rawValue": "3|0|0|000|0|0"
         },
         {
+          "pairId": "118|0887",
+          "label": "Leon (Alt) & Dragapult Dynamax",
+          "trainerName": "Leon",
+          "trainerAlt": "Alt",
+          "pokemonName": "Dragapult",
+          "pokemonForm": "Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leon_0887_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leon_0887_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Dragon",
+          "region": "Galar",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Leon_0887_5.png",
+            "icons/Leon_0887_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "118|0898",
           "label": "Leon (Holiday 2021) & Calyrex Other Form",
           "trainerName": "Leon",
@@ -34222,6 +34622,31 @@
           "syncLevel": 5,
           "isEx": false,
           "rawValue": "4|0|0|000|0|0"
+        },
+        {
+          "pairId": "103|0730",
+          "label": "Lillie (Holiday 2024) & Primarina",
+          "trainerName": "Lillie",
+          "trainerAlt": "Holiday 2024",
+          "pokemonName": "Primarina",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lillie_0730_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lillie_0730_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Fairy",
+          "region": "Alola",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Lillie_0730_5.png",
+            "icons/Lillie_0730_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "103|0035",
@@ -34606,6 +35031,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "115|0717",
+          "label": "Lysandre & Yveltal",
+          "trainerName": "Lysandre",
+          "trainerAlt": "",
+          "pokemonName": "Yveltal",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lysandre_0717_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lysandre_0717_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Flying",
+          "region": "Kalos",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Lysandre_0717_5.png",
+            "icons/Lysandre_0717_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "114|0756",
           "label": "Mallow & Shiinotic",
           "trainerName": "Mallow",
@@ -34735,6 +35185,31 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "119|0861",
+          "label": "Marnie (Summer 2021) & Grimmsnarl",
+          "trainerName": "Marnie",
+          "trainerAlt": "Summer 2021",
+          "pokemonName": "Grimmsnarl",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Marnie_0861_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Marnie_0861_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Fairy",
+          "region": "Galar",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Marnie_0861_5.png",
+            "icons/Marnie_0861_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "119|0510",
           "label": "Marnie & Liepard",
           "trainerName": "Marnie",
@@ -34856,9 +35331,9 @@
             "icons/May_0257_5.png",
             "icons/May_0257_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 3,
           "isEx": false,
-          "rawValue": "1|0|0|000|0|0"
+          "rawValue": "2|0|0|000|1|0"
         },
         {
           "pairId": "113|0260",
@@ -34958,9 +35433,9 @@
             "icons/Mina_0788_5.png",
             "icons/Mina_0788_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 4,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "3|1|0|000|1|0"
         },
         {
           "pairId": "056|0210",
@@ -35194,6 +35669,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "112|0571",
+          "label": "N (Summer 2022) & Zoroark",
+          "trainerName": "N",
+          "trainerAlt": "Summer 2022",
+          "pokemonName": "Zoroark",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/N_0571_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/N_0571_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Dark",
+          "region": "Unova",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/N_0571_5.png",
+            "icons/N_0571_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "112|0644",
           "label": "N & Zekrom",
           "trainerName": "N",
@@ -35266,8 +35766,8 @@
             "icons/Nate_0612_EX.png"
           ],
           "syncLevel": 1,
-          "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
         },
         {
           "pairId": "109|0628",
@@ -35473,6 +35973,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "170|0569",
+          "label": "Oleana & Garbodor Dynamax Gigantamax",
+          "trainerName": "Oleana",
+          "trainerAlt": "",
+          "pokemonName": "Garbodor",
+          "pokemonForm": "Dynamax Gigantamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Oleana_0569_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Oleana_0569_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Poison",
+          "region": "Galar",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Oleana_0569_5.png",
+            "icons/Oleana_0569_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "057|0745",
           "label": "Olivia & Lycanroc Other Form",
           "trainerName": "Olivia",
@@ -35546,6 +36071,31 @@
           "syncLevel": 2,
           "isEx": false,
           "rawValue": "1|0|0|000|0|0"
+        },
+        {
+          "pairId": "175|0745",
+          "label": "Paulo & Lycanroc Other Form Dynamax",
+          "trainerName": "Paulo",
+          "trainerAlt": "",
+          "pokemonName": "Lycanroc",
+          "pokemonForm": "Other Form Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Paulo_0745_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Paulo_0745_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Rock",
+          "region": "Pasio",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Paulo_0745_5.png",
+            "icons/Paulo_0745_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "026|0477",
@@ -35733,6 +36283,31 @@
           "syncLevel": 5,
           "isEx": false,
           "rawValue": "4|0|0|000|0|0"
+        },
+        {
+          "pairId": "204|0959",
+          "label": "Poppy & Tinkaton",
+          "trainerName": "Poppy",
+          "trainerAlt": "",
+          "pokemonName": "Tinkaton",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Poppy_0959_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Poppy_0959_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Steel",
+          "region": "Paldea",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Poppy_0959_5.png",
+            "icons/Poppy_0959_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "082|0151",
@@ -35987,9 +36562,9 @@
             "icons/Red_0006_5.png",
             "icons/Red_0006_EX.png"
           ],
-          "syncLevel": 2,
-          "isEx": false,
-          "rawValue": "1|0|0|000|0|0"
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "6|1|0|000|1|0"
         },
         {
           "pairId": "201|0980",
@@ -36011,6 +36586,31 @@
           "imagePaths": [
             "icons/Rika_0980_5.png",
             "icons/Rika_0980_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "201|0984",
+          "label": "Rika & Great Tusk",
+          "trainerName": "Rika",
+          "trainerAlt": "",
+          "pokemonName": "Great Tusk",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Rika_0984_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Rika_0984_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Ground",
+          "region": "Paldea",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Rika_0984_5.png",
+            "icons/Rika_0984_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -36139,9 +36739,9 @@
             "icons/Rose_0879_5.png",
             "icons/Rose_0879_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 3,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "2|0|0|000|0|0"
         },
         {
           "pairId": "019|0476",
@@ -36342,6 +36942,31 @@
           "imagePaths": [
             "icons/Selene_0793_5.png",
             "icons/Selene_0793_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "121|0212",
+          "label": "Selene (Special Costume) & Scizor Mega Evolution",
+          "trainerName": "Selene",
+          "trainerAlt": "Special Costume",
+          "pokemonName": "Scizor",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Selene_0212_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Selene_0212_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Steel",
+          "region": "Alola",
+          "acquisition": "Special Costume Scout",
+          "acquisitionCategory": "special_costume",
+          "imagePaths": [
+            "icons/Selene_0212_5.png",
+            "icons/Selene_0212_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -36753,6 +37378,31 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "081|0384",
+          "label": "Steven (Anniversary 2021) & Rayquaza Mega Evolution",
+          "trainerName": "Steven",
+          "trainerAlt": "Anniversary 2021",
+          "pokemonName": "Rayquaza",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Steven_0384_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Steven_0384_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Flying",
+          "region": "Hoenn",
+          "acquisition": "Master Fair Scout",
+          "acquisitionCategory": "master_fair",
+          "imagePaths": [
+            "icons/Steven_0384_5.png",
+            "icons/Steven_0384_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
           "pairId": "081|0376|2",
           "label": "Steven (Arc Suit) & Metagross Mega Evolution",
           "trainerName": "Steven",
@@ -37084,6 +37734,31 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "249|0154",
+          "label": "Urbain & Meganium Mega Evolution",
+          "trainerName": "Urbain",
+          "trainerAlt": "",
+          "pokemonName": "Meganium",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Urbain_0154_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Urbain_0154_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Grass",
+          "region": "Kalos",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Urbain_0154_5.png",
+            "icons/Urbain_0154_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "083|0700",
           "label": "Valerie & Sylveon",
           "trainerName": "Valerie",
@@ -37331,9 +38006,9 @@
             "icons/Wally_0282_5.png",
             "icons/Wally_0282_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 3,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "2|0|0|000|0|0"
         },
         {
           "pairId": "092|0475",
@@ -118073,7 +118748,7 @@
     {
       "id": "neodoombot",
       "displayName": "Neodoombot",
-      "pairCount": 247,
+      "pairCount": 310,
       "unmatchedKeys": [],
       "pairs": [
         {
@@ -118247,9 +118922,9 @@
             "icons/Akari_0503_5.png",
             "icons/Akari_0503_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "3|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "108|0637|2",
@@ -118275,6 +118950,56 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "108|0637",
+          "label": "Alder & Volcarona",
+          "trainerName": "Alder",
+          "trainerAlt": "",
+          "pokemonName": "Volcarona",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Alder_0637_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Alder_0637_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Bug",
+          "region": "Unova",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Alder_0637_5.png",
+            "icons/Alder_0637_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "163|0143",
+          "label": "Anabel & Snorlax Dynamax Gigantamax",
+          "trainerName": "Anabel",
+          "trainerAlt": "",
+          "pokemonName": "Snorlax",
+          "pokemonForm": "Dynamax Gigantamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Anabel_0143_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Anabel_0143_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Normal",
+          "region": "Alola",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Anabel_0143_5.png",
+            "icons/Anabel_0143_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "128|0382",
@@ -118553,6 +119278,31 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "149|0078",
+          "label": "Bede (Alt.) & Rapidash Regional Form Dynamax",
+          "trainerName": "Bede",
+          "trainerAlt": "Alt.",
+          "pokemonName": "Rapidash",
+          "pokemonForm": "Regional Form Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Bede_0078_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Bede_0078_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Fairy",
+          "region": "Galar",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Bede_0078_5.png",
+            "icons/Bede_0078_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
+        },
+        {
           "pairId": "149|0144",
           "label": "Bede (Champion) & Articuno Regional Form",
           "trainerName": "Bede",
@@ -118598,9 +119348,9 @@
             "icons/Bede_1006_5.png",
             "icons/Bede_1006_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "9|1|0|000|1|0"
         },
         {
           "pairId": "230|0637",
@@ -118704,6 +119454,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "065|0149",
+          "label": "Blue (Anniversary 2026) & Dragonite Mega Evolution",
+          "trainerName": "Blue",
+          "trainerAlt": "Anniversary 2026",
+          "pokemonName": "Dragonite",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Blue_0149_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Blue_0149_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Flying",
+          "region": "Kanto",
+          "acquisition": "EX Master Fair Scout",
+          "acquisitionCategory": "ex_master_fair",
+          "imagePaths": [
+            "icons/Blue_0149_5.png",
+            "icons/Blue_0149_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|1|0"
+        },
+        {
           "pairId": "065|0018|2",
           "label": "Blue (Arc Suit) & Pidgeot Mega Evolution",
           "trainerName": "Blue",
@@ -118724,9 +119499,9 @@
             "icons/Blue_0018_2_5.png",
             "icons/Blue_0018_2_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "0|1|0|000|1|0"
+          "rawValue": "2|1|0|000|1|0"
         },
         {
           "pairId": "065|0145",
@@ -118854,6 +119629,31 @@
           "rawValue": "4|1|0|000|0|0"
         },
         {
+          "pairId": "250|0144",
+          "label": "Brandon & Articuno",
+          "trainerName": "Brandon",
+          "trainerAlt": "",
+          "pokemonName": "Articuno",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Brandon_0144_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Brandon_0144_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Flying",
+          "region": "Hoenn",
+          "acquisition": "Battle Points Exchange",
+          "acquisitionCategory": "battle_points",
+          "imagePaths": [
+            "icons/Brandon_0144_5.png",
+            "icons/Brandon_0144_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "243|0185",
           "label": "Brassius & Sudowoodo Terastallization",
           "trainerName": "Brassius",
@@ -118924,9 +119724,9 @@
             "icons/Brendan_0381_5.png",
             "icons/Brendan_0381_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 4,
           "isEx": true,
-          "rawValue": "1|1|0|000|0|0"
+          "rawValue": "3|1|0|000|1|0"
         },
         {
           "pairId": "018|0259",
@@ -118954,6 +119754,56 @@
           "rawValue": "1|1|0|000|1|0"
         },
         {
+          "pairId": "018|0373",
+          "label": "Brendan & Salamence Mega Evolution",
+          "trainerName": "Brendan",
+          "trainerAlt": "",
+          "pokemonName": "Salamence",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Brendan_0373_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Brendan_0373_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Flying",
+          "region": "Hoenn",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Brendan_0373_5.png",
+            "icons/Brendan_0373_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "018|0254",
+          "label": "Brendan & Sceptile Treecko Grovyle Mega Evolution",
+          "trainerName": "Brendan",
+          "trainerAlt": "",
+          "pokemonName": "Sceptile",
+          "pokemonForm": "Treecko Grovyle Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Brendan_0254_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Brendan_0254_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Grass",
+          "region": "Hoenn",
+          "acquisition": "Spotlight Scout / General Pool",
+          "acquisitionCategory": "spotlight",
+          "imagePaths": [
+            "icons/Brendan_0254_5.png",
+            "icons/Brendan_0254_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "4|1|0|000|0|0"
+        },
+        {
           "pairId": "002|0095|2",
           "label": "Brock (Arc Suit) & Onix",
           "trainerName": "Brock",
@@ -118974,9 +119824,9 @@
             "icons/Brock_0095_2_5.png",
             "icons/Brock_0095_2_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "0|1|0|000|1|0"
+          "rawValue": "2|1|0|000|1|0"
         },
         {
           "pairId": "002|0141",
@@ -119002,6 +119852,56 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "5|1|0|000|0|0"
+        },
+        {
+          "pairId": "071|0658",
+          "label": "Calem (Champion) & Greninja",
+          "trainerName": "Calem",
+          "trainerAlt": "Champion",
+          "pokemonName": "Greninja",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Calem_0658_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Calem_0658_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Dark",
+          "region": "Kalos",
+          "acquisition": "Master Fair Scout",
+          "acquisitionCategory": "master_fair",
+          "imagePaths": [
+            "icons/Calem_0658_5.png",
+            "icons/Calem_0658_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "233|0262",
+          "label": "Carmine (Alt.) & Mightyena",
+          "trainerName": "Carmine",
+          "trainerAlt": "Alt.",
+          "pokemonName": "Mightyena",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Carmine_0262_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Carmine_0262_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Dark",
+          "region": "Paldea",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Carmine_0262_5.png",
+            "icons/Carmine_0262_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
         },
         {
           "pairId": "233|1025",
@@ -119079,6 +119979,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "193|0025",
+          "label": "Chase & Pikachu",
+          "trainerName": "Chase",
+          "trainerAlt": "",
+          "pokemonName": "Pikachu",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Chase_0025_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Chase_0025_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Electric",
+          "region": "Kanto",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Chase_0025_5.png",
+            "icons/Chase_0025_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "064|0508",
           "label": "Cheren & Stoutland",
           "trainerName": "Cheren",
@@ -119129,6 +120054,31 @@
           "syncLevel": 5,
           "isEx": false,
           "rawValue": "4|0|0|000|0|0"
+        },
+        {
+          "pairId": "238|0512",
+          "label": "Cilan & Simisage",
+          "trainerName": "Cilan",
+          "trainerAlt": "",
+          "pokemonName": "Simisage",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cilan_0512_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cilan_0512_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Grass",
+          "region": "Unova",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Cilan_0512_5.png",
+            "icons/Cilan_0512_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
         },
         {
           "pairId": "014|0780",
@@ -119232,6 +120182,31 @@
           "rawValue": "2|1|0|000|1|0"
         },
         {
+          "pairId": "231|0591",
+          "label": "Clive & Amoonguss",
+          "trainerName": "Clive",
+          "trainerAlt": "",
+          "pokemonName": "Amoonguss",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Clive_0591_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Clive_0591_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Poison",
+          "region": "Paldea",
+          "acquisition": "Special Costume Scout",
+          "acquisitionCategory": "special_costume",
+          "imagePaths": [
+            "icons/Clive_0591_5.png",
+            "icons/Clive_0591_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "160|0601",
           "label": "Colress & Klinklang",
           "trainerName": "Colress",
@@ -119255,6 +120230,31 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "4|1|0|000|0|0"
+        },
+        {
+          "pairId": "151|0323",
+          "label": "Courtney & Camerupt Mega Evolution",
+          "trainerName": "Courtney",
+          "trainerAlt": "",
+          "pokemonName": "Camerupt",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Courtney_0323_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Courtney_0323_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Ground",
+          "region": "Hoenn",
+          "acquisition": "Spotlight Scout / General Pool",
+          "acquisitionCategory": "spotlight",
+          "imagePaths": [
+            "icons/Courtney_0323_5.png",
+            "icons/Courtney_0323_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": false,
+          "rawValue": "4|0|0|000|0|0"
         },
         {
           "pairId": "078|0445|2",
@@ -119382,6 +120382,81 @@
           "rawValue": "0|1|0|000|1|0"
         },
         {
+          "pairId": "078|0445",
+          "label": "Cynthia & Garchomp Mega Evolution",
+          "trainerName": "Cynthia",
+          "trainerAlt": "",
+          "pokemonName": "Garchomp",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0445_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0445_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Ground",
+          "region": "Sinnoh",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Cynthia_0445_5.png",
+            "icons/Cynthia_0445_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
+        },
+        {
+          "pairId": "078|0471",
+          "label": "Cynthia & Glaceon",
+          "trainerName": "Cynthia",
+          "trainerAlt": "",
+          "pokemonName": "Glaceon",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0471_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0471_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Ice",
+          "region": "Sinnoh",
+          "acquisition": "Event Reward",
+          "acquisitionCategory": "event_reward",
+          "imagePaths": [
+            "icons/Cynthia_0471_5.png",
+            "icons/Cynthia_0471_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "078|0442",
+          "label": "Cynthia & Spiritomb",
+          "trainerName": "Cynthia",
+          "trainerAlt": "",
+          "pokemonName": "Spiritomb",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0442_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Cynthia_0442_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Ghost",
+          "region": "Sinnoh",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Cynthia_0442_5.png",
+            "icons/Cynthia_0442_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
+        },
+        {
           "pairId": "100|0491",
           "label": "Cyrus (Sygna Suit) & Darkrai",
           "trainerName": "Cyrus",
@@ -119477,9 +120552,59 @@
             "icons/Darach_0398_5.png",
             "icons/Darach_0398_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "4|1|0|000|0|0"
+        },
+        {
+          "pairId": "094|0484",
+          "label": "Dawn (Champion) & Palkia Other Form",
+          "trainerName": "Dawn",
+          "trainerAlt": "Champion",
+          "pokemonName": "Palkia",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Dawn_0484_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Dawn_0484_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Dragon",
+          "region": "Sinnoh",
+          "acquisition": "EX Master Fair Scout",
+          "acquisitionCategory": "ex_master_fair",
+          "imagePaths": [
+            "icons/Dawn_0484_5.png",
+            "icons/Dawn_0484_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "094|0741",
+          "label": "Dawn (New Year's 2023) & Oricorio Sensu Style",
+          "trainerName": "Dawn",
+          "trainerAlt": "New Year's 2023",
+          "pokemonName": "Oricorio",
+          "pokemonForm": "Sensu Style",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Dawn_0741_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Dawn_0741_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Special)",
+          "type": "Ghost",
+          "region": "Sinnoh",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Dawn_0741_5.png",
+            "icons/Dawn_0741_EX.png"
+          ],
+          "syncLevel": 2,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "1|0|0|000|0|0"
         },
         {
           "pairId": "094|0488",
@@ -119602,9 +120727,9 @@
             "icons/Diantha_0719_5.png",
             "icons/Diantha_0719_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "3|1|0|000|1|0"
+          "rawValue": "6|1|0|000|1|0"
         },
         {
           "pairId": "027|0373",
@@ -119708,6 +120833,31 @@
           "rawValue": "1|1|0|000|0|0"
         },
         {
+          "pairId": "069|0176",
+          "label": "Elesa (Palentine's 2023) & Togetic",
+          "trainerName": "Elesa",
+          "trainerAlt": "Palentine's 2023",
+          "pokemonName": "Togetic",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Elesa_0176_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Elesa_0176_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Flying",
+          "region": "Unova",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Elesa_0176_5.png",
+            "icons/Elesa_0176_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "069|0642",
           "label": "Elesa (Sygna Suit (Alt.)) & Thundurus Other Form Dynamax",
           "trainerName": "Elesa",
@@ -119728,9 +120878,9 @@
             "icons/Elesa_0642_5.png",
             "icons/Elesa_0642_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "3|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "122|0800",
@@ -119756,6 +120906,31 @@
           "syncLevel": 4,
           "isEx": true,
           "rawValue": "3|1|0|000|1|0"
+        },
+        {
+          "pairId": "122|0724",
+          "label": "Elio & Decidueye",
+          "trainerName": "Elio",
+          "trainerAlt": "",
+          "pokemonName": "Decidueye",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Elio_0724_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Elio_0724_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Ghost",
+          "region": "Alola",
+          "acquisition": "Mix Scout",
+          "acquisitionCategory": "general_pool",
+          "imagePaths": [
+            "icons/Elio_0724_5.png",
+            "icons/Elio_0724_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
         },
         {
           "pairId": "122|0730",
@@ -119828,9 +121003,9 @@
             "icons/Eri_0979_5.png",
             "icons/Eri_0979_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 4,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "3|1|0|000|1|0"
         },
         {
           "pairId": "005|0754",
@@ -119878,9 +121053,9 @@
             "icons/Ethan_0249_2_5.png",
             "icons/Ethan_0249_2_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "075|0243",
@@ -119927,6 +121102,31 @@
           "imagePaths": [
             "icons/Ethan_0249_5.png",
             "icons/Ethan_0249_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
+        },
+        {
+          "pairId": "075|0130",
+          "label": "Ethan & Gyarados Mega Evolution",
+          "trainerName": "Ethan",
+          "trainerAlt": "",
+          "pokemonName": "Gyarados",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ethan_0130_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ethan_0130_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Water",
+          "region": "Johto",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Ethan_0130_5.png",
+            "icons/Ethan_0130_EX.png"
           ],
           "syncLevel": 1,
           "isEx": true,
@@ -120030,8 +121230,33 @@
             "icons/Flannery_0219_EX.png"
           ],
           "syncLevel": 1,
-          "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
+        },
+        {
+          "pairId": "225|0469",
+          "label": "Florian (Alt.) & Yanmega Terastallization",
+          "trainerName": "Florian",
+          "trainerAlt": "Alt.",
+          "pokemonName": "Yanmega",
+          "pokemonForm": "Terastallization",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Florian_0469_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Florian_0469_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Bug",
+          "region": "Paldea",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Florian_0469_5.png",
+            "icons/Florian_0469_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
         },
         {
           "pairId": "225|1017",
@@ -120134,6 +121359,31 @@
           "rawValue": "3|1|0|000|1|0"
         },
         {
+          "pairId": "196|0970|2",
+          "label": "Geeta (Arc Suit) & Glimmora",
+          "trainerName": "Geeta",
+          "trainerAlt": "Arc Suit",
+          "pokemonName": "Glimmora",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Geeta_0970_2_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Geeta_0970_2_EX.png",
+          "roleCategory": "multi",
+          "roleLabel": "Multi",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Poison",
+          "region": "Paldea",
+          "acquisition": "Arc Suit Fair Scout",
+          "acquisitionCategory": "arc_suit_fair",
+          "imagePaths": [
+            "icons/Geeta_0970_2_5.png",
+            "icons/Geeta_0970_2_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
           "pairId": "196|0970",
           "label": "Geeta & Glimmora",
           "trainerName": "Geeta",
@@ -120157,6 +121407,31 @@
           "syncLevel": 3,
           "isEx": true,
           "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "124|1002",
+          "label": "Ghetsis (Sygna Suit) & Chien-Pao Terastallization",
+          "trainerName": "Ghetsis",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Chien-Pao",
+          "pokemonForm": "Terastallization",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ghetsis_1002_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ghetsis_1002_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Ice",
+          "region": "Unova",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Ghetsis_1002_5.png",
+            "icons/Ghetsis_1002_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|1|0"
         },
         {
           "pairId": "124|0646",
@@ -120405,9 +121680,9 @@
             "icons/Gloria_0815_2_5.png",
             "icons/Gloria_0815_2_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "111|0892",
@@ -120435,6 +121710,31 @@
           "rawValue": "2|1|0|000|1|0"
         },
         {
+          "pairId": "111|0818",
+          "label": "Gloria (Summer 2021) & Inteleon",
+          "trainerName": "Gloria",
+          "trainerAlt": "Summer 2021",
+          "pokemonName": "Inteleon",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Gloria_0818_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Gloria_0818_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Water",
+          "region": "Galar",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Gloria_0818_5.png",
+            "icons/Gloria_0818_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
+        },
+        {
           "pairId": "111|0888",
           "label": "Gloria & Zacian Other Form",
           "trainerName": "Gloria",
@@ -120455,9 +121755,34 @@
             "icons/Gloria_0888_5.png",
             "icons/Gloria_0888_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 5,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "4|0|0|000|0|0"
+        },
+        {
+          "pairId": "209|0286",
+          "label": "Greta & Breloom Dynamax",
+          "trainerName": "Greta",
+          "trainerAlt": "",
+          "pokemonName": "Breloom",
+          "pokemonForm": "Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Greta_0286_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Greta_0286_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Grass",
+          "region": "Hoenn",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Greta_0286_5.png",
+            "icons/Greta_0286_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": false,
+          "rawValue": "2|0|0|000|0|0"
         },
         {
           "pairId": "073|0319",
@@ -120560,6 +121885,31 @@
           "rawValue": "4|1|0|000|0|0"
         },
         {
+          "pairId": "248|0160",
+          "label": "Harmony & Feraligatr Mega Evolution",
+          "trainerName": "Harmony",
+          "trainerAlt": "",
+          "pokemonName": "Feraligatr",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Harmony_0160_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Harmony_0160_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Water",
+          "region": "Kalos",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Harmony_0160_5.png",
+            "icons/Harmony_0160_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|1|0"
+        },
+        {
           "pairId": "054|0785",
           "label": "Hau (Sygna Suit) & Tapu Koko",
           "trainerName": "Hau",
@@ -120605,9 +121955,9 @@
             "icons/Hilbert_0646_5.png",
             "icons/Hilbert_0646_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "067|0649",
@@ -120631,8 +121981,33 @@
             "icons/Hilbert_0649_EX.png"
           ],
           "syncLevel": 2,
-          "isEx": false,
-          "rawValue": "1|0|0|000|0|0"
+          "isEx": true,
+          "rawValue": "1|1|0|000|0|0"
+        },
+        {
+          "pairId": "067|0642",
+          "label": "Hilbert & Thundurus Other Form",
+          "trainerName": "Hilbert",
+          "trainerAlt": "",
+          "pokemonName": "Thundurus",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hilbert_0642_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hilbert_0642_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Electric",
+          "region": "Unova",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Hilbert_0642_5.png",
+            "icons/Hilbert_0642_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": true,
+          "rawValue": "1|1|0|000|1|0"
         },
         {
           "pairId": "068|1010",
@@ -120657,7 +122032,32 @@
           ],
           "syncLevel": 3,
           "isEx": true,
-          "rawValue": "2|1|0|000|0|0"
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "068|0719",
+          "label": "Hilda (Special Costume) & Diancie Mega Evolution",
+          "trainerName": "Hilda",
+          "trainerAlt": "Special Costume",
+          "pokemonName": "Diancie",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hilda_0719_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Hilda_0719_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Rock",
+          "region": "Unova",
+          "acquisition": "Special Costume Scout",
+          "acquisitionCategory": "special_costume",
+          "imagePaths": [
+            "icons/Hilda_0719_5.png",
+            "icons/Hilda_0719_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "068|0494",
@@ -120730,9 +122130,9 @@
             "icons/Hop_0888_5.png",
             "icons/Hop_0888_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 2,
           "isEx": true,
-          "rawValue": "0|1|0|000|1|0"
+          "rawValue": "1|1|0|000|1|0"
         },
         {
           "pairId": "141|0889",
@@ -120833,6 +122233,31 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "133|0609",
+          "label": "Ingo (Sygna Suit) & Chandelure Dynamax",
+          "trainerName": "Ingo",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Chandelure",
+          "pokemonForm": "Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ingo_0609_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Ingo_0609_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Ghost",
+          "region": "Unova",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Ingo_0609_5.png",
+            "icons/Ingo_0609_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": false,
+          "rawValue": "2|0|0|000|0|0"
         },
         {
           "pairId": "191|0987",
@@ -121012,6 +122437,58 @@
           "rawValue": "4|0|0|000|0|0"
         },
         {
+          "pairId": "200|0981",
+          "label": "Jacq & Farigiraf",
+          "trainerName": "Jacq",
+          "trainerAlt": "",
+          "pokemonName": "Farigiraf",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Jacq_0981_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Jacq_0981_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Psychic",
+          "region": "Paldea",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Jacq_0981_5.png",
+            "icons/Jacq_0981_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
+        },
+        {
+          "pairId": "015|0168",
+          "label": "Janine & Ariados",
+          "trainerName": "Janine",
+          "trainerAlt": "",
+          "pokemonName": "Ariados",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Janine_0168_3.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Janine_0168_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Poison",
+          "region": "Kanto",
+          "acquisition": "Spotlight Scout / General Pool",
+          "acquisitionCategory": "spotlight",
+          "imagePaths": [
+            "icons/Janine_0168_3.png",
+            "icons/Janine_0168_4.png",
+            "icons/Janine_0168_5.png",
+            "icons/Janine_0168_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": false,
+          "rawValue": "4|2|0|000|0|0"
+        },
+        {
           "pairId": "093|0205",
           "label": "Jasmine (Academy) & Forretress",
           "trainerName": "Jasmine",
@@ -121062,6 +122539,31 @@
           "rawValue": "4|1|0|000|1|5"
         },
         {
+          "pairId": "224|0358",
+          "label": "Juliana & Chimecho",
+          "trainerName": "Juliana",
+          "trainerAlt": "",
+          "pokemonName": "Chimecho",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Juliana_0358_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Juliana_0358_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Psychic",
+          "region": "Paldea",
+          "acquisition": "Event Reward",
+          "acquisitionCategory": "event_reward",
+          "imagePaths": [
+            "icons/Juliana_0358_5.png",
+            "icons/Juliana_0358_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
+        },
+        {
           "pairId": "224|1007",
           "label": "Juliana & Koraidon Other Form",
           "trainerName": "Juliana",
@@ -121110,6 +122612,31 @@
           "syncLevel": 5,
           "isEx": false,
           "rawValue": "4|0|0|000|1|0"
+        },
+        {
+          "pairId": "206|0323",
+          "label": "Kabu (Academy) & Camerupt Dynamax",
+          "trainerName": "Kabu",
+          "trainerAlt": "Academy",
+          "pokemonName": "Camerupt",
+          "pokemonForm": "Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Kabu_0323_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Kabu_0323_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Ground",
+          "region": "Galar",
+          "acquisition": "Special Costume Scout",
+          "acquisitionCategory": "special_costume",
+          "imagePaths": [
+            "icons/Kabu_0323_5.png",
+            "icons/Kabu_0323_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "206|0851",
@@ -121207,9 +122734,9 @@
             "icons/Kieran_0162_5.png",
             "icons/Kieran_0162_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "3|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "234|1019",
@@ -121382,9 +122909,9 @@
             "icons/Lacey_0547_5.png",
             "icons/Lacey_0547_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "1|1|0|000|0|0"
+          "rawValue": "2|1|0|000|0|0"
         },
         {
           "pairId": "227|0210",
@@ -121460,6 +122987,31 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "129|0091",
+          "label": "Lana & Cloyster",
+          "trainerName": "Lana",
+          "trainerAlt": "",
+          "pokemonName": "Cloyster",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lana_0091_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lana_0091_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Water",
+          "region": "Alola",
+          "acquisition": "Gym Scout",
+          "acquisitionCategory": "gym_scout",
+          "imagePaths": [
+            "icons/Lana_0091_5.png",
+            "icons/Lana_0091_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": false,
+          "rawValue": "4|0|0|000|0|0"
         },
         {
           "pairId": "077|0149|2",
@@ -121559,7 +123111,7 @@
           ],
           "syncLevel": 1,
           "isEx": true,
-          "rawValue": "0|1|0|000|0|0"
+          "rawValue": "0|1|0|000|1|0"
         },
         {
           "pairId": "205|0982",
@@ -121582,9 +123134,9 @@
             "icons/Larry_0982_5.png",
             "icons/Larry_0982_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "076|0146",
@@ -121632,9 +123184,59 @@
             "icons/Leaf_0003_5.png",
             "icons/Leaf_0003_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "1|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "076|0015",
+          "label": "Leaf & Beedrill Mega Evolution",
+          "trainerName": "Leaf",
+          "trainerAlt": "",
+          "pokemonName": "Beedrill",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leaf_0015_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leaf_0015_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Bug",
+          "region": "Kanto",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Leaf_0015_5.png",
+            "icons/Leaf_0015_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
+        },
+        {
+          "pairId": "076|0009",
+          "label": "Leaf & Blastoise Dynamax",
+          "trainerName": "Leaf",
+          "trainerAlt": "",
+          "pokemonName": "Blastoise",
+          "pokemonForm": "Dynamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leaf_0009_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leaf_0009_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Special)",
+          "type": "Water",
+          "region": "Kanto",
+          "acquisition": "Mix Scout",
+          "acquisitionCategory": "general_pool",
+          "imagePaths": [
+            "icons/Leaf_0009_5.png",
+            "icons/Leaf_0009_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "076|0133",
@@ -121707,9 +123309,9 @@
             "icons/Lear_0720_5.png",
             "icons/Lear_0720_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "1|1|0|000|1|0"
+          "rawValue": "2|1|0|000|1|0"
         },
         {
           "pairId": "185|0505",
@@ -121807,9 +123409,34 @@
             "icons/Leon_0890_5.png",
             "icons/Leon_0890_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": true,
-          "rawValue": "3|1|0|000|1|0"
+          "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "118|0006",
+          "label": "Leon & Charizard Dynamax Gigantamax",
+          "trainerName": "Leon",
+          "trainerAlt": "",
+          "pokemonName": "Charizard",
+          "pokemonForm": "Dynamax Gigantamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leon_0006_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Leon_0006_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Fire",
+          "region": "Galar",
+          "acquisition": "Master Fair Scout",
+          "acquisitionCategory": "master_fair",
+          "imagePaths": [
+            "icons/Leon_0006_5.png",
+            "icons/Leon_0006_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "103|0792",
@@ -121962,6 +123589,31 @@
           "rawValue": "0|1|0|000|0|0"
         },
         {
+          "pairId": "145|0483|2",
+          "label": "Lucas (Champion) & Dialga Other Form",
+          "trainerName": "Lucas",
+          "trainerAlt": "Champion",
+          "pokemonName": "Dialga",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lucas_0483_2_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lucas_0483_2_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Dragon",
+          "region": "Sinnoh",
+          "acquisition": "EX Master Fair Scout",
+          "acquisitionCategory": "ex_master_fair",
+          "imagePaths": [
+            "icons/Lucas_0483_2_5.png",
+            "icons/Lucas_0483_2_EX.png"
+          ],
+          "syncLevel": 4,
+          "isEx": true,
+          "rawValue": "3|1|0|000|1|0"
+        },
+        {
           "pairId": "145|0483",
           "label": "Lucas & Dialga",
           "trainerName": "Lucas",
@@ -122057,9 +123709,34 @@
             "icons/Lyra_0244_5.png",
             "icons/Lyra_0244_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "1|1|0|000|0|0"
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "066|0251",
+          "label": "Lyra (Sygna Suit) & Celebi",
+          "trainerName": "Lyra",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Celebi",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lyra_0251_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Lyra_0251_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Grass",
+          "region": "Johto",
+          "acquisition": "Master Fair Scout",
+          "acquisitionCategory": "master_fair",
+          "imagePaths": [
+            "icons/Lyra_0251_5.png",
+            "icons/Lyra_0251_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "115|0721",
@@ -122107,9 +123784,9 @@
             "icons/Lysandre_0717_5.png",
             "icons/Lysandre_0717_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 2,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "1|0|0|000|1|0"
         },
         {
           "pairId": "236|0446",
@@ -122132,9 +123809,9 @@
             "icons/Mai_0446_5.png",
             "icons/Mai_0446_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 4,
           "isEx": true,
-          "rawValue": "2|1|0|000|0|0"
+          "rawValue": "3|1|0|000|0|0"
         },
         {
           "pairId": "212|0663",
@@ -122232,6 +123909,56 @@
             "icons/Marnie_0146_5.png",
             "icons/Marnie_0146_EX.png"
           ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "119|0303",
+          "label": "Marnie (Palentine's 2022) & Mawile Mega Evolution",
+          "trainerName": "Marnie",
+          "trainerAlt": "Palentine's 2022",
+          "pokemonName": "Mawile",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Marnie_0303_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Marnie_0303_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Steel",
+          "region": "Galar",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Marnie_0303_5.png",
+            "icons/Marnie_0303_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "119|0861",
+          "label": "Marnie (Summer 2021) & Grimmsnarl",
+          "trainerName": "Marnie",
+          "trainerAlt": "Summer 2021",
+          "pokemonName": "Grimmsnarl",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Marnie_0861_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Marnie_0861_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Physical)",
+          "type": "Fairy",
+          "region": "Galar",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Marnie_0861_5.png",
+            "icons/Marnie_0861_EX.png"
+          ],
           "syncLevel": 1,
           "isEx": true,
           "rawValue": "0|1|0|000|1|0"
@@ -122260,6 +123987,56 @@
           "syncLevel": 3,
           "isEx": true,
           "rawValue": "2|1|0|000|0|0"
+        },
+        {
+          "pairId": "127|0383",
+          "label": "Maxie & Groudon",
+          "trainerName": "Maxie",
+          "trainerAlt": "",
+          "pokemonName": "Groudon",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Maxie_0383_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Maxie_0383_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Ground",
+          "region": "Hoenn",
+          "acquisition": "Master Fair Scout",
+          "acquisitionCategory": "master_fair",
+          "imagePaths": [
+            "icons/Maxie_0383_5.png",
+            "icons/Maxie_0383_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "113|0380",
+          "label": "May (Anniversary 2022) & Latias Mega Evolution",
+          "trainerName": "May",
+          "trainerAlt": "Anniversary 2022",
+          "pokemonName": "Latias",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/May_0380_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/May_0380_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Psychic",
+          "region": "Hoenn",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/May_0380_5.png",
+            "icons/May_0380_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|0|0"
         },
         {
           "pairId": "113|0382",
@@ -122332,9 +124109,34 @@
             "icons/May_0257_5.png",
             "icons/May_0257_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "0|1|0|000|1|0"
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
+          "pairId": "113|0260",
+          "label": "May & Swampert Mudkip Marshtomp Mega Evolution",
+          "trainerName": "May",
+          "trainerAlt": "",
+          "pokemonName": "Swampert",
+          "pokemonForm": "Mudkip Marshtomp Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/May_0260_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/May_0260_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Water",
+          "region": "Hoenn",
+          "acquisition": "Spotlight Scout / General Pool",
+          "acquisitionCategory": "spotlight",
+          "imagePaths": [
+            "icons/May_0260_5.png",
+            "icons/May_0260_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "4|1|0|000|0|0"
         },
         {
           "pairId": "222|0936",
@@ -122356,6 +124158,31 @@
           "imagePaths": [
             "icons/Mela_0936_5.png",
             "icons/Mela_0936_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
+        },
+        {
+          "pairId": "241|0748",
+          "label": "Miriam & Toxapex Terastallization",
+          "trainerName": "Miriam",
+          "trainerAlt": "",
+          "pokemonName": "Toxapex",
+          "pokemonForm": "Terastallization",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Miriam_0748_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Miriam_0748_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Poison",
+          "region": "Paldea",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Miriam_0748_5.png",
+            "icons/Miriam_0748_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -122385,6 +124212,31 @@
           "syncLevel": 4,
           "isEx": true,
           "rawValue": "3|1|0|000|1|0"
+        },
+        {
+          "pairId": "003|0134",
+          "label": "Misty (Sygna Suit) & Vaporeon",
+          "trainerName": "Misty",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Vaporeon",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Misty_0134_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Misty_0134_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Water",
+          "region": "Kanto",
+          "acquisition": "Spotlight Scout / General Pool",
+          "acquisitionCategory": "spotlight",
+          "imagePaths": [
+            "icons/Misty_0134_5.png",
+            "icons/Misty_0134_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "4|1|0|000|0|0"
         },
         {
           "pairId": "099|0250",
@@ -122437,6 +124289,31 @@
           "rawValue": "4|1|0|000|1|5"
         },
         {
+          "pairId": "112|0571",
+          "label": "N (Summer 2022) & Zoroark",
+          "trainerName": "N",
+          "trainerAlt": "Summer 2022",
+          "pokemonName": "Zoroark",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/N_0571_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/N_0571_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Dark",
+          "region": "Unova",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/N_0571_5.png",
+            "icons/N_0571_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|1|0"
+        },
+        {
           "pairId": "112|0646",
           "label": "N (Sygna Suit) & Kyurem Other Form",
           "trainerName": "N",
@@ -122460,6 +124337,31 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "9|1|0|000|1|0"
+        },
+        {
+          "pairId": "112|0567",
+          "label": "N & Archeops",
+          "trainerName": "N",
+          "trainerAlt": "",
+          "pokemonName": "Archeops",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/N_0567_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/N_0567_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Rock",
+          "region": "Unova",
+          "acquisition": "Training Ticket Exchange",
+          "acquisitionCategory": "ticket_exchange",
+          "imagePaths": [
+            "icons/N_0567_5.png",
+            "icons/N_0567_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": false,
+          "rawValue": "4|0|0|000|0|0"
         },
         {
           "pairId": "112|0645",
@@ -122537,6 +124439,31 @@
           "rawValue": "3|1|0|000|1|0"
         },
         {
+          "pairId": "109|0628",
+          "label": "Nate & Braviary",
+          "trainerName": "Nate",
+          "trainerAlt": "",
+          "pokemonName": "Braviary",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Nate_0628_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Nate_0628_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "",
+          "exRoleLabel": "",
+          "type": "Flying",
+          "region": "Unova",
+          "acquisition": "Spotlight Scout / General Pool",
+          "acquisitionCategory": "spotlight",
+          "imagePaths": [
+            "icons/Nate_0628_5.png",
+            "icons/Nate_0628_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "4|1|0|000|0|0"
+        },
+        {
           "pairId": "173|0985",
           "label": "Nemona (Sygna Suit) & Scream Tail",
           "trainerName": "Nemona",
@@ -122560,6 +124487,31 @@
           "syncLevel": 4,
           "isEx": true,
           "rawValue": "3|1|0|000|1|0"
+        },
+        {
+          "pairId": "173|0923",
+          "label": "Nemona & Pawmot",
+          "trainerName": "Nemona",
+          "trainerAlt": "",
+          "pokemonName": "Pawmot",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Nemona_0923_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Nemona_0923_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Electric",
+          "region": "Paldea",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Nemona_0923_5.png",
+            "icons/Nemona_0923_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "173|0912",
@@ -122710,9 +124662,9 @@
             "icons/Palmer_0486_5.png",
             "icons/Palmer_0486_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 4,
           "isEx": true,
-          "rawValue": "2|1|0|000|1|0"
+          "rawValue": "3|1|0|000|1|0"
         },
         {
           "pairId": "187|0133",
@@ -122763,7 +124715,7 @@
           ],
           "syncLevel": 5,
           "isEx": true,
-          "rawValue": "4|1|0|000|0|0"
+          "rawValue": "4|1|0|000|1|0"
         },
         {
           "pairId": "237|0164",
@@ -122816,6 +124768,81 @@
           "rawValue": "2|1|0|000|1|0"
         },
         {
+          "pairId": "179|0110",
+          "label": "Petrel & Weezing",
+          "trainerName": "Petrel",
+          "trainerAlt": "",
+          "pokemonName": "Weezing",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Petrel_0110_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Petrel_0110_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Poison",
+          "region": "Johto",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Petrel_0110_5.png",
+            "icons/Petrel_0110_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "026|0563",
+          "label": "Phoebe (Fall 2023) & Cofagrigus",
+          "trainerName": "Phoebe",
+          "trainerAlt": "Fall 2023",
+          "pokemonName": "Cofagrigus",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Phoebe_0563_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Phoebe_0563_EX.png",
+          "roleCategory": "support",
+          "roleLabel": "Support",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Ghost",
+          "region": "Hoenn",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Phoebe_0563_5.png",
+            "icons/Phoebe_0563_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "117|0849",
+          "label": "Piers (Sygna Suit) & Toxtricity Other Form",
+          "trainerName": "Piers",
+          "trainerAlt": "Sygna Suit",
+          "pokemonName": "Toxtricity",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Piers_0849_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Piers_0849_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Electric",
+          "region": "Galar",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Piers_0849_5.png",
+            "icons/Piers_0849_EX.png"
+          ],
+          "syncLevel": 2,
+          "isEx": false,
+          "rawValue": "1|0|0|000|0|0"
+        },
+        {
           "pairId": "001|0794",
           "label": "Player & Buzzwole",
           "trainerName": "Player",
@@ -122839,6 +124866,37 @@
           "syncLevel": 3,
           "isEx": false,
           "rawValue": "2|0|0|000|0|0"
+        },
+        {
+          "pairId": "001|0025",
+          "label": "Player & Pikachu",
+          "trainerName": "Player",
+          "trainerAlt": "",
+          "pokemonName": "Pikachu",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Scottie_0025_3.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Scottie_0025_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Electric",
+          "region": "Pasio",
+          "acquisition": "Main Story: PML Arc",
+          "acquisitionCategory": "main_story",
+          "imagePaths": [
+            "icons/Scottie_0025_3.png",
+            "icons/Bettie_0025_3.png",
+            "icons/Scottie_0025_4.png",
+            "icons/Bettie_0025_4.png",
+            "icons/Scottie_0025_5.png",
+            "icons/Bettie_0025_5.png",
+            "icons/Scottie_0025_EX.png",
+            "icons/Bettie_0025_EX.png"
+          ],
+          "syncLevel": 5,
+          "isEx": true,
+          "rawValue": "9|6|0|000|1|0"
         },
         {
           "pairId": "001|0791",
@@ -122888,9 +124946,9 @@
             "icons/Poppy_0208_5.png",
             "icons/Poppy_0208_EX.png"
           ],
-          "syncLevel": 2,
-          "isEx": false,
-          "rawValue": "1|0|0|000|0|0"
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|0|0"
         },
         {
           "pairId": "204|0990",
@@ -123013,9 +125071,9 @@
             "icons/Raihan_0330_5.png",
             "icons/Raihan_0330_EX.png"
           ],
-          "syncLevel": 4,
+          "syncLevel": 5,
           "isEx": false,
-          "rawValue": "3|0|0|000|0|0"
+          "rawValue": "4|0|0|000|0|0"
         },
         {
           "pairId": "123|0884",
@@ -123293,6 +125351,31 @@
           "rawValue": "2|1|0|000|0|0"
         },
         {
+          "pairId": "201|0984",
+          "label": "Rika & Great Tusk",
+          "trainerName": "Rika",
+          "trainerAlt": "",
+          "pokemonName": "Great Tusk",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Rika_0984_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Rika_0984_EX.png",
+          "roleCategory": "field",
+          "roleLabel": "Field",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Ground",
+          "region": "Paldea",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Rika_0984_5.png",
+            "icons/Rika_0984_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
           "pairId": "195|0448",
           "label": "Riley & Lucario Dynamax",
           "trainerName": "Riley",
@@ -123366,6 +125449,31 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "4|1|0|000|0|0"
+        },
+        {
+          "pairId": "169|0879",
+          "label": "Rose & Copperajah Dynamax Gigantamax",
+          "trainerName": "Rose",
+          "trainerAlt": "",
+          "pokemonName": "Copperajah",
+          "pokemonForm": "Dynamax Gigantamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Rose_0879_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Rose_0879_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Steel",
+          "region": "Galar",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Rose_0879_5.png",
+            "icons/Rose_0879_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "044|0849",
@@ -123462,6 +125570,31 @@
           "imagePaths": [
             "icons/Samson Oak_0103_5.png",
             "icons/Samson Oak_0103_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "253|0454",
+          "label": "Saturn & Toxicroak",
+          "trainerName": "Saturn",
+          "trainerAlt": "",
+          "pokemonName": "Toxicroak",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Saturn_0454_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Saturn_0454_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "support",
+          "exRoleLabel": "Support",
+          "type": "Fighting",
+          "region": "Sinnoh",
+          "acquisition": "Variety Scout",
+          "acquisitionCategory": "variety",
+          "imagePaths": [
+            "icons/Saturn_0454_5.png",
+            "icons/Saturn_0454_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -123568,6 +125701,31 @@
           "rawValue": "4|1|0|000|0|0"
         },
         {
+          "pairId": "096|0658|2",
+          "label": "Serena (Anniversary 2026) & Greninja Mega Evolution",
+          "trainerName": "Serena",
+          "trainerAlt": "Anniversary 2026",
+          "pokemonName": "Greninja",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Serena_0658_2_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Serena_0658_2_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "field",
+          "exRoleLabel": "Field",
+          "type": "Dark",
+          "region": "Kalos",
+          "acquisition": "EX Master Fair Scout",
+          "acquisitionCategory": "ex_master_fair",
+          "imagePaths": [
+            "icons/Serena_0658_2_5.png",
+            "icons/Serena_0658_2_EX.png"
+          ],
+          "syncLevel": 3,
+          "isEx": true,
+          "rawValue": "2|1|0|000|1|0"
+        },
+        {
           "pairId": "096|0658",
           "label": "Serena (Champion) & Greninja",
           "trainerName": "Serena",
@@ -123663,9 +125821,9 @@
             "icons/Serena_0655_5.png",
             "icons/Serena_0655_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 5,
           "isEx": false,
-          "rawValue": "0|0|0|000|0|0"
+          "rawValue": "4|0|0|000|0|0"
         },
         {
           "pairId": "162|0301",
@@ -123792,6 +125950,56 @@
           "syncLevel": 5,
           "isEx": true,
           "rawValue": "4|1|0|000|1|0"
+        },
+        {
+          "pairId": "041|0641",
+          "label": "Skyla (Anniversary 2022) & Tornadus Other Form",
+          "trainerName": "Skyla",
+          "trainerAlt": "Anniversary 2022",
+          "pokemonName": "Tornadus",
+          "pokemonForm": "Other Form",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Skyla_0641_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Skyla_0641_EX.png",
+          "roleCategory": "tech",
+          "roleLabel": "Tech",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Special)",
+          "type": "Flying",
+          "region": "Unova",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Skyla_0641_5.png",
+            "icons/Skyla_0641_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "041|0189",
+          "label": "Skyla (Summer 2025) & Jumpluff",
+          "trainerName": "Skyla",
+          "trainerAlt": "Summer 2025",
+          "pokemonName": "Jumpluff",
+          "pokemonForm": "",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Skyla_0189_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Skyla_0189_EX.png",
+          "roleCategory": "sprint",
+          "roleLabel": "Sprint",
+          "exRoleCategory": "strike",
+          "exRoleLabel": "Strike (Special)",
+          "type": "Grass",
+          "region": "Unova",
+          "acquisition": "Seasonal Scout",
+          "acquisitionCategory": "seasonal",
+          "imagePaths": [
+            "icons/Skyla_0189_5.png",
+            "icons/Skyla_0189_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
         },
         {
           "pairId": "041|0581",
@@ -123966,9 +126174,9 @@
             "icons/Steven_0376_5.png",
             "icons/Steven_0376_EX.png"
           ],
-          "syncLevel": 1,
+          "syncLevel": 2,
           "isEx": true,
-          "rawValue": "0|1|0|000|1|0"
+          "rawValue": "1|1|0|000|1|0"
         },
         {
           "pairId": "081|0227",
@@ -124021,6 +126229,31 @@
           "rawValue": "0|0|0|000|0|0"
         },
         {
+          "pairId": "249|0154",
+          "label": "Urbain & Meganium Mega Evolution",
+          "trainerName": "Urbain",
+          "trainerAlt": "",
+          "pokemonName": "Meganium",
+          "pokemonForm": "Mega Evolution",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Urbain_0154_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Urbain_0154_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Special)",
+          "exRoleCategory": "tech",
+          "exRoleLabel": "Tech",
+          "type": "Grass",
+          "region": "Kalos",
+          "acquisition": "EX Fair Scout",
+          "acquisitionCategory": "ex_fair",
+          "imagePaths": [
+            "icons/Urbain_0154_5.png",
+            "icons/Urbain_0154_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": true,
+          "rawValue": "0|1|0|000|1|0"
+        },
+        {
           "pairId": "157|0820",
           "label": "Victor (Palentine's 2024) & Greedent",
           "trainerName": "Victor",
@@ -124040,6 +126273,31 @@
           "imagePaths": [
             "icons/Victor_0820_5.png",
             "icons/Victor_0820_EX.png"
+          ],
+          "syncLevel": 1,
+          "isEx": false,
+          "rawValue": "0|0|0|000|0|0"
+        },
+        {
+          "pairId": "157|0812",
+          "label": "Victor & Rillaboom Dynamax Gigantamax",
+          "trainerName": "Victor",
+          "trainerAlt": "",
+          "pokemonName": "Rillaboom",
+          "pokemonForm": "Dynamax Gigantamax",
+          "primaryImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Victor_0812_5.png",
+          "exImagePath": "https://pomasters.github.io/SyncPairsTracker/icons/Victor_0812_EX.png",
+          "roleCategory": "strike",
+          "roleLabel": "Strike (Physical)",
+          "exRoleCategory": "sprint",
+          "exRoleLabel": "Sprint",
+          "type": "Grass",
+          "region": "Galar",
+          "acquisition": "Poké Fair Scout",
+          "acquisitionCategory": "poke_fair",
+          "imagePaths": [
+            "icons/Victor_0812_5.png",
+            "icons/Victor_0812_EX.png"
           ],
           "syncLevel": 1,
           "isEx": false,
@@ -124116,9 +126374,9 @@
             "icons/Wally_0282_5.png",
             "icons/Wally_0282_EX.png"
           ],
-          "syncLevel": 3,
+          "syncLevel": 4,
           "isEx": true,
-          "rawValue": "2|1|0|000|0|0"
+          "rawValue": "3|1|0|000|0|0"
         },
         {
           "pairId": "092|0475",
@@ -124219,7 +126477,7 @@
           ],
           "syncLevel": 5,
           "isEx": true,
-          "rawValue": "4|1|0|000|0|0"
+          "rawValue": "9|1|0|000|1|0"
         },
         {
           "pairId": "023|0334",
@@ -124242,9 +126500,9 @@
             "icons/Winona_0334_5.png",
             "icons/Winona_0334_EX.png"
           ],
-          "syncLevel": 2,
+          "syncLevel": 3,
           "isEx": true,
-          "rawValue": "1|1|0|000|0|0"
+          "rawValue": "2|1|0|000|1|0"
         },
         {
           "pairId": "080|0384",
