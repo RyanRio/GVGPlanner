@@ -1,3 +1,4 @@
+import type { DamageCategory } from "../src/types";
 import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -148,7 +149,7 @@ function mapChallenge(record: {
         battle_1_effect: string | null;
         battle_2_effect: string | null;
         battle_3_effect: string | null;
-        gym_challenge_leader_pairs: Array<{ sync_pairs: RawCatalogPair | RawCatalogPair[] | null }> | null;
+        gym_challenge_leader_pairs: Array<{ damage_category: DamageCategory; sync_pairs: RawCatalogPair | RawCatalogPair[] | null }> | null;
         gym_challenge_leader_setup_pairs: Array<{ sync_pairs: RawCatalogPair | RawCatalogPair[] | null }> | null;
       }>
     | null;
@@ -211,8 +212,10 @@ function mapChallenge(record: {
         battle2Effect: leader.battle_2_effect ?? "",
         battle3Effect: leader.battle_3_effect ?? "",
         importantPairs: (leader.gym_challenge_leader_pairs ?? [])
-          .map((entry) => mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs))
-          .filter((pair): pair is CatalogPair => Boolean(pair))
+          .flatMap((entry) => {
+            const pair = mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs);
+            return pair ? [{ ...pair, damageCategory: entry.damage_category }] : [];
+          })
           .sort((a, b) => a.label.localeCompare(b.label)),
         rebuffPairs: (leader.gym_challenge_leader_setup_pairs ?? [])
           .map((entry) => mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs))
@@ -271,6 +274,7 @@ const challengeSelect = `
     battle_2_effect,
     battle_3_effect,
     gym_challenge_leader_pairs (
+      damage_category,
       sync_pairs (
         id,
         display_label,

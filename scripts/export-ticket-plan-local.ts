@@ -1,3 +1,4 @@
+import { roundParameter, parameterLegend, parameterLabel, parameterColorKey } from "./lib/ticket-parameters";
 import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -159,6 +160,8 @@ async function fetchCurrentChallengeAndMembers(client: ReturnType<typeof createC
       .select(`
         id,
         name,
+        datamine,
+        gym_challenge_modifiers (modifier_1, modifier_2, modifier_3),
         gym_challenge_leaders (
           slot_number,
           leader_name,
@@ -204,7 +207,11 @@ async function fetchCurrentChallengeAndMembers(client: ReturnType<typeof createC
     .map((entry) => entry.member_slug)
     .filter((value): value is string => typeof value === "string" && value.length > 0);
 
+  const rawModifiers = challengeResult.data.gym_challenge_modifiers;
+  const modifier = Array.isArray(rawModifiers) ? rawModifiers[0] : rawModifiers;
   return {
+    datamine: challengeResult.data.datamine,
+    modifiers: [modifier?.modifier_1 ?? "", modifier?.modifier_2 ?? "", modifier?.modifier_3 ?? ""],
     challengeName: challengeResult.data.name,
     leaders,
     members,
@@ -214,8 +221,13 @@ async function fetchCurrentChallengeAndMembers(client: ReturnType<typeof createC
   };
 }
 
-function buildWorkbook(challengeName: string, leaders: ChallengeLeader[], members: ImportedMember[], setupDutyNames: string[]) {
+function buildWorkbook(challengeName: string, leaders: ChallengeLeader[], members: ImportedMember[], setupDutyNames: string[], datamine: unknown, modifiers: string[]) {
   const wb = XLSX.utils.book_new();
+  const roundCount = 15;
+  const parameters = Array.from({ length: roundCount }, (_, index) =>
+    leaders.map((leader) => roundParameter(datamine, modifiers, index + 1, leader.slotNumber)));
+  const legend = parameterLegend(parameters.flat());
+  const fillByParameter = new Map(legend.map((entry) => [entry.rule, entry.fill]));
 
   const ws = XLSX.utils.aoa_to_sheet([]);
   ws["!cols"] = [
@@ -296,7 +308,6 @@ function buildWorkbook(challengeName: string, leaders: ChallengeLeader[], member
   const plannerHeaderRow = 24;
   const plannerSubHeaderRow = 25;
   const plannerDataStartRow = 29;
-  const roundCount = 15;
   const finalDataRow = plannerDataStartRow + roundCount - 1;
 
   setCell(ws, plannerHeaderRow, 0, "Round");
@@ -340,7 +351,8 @@ function buildWorkbook(challengeName: string, leaders: ChallengeLeader[], member
     styleCell(ws, row, 0, { bold: true, fill: "F2F2F2", align: "center" });
 
     let col = 3;
-    leaders.forEach((leader) => {
+    leaders.forEach((leader, leaderIndex) => {
+      const parameter = parameters[index][leaderIndex];
       setCell(ws, row, col, "");
       setCell(ws, row, col + 1, "");
       setCell(ws, row, col + 2, "");
@@ -353,11 +365,13 @@ function buildWorkbook(challengeName: string, leaders: ChallengeLeader[], member
 
       for (let offset = 0; offset <= 6; offset += 1) {
         styleCell(ws, row, col + offset, {
-          fill: offset === 6 ? getLeaderFill(leader.weaknessType) : "FFFFFF",
+          fill: fillByParameter.get(parameterColorKey(parameter)),
+          bold: offset === 6,
           align: offset === 1 || offset === 3 || offset === 5 || offset === 6 ? "center" : "left"
         });
       }
 
+      ws[encodeCell(row, col)].c = [{ a: "GVGPlanner", t: `${leader.leaderName}, round ${roundNumber}: ${parameterLabel(parameter)}` }];
       col += 7;
     });
 
@@ -373,6 +387,19 @@ function buildWorkbook(challengeName: string, leaders: ChallengeLeader[], member
 
   setCell(ws, 8, 1, { f: `SUM(${encodeCell(plannerDataStartRow, 1)}:${encodeCell(plannerDataStartRow + roundCount - 1, 1)})` });
   styleCell(ws, 8, 1, { fill: "FFF9E8", bold: true, align: "center" });
+
+  setCell(ws, 3, 10, "Round parameter legend");
+  merges.push(XLSX.utils.decode_range(encodeRange(3, 10, 3, 23)));
+  styleCell(ws, 3, 10, { bold: true, fill: "D9EAF7" });
+  legend.forEach((entry, index) => {
+    const legendRow = 4 + index;
+    setCell(ws, legendRow, 10, entry.label);
+    merges.push(XLSX.utils.decode_range(encodeRange(legendRow, 10, legendRow, 23)));
+    for (let col = 10; col <= 23; col += 1) {
+      if (col !== 10) setCell(ws, legendRow, col, "");
+      styleCell(ws, legendRow, col, { fill: entry.fill });
+    }
+  });
 
   ws["!merges"] = merges;
   ws["!ref"] = encodeRange(0, 0, finalDataRow, groupStartCol - 1);
@@ -418,8 +445,8 @@ async function main() {
   });
   if (signInError) throw signInError;
 
-  const { challengeName, leaders, members, setupDutyNames } = await fetchCurrentChallengeAndMembers(client);
-  const workbook = buildWorkbook(challengeName, leaders, members, setupDutyNames);
+  const { challengeName, leaders, members, setupDutyNames, datamine, modifiers } = await fetchCurrentChallengeAndMembers(client);
+  const workbook = buildWorkbook(challengeName, leaders, members, setupDutyNames, datamine, modifiers);
   const outputPath = args.out ? path.resolve(projectRoot, args.out) : defaultOutputPath(challengeName);
   await mkdir(path.dirname(outputPath), { recursive: true });
   XLSX.writeFile(workbook, outputPath);

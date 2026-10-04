@@ -1,4 +1,5 @@
 import "./style.css";
+import { displayMoveLevel } from "./move-level.js";
 
 const acquisitionLabels = {
   arc_suit_fair: "Arc Suit Fair",
@@ -29,6 +30,7 @@ const state = {
   acquisitionFilters: [],
   roleFilter: "all",
   challengeOnly: false,
+  superawakenedOnly: false,
   sortKey: "label",
   challengeModalOpen: false,
   selectedChallengePairIds: [],
@@ -82,8 +84,9 @@ function pairMatchesFilters(pair, ownerName, significantPairIds) {
     state.acquisitionFilters.length === 0 || state.acquisitionFilters.includes(getPairAcquisitionCategory(pair));
   const matchesRole = state.roleFilter === "all" || pair.roleCategory === state.roleFilter;
   const matchesChallenge = !state.challengeOnly || significantPairIds.has(pair.pairId);
+  const matchesSuperawakening = !state.superawakenedOnly || displayMoveLevel(pair) > 5;
 
-  return matchesQuery && matchesType && matchesPremium && matchesRole && matchesChallenge;
+  return matchesQuery && matchesType && matchesPremium && matchesRole && matchesChallenge && matchesSuperawakening;
 }
 
 function toggleAcquisitionFilter(acquisitionCategory) {
@@ -285,7 +288,7 @@ function updateChallengeOverview() {
 }
 
 function formatInvestment(owner) {
-  const bits = [`${owner.syncLevel}/5`];
+  const bits = [`${displayMoveLevel(owner)}/5`];
   const rawParts = String(owner.rawValue ?? "").split("|");
   const hasExRoleUnlock = Number.parseInt(rawParts[4] ?? "0", 10) > 0;
   const exRoleShort = {
@@ -622,6 +625,10 @@ function render() {
             </select>
           </label>
           <label class="checkbox-row">
+            <input data-role="superawakened-only" type="checkbox"${state.superawakenedOnly ? " checked" : ""} />
+            <span>Only superawakened pairs (6/5–10/5)</span>
+          </label>
+          <label class="checkbox-row">
             <input data-role="challenge-only" type="checkbox"${state.challengeOnly ? " checked" : ""}${currentChallenge ? "" : " disabled"} />
             <span>Only current challenge pairs</span>
           </label>
@@ -661,6 +668,7 @@ function render() {
               .map((acquisitionCategory) => `<span>${escapeHtml(acquisitionLabels[acquisitionCategory])}</span>`)
               .join("")}
             ${state.challengeOnly ? `<span>${escapeHtml(currentChallenge?.name ?? "Current challenge")}</span>` : ""}
+            ${state.superawakenedOnly ? `<span>Superawakened</span>` : ""}
           </div>
           <span class="timestamp">Snapshot ${snapshot.generatedAt ? new Date(snapshot.generatedAt).toLocaleString() : "not generated yet"}</span>
         </div>
@@ -695,7 +703,7 @@ function render() {
                                       }
                                     </div>
                                     ${pair.isEx && !pair.exImagePath ? `<div class="syncFav">EX</div>` : ""}
-                                    <div class="syncLevelBadge">${escapeHtml(pair.syncLevel)}</div>
+                                    <div class="syncLevelBadge">${escapeHtml(displayMoveLevel(pair))}</div>
                                     <div class="syncInfos">
                                       <p class="infoName">${escapeHtml(pair.label)}</p>
                                       <p>${escapeHtml(member.memberName)}</p>
@@ -728,7 +736,7 @@ function render() {
                               }
                             </div>
                             ${pair.isEx && !pair.exImagePath ? `<div class="syncFav">EX</div>` : ""}
-                            <div class="syncLevelBadge">${escapeHtml(pair.syncLevel)}</div>
+                            <div class="syncLevelBadge">${escapeHtml(displayMoveLevel(pair))}</div>
                             <div class="syncInfos">
                               <p class="infoName">${escapeHtml(pair.label)}</p>
                               <p>${escapeHtml(pair.ownerName)}</p>
@@ -776,6 +784,10 @@ function render() {
   });
   app.querySelector('[data-role="challenge-only"]')?.addEventListener("change", (event) => {
     state.challengeOnly = event.target.checked;
+    render();
+  });
+  app.querySelector('[data-role="superawakened-only"]')?.addEventListener("change", (event) => {
+    state.superawakenedOnly = event.target.checked;
     render();
   });
   app.querySelector('[data-role="open-challenge-modal"]')?.addEventListener("click", () => {

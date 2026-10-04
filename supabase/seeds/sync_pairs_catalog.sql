@@ -288,6 +288,30 @@ values
     '{"pokemon_gender":"","sync_pair_ex_pose":false,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"","internal_pokemon_name":"pm0877_00_beastyellow"}'::jsonb
   ),
   (
+    '001|0803',
+    'Player & Poipole',
+    'Player',
+    null,
+    'Poipole',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    null,
+    null,
+    5,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Poison',
+    'Ground',
+    'Pasio',
+    '2026-08-28'::date,
+    'icons/Scottie_0803_5.png',
+    '["icons/Scottie_0803_5.png","icons/Bettie_0803_5.png"]'::jsonb,
+    '["Poison","Pasio","Main Character"]'::jsonb,
+    '["Ultra Beast","Multiple Units","Master Passive Teamwork","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePoison"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":false,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"hero","internal_pokemon_name":"pm0886_00_beastdoku1"}'::jsonb
+  ),
+  (
     '002|0095',
     'Brock & Onix',
     'Brock',
@@ -452,7 +476,7 @@ values
     'icons/Misty_0134_5.png',
     '["icons/Misty_0134_5.png","icons/Misty_0134_EX.png"]'::jsonb,
     '["Water","Kanto","Sygna Suit","Battle Facility Foe","Passionate Spirit"]'::jsonb,
-    '["Multiple Units","isWoman","Eeveelution","Villain Arc","Multiple Pokemon","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
+    '["Multiple Units","isWoman","Eeveelution","Multiple Pokemon","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0110_10_kasumi","internal_pokemon_name":"pm0134_00_showers"}'::jsonb
   ),
   (
@@ -644,7 +668,7 @@ values
     'icons/Erika_0470_5.png',
     '["icons/Erika_0470_5.png","icons/Erika_0470_EX.png"]'::jsonb,
     '["Grass","Kanto","Sygna Suit","Battle Facility Foe","Artistic"]'::jsonb,
-    '["Multiple Units","isWoman","Weather","Eeveelution","Villain Arc","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
+    '["Multiple Units","isWoman","Weather","Eeveelution","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0008_10_erika","internal_pokemon_name":"pm0470_00_leafia"}'::jsonb
   ),
   (
@@ -884,7 +908,7 @@ values
     'icons/Kris_0245_5.png',
     '["icons/Kris_0245_5.png","icons/Kris_0245_EX.png"]'::jsonb,
     '["Water","Johto","Main Character","Sygna Suit","Knowledgeable"]'::jsonb,
-    '["Limited","Multiple Units","Grid5","GridExpansion","isWoman","Weather","Legendary","Villain Arc","Multiple Pokemon","Unique Costume","Master Passive Flag Bearer","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
+    '["Limited","Multiple Units","Grid5","GridExpansion","isWoman","Weather","Legendary","Multiple Pokemon","Unique Costume","Master Passive Flag Bearer","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0018_10_chris","internal_pokemon_name":"pm0245_00_suicune"}'::jsonb
   ),
   (
@@ -956,7 +980,7 @@ values
     'icons/Bugsy_0015_3.png',
     '["icons/Bugsy_0015_3.png","icons/Bugsy_0015_4.png","icons/Bugsy_0015_5.png","icons/Bugsy_0015_EX.png"]'::jsonb,
     '["Bug","Johto","Gym Leader","Knowledgeable","Researcher"]'::jsonb,
-    '["GridMega","Multiple Units","isMan","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeBug"]'::jsonb,
+    '["GridMega","Multiple Units","Multiple Pokemon","isMan","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeBug"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0045_00_tsukushi","internal_pokemon_name":"pm0015_00_spear"}'::jsonb
   ),
   (
@@ -1078,6 +1102,30 @@ values
     '["Normal","Johto","Gym Leader","Pigtails","Pokéathlete"]'::jsonb,
     '["Region Circle","Wish Zone","Multiple Units","isWoman","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0026_00_akane","internal_pokemon_name":"pm0040_00_pukurin"}'::jsonb
+  ),
+  (
+    '012|0203',
+    'Whitney & Girafarig',
+    'Whitney',
+    null,
+    'Girafarig',
+    null,
+    'strike'::public.pair_role,
+    'Strike (Special)',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Trainer Lodge Exchange',
+    'Normal',
+    'Bug',
+    'Johto',
+    '2026-08-01'::date,
+    'icons/Whitney_0203_4.png',
+    '["icons/Whitney_0203_4.png","icons/Whitney_0203_5.png","icons/Whitney_0203_EX.png"]'::jsonb,
+    '["Normal","Johto","Gym Leader","Pigtails","Pokéathlete"]'::jsonb,
+    '["Multiple Units","Multiple Pokemon","isWoman","SyncMoveSpecial","AttackMoveSpecial","MoveTypeNormal"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0026_00_akane","internal_pokemon_name":"pm0203_01_kirinriki"}'::jsonb
   ),
   (
     '013|0087',
@@ -1340,7 +1388,7 @@ values
     'icons/Brendan_0381_5.png',
     '["icons/Brendan_0381_5.png","icons/Brendan_0381_EX.png"]'::jsonb,
     '["Dragon","Hoenn","Main Character","Sygna Suit","Space Cadet"]'::jsonb,
-    '["Limited","Multiple Units","isMan","Legendary","Villain Arc","Grid5","GridExpansion","GridMega","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","MoveTypePsychic","MoveTypeDragon"]'::jsonb,
+    '["Limited","Multiple Units","isMan","Legendary","Grid5","GridExpansion","GridMega","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","MoveTypePsychic","MoveTypeDragon"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0019_10_yuki","internal_pokemon_name":"pm0381_00_latios"}'::jsonb
   ),
   (
@@ -1414,6 +1462,30 @@ values
     '["Water","Hoenn","Main Character","Space Cadet","Pasio Academy"]'::jsonb,
     '["Starter","Limited","Weather","Region Circle","Unique Costume","Multiple Units","isMan","Academy Sync Pair","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Academy","internal_trainer_name":"ch0019_40_yuki","internal_pokemon_name":"pm0259_00_numacraw"}'::jsonb
+  ),
+  (
+    '018|0373',
+    'Brendan & Salamence Mega Evolution',
+    'Brendan',
+    null,
+    'Salamence',
+    'Mega Evolution',
+    'field'::public.pair_role,
+    'Field',
+    'support'::public.pair_role,
+    'Support',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Flying',
+    'Ice',
+    'Hoenn',
+    '2026-09-01'::date,
+    'icons/Brendan_0373_5.png',
+    '["icons/Brendan_0373_5.png","icons/Brendan_0373_EX.png"]'::jsonb,
+    '["Flying","Hoenn","Main Character","Space Cadet"]'::jsonb,
+    '["GridMega","Buddy Move","Limited","Wish Zone","Region Circle","Multiple Units","Multiple Pokemon","isMan","Rebuff","SyncMovePhysical","AttackMovePhysical","MoveTypeFlying"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0019_00_yuki","internal_pokemon_name":"pm0373_00_bohmander"}'::jsonb
   ),
   (
     '019|0476',
@@ -3144,6 +3216,30 @@ values
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Arc","internal_trainer_name":"ch0012_90_corni","internal_pokemon_name":"pm0448_00_lucario"}'::jsonb
   ),
   (
+    '049|0067',
+    'Korrina & Machoke',
+    'Korrina',
+    null,
+    'Machoke',
+    null,
+    'tech'::public.pair_role,
+    'Tech',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Trainer Lodge Exchange',
+    'Fighting',
+    'Flying',
+    'Kalos',
+    '2026-10-01'::date,
+    'icons/Korrina_0067_4.png',
+    '["icons/Korrina_0067_4.png","icons/Korrina_0067_5.png","icons/Korrina_0067_EX.png"]'::jsonb,
+    '["Fighting","Kalos","Gym Leader","Passionate Spirit"]'::jsonb,
+    '["Multiple Units","isWoman","SyncMovePhysical","AttackMovePhysical","MoveTypeElectric","MoveTypeFighting"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0012_00_corni","internal_pokemon_name":"pm0067_00_goriky"}'::jsonb
+  ),
+  (
     '050|0071',
     'Ramos & Victreebel Weepinbell',
     'Ramos',
@@ -3188,7 +3284,7 @@ values
     'icons/Wulfric_0713_3.png',
     '["icons/Wulfric_0713_3.png","icons/Wulfric_0713_4.png","icons/Wulfric_0713_5.png","icons/Wulfric_0713_EX.png"]'::jsonb,
     '["Ice","Kalos","Gym Leader","Veteran Trainer","Passionate Spirit"]'::jsonb,
-    '["isMan","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeIce"]'::jsonb,
+    '["Multiple Pokemon","isMan","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeIce"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0022_00_urup","internal_pokemon_name":"pm0751_00_ice3"}'::jsonb
   ),
   (
@@ -3308,7 +3404,7 @@ values
     'icons/Hau_0785_5.png',
     '["icons/Hau_0785_5.png","icons/Hau_0785_EX.png"]'::jsonb,
     '["Electric","Alola","Sygna Suit","Free Spirit","Passionate Spirit"]'::jsonb,
-    '["Legendary","Grid5","Buddy Move","Limited","Terrain","Wish Zone","Multiple Units","isMan","ZMove","Villain Arc","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","MoveTypeElectric","MoveTypeFairy"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Terrain","Wish Zone","Multiple Units","isMan","ZMove","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","MoveTypeElectric","MoveTypeFairy"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0098_10_hau","internal_pokemon_name":"pm0830_00_tikitori"}'::jsonb
   ),
   (
@@ -3476,7 +3572,7 @@ values
     'icons/Mina_0788_5.png',
     '["icons/Mina_0788_5.png","icons/Mina_0788_EX.png"]'::jsonb,
     '["Fairy","Alola","Trial Giver","Sygna Suit","Free Spirit"]'::jsonb,
-    '["Legendary","Grid5","Buddy Move","Limited","Weather","Wish Zone","Multiple Units","isWoman","ZMove","Villain Arc","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeFairy"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Weather","Wish Zone","Multiple Units","isWoman","ZMove","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeFairy"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0034_10_matsurika","internal_pokemon_name":"pm0833_00_tikisakana"}'::jsonb
   ),
   (
@@ -3548,7 +3644,7 @@ values
     'icons/Hapu_0750_3.png',
     '["icons/Hapu_0750_3.png","icons/Hapu_0750_4.png","icons/Hapu_0750_5.png","icons/Hapu_0750_EX.png"]'::jsonb,
     '["Ground","Alola","Trial Giver","Pigtails","Nature Lover"]'::jsonb,
-    '["isWoman","ZMove","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGround"]'::jsonb,
+    '["Multiple Pokemon","isWoman","ZMove","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0013_00_hapu","internal_pokemon_name":"pm0840_00_roba2"}'::jsonb
   ),
   (
@@ -3572,8 +3668,32 @@ values
     'icons/Kahili_0733_4.png',
     '["icons/Kahili_0733_4.png","icons/Kahili_0733_5.png","icons/Kahili_0733_EX.png"]'::jsonb,
     '["Flying","Alola","Elite Four","Fancy Lady","Grown Woman"]'::jsonb,
-    '["isWoman","ZMove","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeFlying"]'::jsonb,
+    '["Multiple Units","isWoman","ZMove","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeFlying"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0058_00_kahiri","internal_pokemon_name":"pm0809_00_kuchibashi3"}'::jsonb
+  ),
+  (
+    '059|0630',
+    'Kahili & Mandibuzz',
+    'Kahili',
+    null,
+    'Mandibuzz',
+    null,
+    'tech'::public.pair_role,
+    'Tech',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Flying',
+    'Electric',
+    'Alola',
+    '2026-08-28'::date,
+    'icons/Kahili_0630_4.png',
+    '["icons/Kahili_0630_4.png","icons/Kahili_0630_5.png","icons/Kahili_0630_EX.png"]'::jsonb,
+    '["Flying","Alola","Elite Four","Fancy Lady","Grown Woman"]'::jsonb,
+    '["Multiple Units","isWoman","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeFlying"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0058_00_kahiri","internal_pokemon_name":"pm0630_00_vulgina"}'::jsonb
   ),
   (
     '060|0284',
@@ -3764,7 +3884,7 @@ values
     'icons/Acerola_0787_5.png',
     '["icons/Acerola_0787_5.png","icons/Acerola_0787_EX.png"]'::jsonb,
     '["Grass","Alola","Trial Giver","Sygna Suit","Free Spirit"]'::jsonb,
-    '["Legendary","Grid5","Buddy Move","Limited","Weather","Terrain","Multiple Units","isWoman","ZMove","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Weather","Terrain","Multiple Units","isWoman","ZMove","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0007_10_acerola","internal_pokemon_name":"pm0832_00_tikiushi"}'::jsonb
   ),
   (
@@ -3956,7 +4076,7 @@ values
     'icons/Blue_0142_5.png',
     '["icons/Blue_0142_5.png","icons/Blue_0142_EX.png"]'::jsonb,
     '["Rock","Kanto","Rival","Pallet Town","Passionate Spirit"]'::jsonb,
-    '["Fossil","Limited","Wish Zone","Grid5","GridExpansion","GridMega","Multiple Units","isMan","Villain Arc","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeRock"]'::jsonb,
+    '["Fossil","Limited","Wish Zone","Grid5","GridExpansion","GridMega","Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeRock"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0021_80_green","internal_pokemon_name":"pm0142_00_ptera"}'::jsonb
   ),
   (
@@ -4104,6 +4224,30 @@ values
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Arc","internal_trainer_name":"ch0021_91_green","internal_pokemon_name":"pm0018_00_pigeot"}'::jsonb
   ),
   (
+    '065|0149',
+    'Blue (Anniversary 2026) & Dragonite Mega Evolution',
+    'Blue',
+    'Anniversary 2026',
+    'Dragonite',
+    'Mega Evolution',
+    'strike'::public.pair_role,
+    'Strike (Physical)',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'master_fair'::public.pair_premium_category,
+    'EX Master Fair Scout',
+    'Flying',
+    'Ice',
+    'Kanto',
+    '2026-08-28'::date,
+    'icons/Blue_0149_5.png',
+    '["icons/Blue_0149_5.png","icons/Blue_0149_EX.png"]'::jsonb,
+    '["Flying","Kanto","Rival","Seasonal Outfit","Cape"]'::jsonb,
+    '["Grid5","GridMega","Buddy Move","Limited","Wish Zone","Wish ZoneEX","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isMan","Anniversary","SyncMovePhysical","AttackMovePhysical","MoveTypeFlying"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0021_40_green","internal_pokemon_name":"pm0149_00_kairyu"}'::jsonb
+  ),
+  (
     '066|0154',
     'Lyra & Meganium Chikorita Bayleef',
     'Lyra',
@@ -4124,7 +4268,7 @@ values
     'icons/Lyra_0154_5.png',
     '["icons/Lyra_0154_5.png","icons/Lyra_0154_EX.png"]'::jsonb,
     '["Grass","Johto","Main Character","Pigtails","Pokéathlete"]'::jsonb,
-    '["Multiple Units","isWoman","Weather","Starter","First Unit","Grid3","GridExpansion","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
+    '["Multiple Units","Multiple Pokemon","isWoman","Weather","Starter","First Unit","Grid3","GridExpansion","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0002_00_kotone","internal_pokemon_name":"pm0154_01_meganium"}'::jsonb
   ),
   (
@@ -4172,7 +4316,7 @@ values
     'icons/Lyra_0251_5.png',
     '["icons/Lyra_0251_5.png","icons/Lyra_0251_EX.png"]'::jsonb,
     '["Grass","Johto","Main Character","Sygna Suit","Pigtails"]'::jsonb,
-    '["Grid5","GridExpansion","Limited","Grid5","GridExpansion","Multiple Units","isWoman","Terrain","Mythical","Villain Arc","Unique Costume","Master Passive Pride","SyncMoveSpecial","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
+    '["Grid5","GridExpansion","Limited","Grid5","GridExpansion","Multiple Units","isWoman","Terrain","Mythical","Unique Costume","Master Passive Pride","SyncMoveSpecial","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0002_10_kotone","internal_pokemon_name":"pm0251_00_celebi"}'::jsonb
   ),
   (
@@ -4248,6 +4392,30 @@ values
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0002_90_kotone","internal_pokemon_name":"pm0244_00_entei"}'::jsonb
   ),
   (
+    '066|0183',
+    'Lyra (Special Costume) & Marill',
+    'Lyra',
+    'Special Costume',
+    'Marill',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Water',
+    'Poison',
+    'Johto',
+    '2026-09-28'::date,
+    'icons/Lyra_0183_5.png',
+    '["icons/Lyra_0183_5.png","icons/Lyra_0183_EX.png"]'::jsonb,
+    '["Water","Johto","Special Costume","Pigtails","Pokéathlete"]'::jsonb,
+    '["Unique Costume","Multiple Units","isWoman","Master Passive Teamwork","SyncMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0002_41_kotone","internal_pokemon_name":"pm0183_00_maril"}'::jsonb
+  ),
+  (
     '067|0503',
     'Hilbert & Samurott Oshawott Dewott',
     'Hilbert',
@@ -4292,7 +4460,7 @@ values
     'icons/Hilbert_0262_5.png',
     '["icons/Hilbert_0262_5.png","icons/Hilbert_0262_EX.png"]'::jsonb,
     '["Dark","Unova","Seasonal Outfit","Sweet Tooth"]'::jsonb,
-    '["Limited","Multiple Units","isMan","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeDark"]'::jsonb,
+    '["Limited","Multiple Units","Multiple Pokemon","isMan","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0020_40_toya","internal_pokemon_name":"pm0262_00_graena"}'::jsonb
   ),
   (
@@ -4316,7 +4484,7 @@ values
     'icons/Hilbert_0649_5.png',
     '["icons/Hilbert_0649_5.png","icons/Hilbert_0649_EX.png"]'::jsonb,
     '["Bug","Unova","Main Character","Sygna Suit","Unova Adventurer"]'::jsonb,
-    '["isMan","Limited","Multiple Units","Mythical","Rebuff","Grid5","Villain Arc","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeBug"]'::jsonb,
+    '["isMan","Limited","Multiple Units","Mythical","Rebuff","Grid5","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeBug"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0020_10_toya","internal_pokemon_name":"pm0649_11_genesect"}'::jsonb
   ),
   (
@@ -4424,8 +4592,8 @@ values
     'Mega Evolution',
     'strike'::public.pair_role,
     'Strike (Physical)',
-    null,
-    null,
+    'tech'::public.pair_role,
+    'Tech',
     5,
     'special_costume'::public.pair_premium_category,
     'Special Costume Scout',
@@ -4484,7 +4652,7 @@ values
     'icons/Hilda_0494_5.png',
     '["icons/Hilda_0494_5.png","icons/Hilda_0494_EX.png"]'::jsonb,
     '["Fire","Unova","Main Character","Sygna Suit","Unova Adventurer"]'::jsonb,
-    '["isWoman","Limited","Multiple Units","Weather","Mythical","Grid5","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeFire","MoveTypePsychic"]'::jsonb,
+    '["isWoman","Limited","Multiple Units","Weather","Mythical","Grid5","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeFire","MoveTypePsychic"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0004_10_toko","internal_pokemon_name":"pm0494_00_victini"}'::jsonb
   ),
   (
@@ -5035,7 +5203,7 @@ values
     '2019-12-05'::date,
     'icons/Giovanni_0150_5.png',
     '["icons/Giovanni_0150_5.png","icons/Giovanni_0150_EX.png"]'::jsonb,
-    '["Psychic","Kanto","Villain.","Complicated Family"]'::jsonb,
+    '["Psychic","Kanto","Villain","Complicated Family"]'::jsonb,
     '["Legendary Adventures","Multiple Units","isMan","Terrain","Legendary","Song Key","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypePsychic","MoveTypeGhost"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0140_00_sakaki","internal_pokemon_name":"pm0150_00_mewtwo"}'::jsonb
   ),
@@ -5059,8 +5227,8 @@ values
     '2022-05-19'::date,
     'icons/Giovanni_0034_5.png',
     '["icons/Giovanni_0034_5.png","icons/Giovanni_0034_EX.png"]'::jsonb,
-    '["Ground","Johto","Villain.","Sygna Suit"]'::jsonb,
-    '["Limited","Wish Zone","Grid5","GridExpansion","Multiple Units","isMan","Song Key","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypePoison","MoveTypeGround","MoveTypeSteel"]'::jsonb,
+    '["Ground","Johto","Villain","Sygna Suit"]'::jsonb,
+    '["Limited","Wish Zone","Grid5","GridExpansion","Multiple Units","isMan","Song Key","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypePoison","MoveTypeGround","MoveTypeSteel"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0140_10_sakaki","internal_pokemon_name":"pm0034_00_00_nidoking"}'::jsonb
   ),
   (
@@ -5083,7 +5251,7 @@ values
     '2022-08-15'::date,
     'icons/Giovanni_0053_4.png',
     '["icons/Giovanni_0053_4.png","icons/Giovanni_0053_5.png","icons/Giovanni_0053_EX.png"]'::jsonb,
-    '["Normal","Kanto","Villain."]'::jsonb,
+    '["Normal","Kanto","Villain"]'::jsonb,
     '["Limited","Multiple Units","isMan","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0140_80_sakaki","internal_pokemon_name":"pm0053_00_persian"}'::jsonb
   ),
@@ -5107,7 +5275,7 @@ values
     '2023-09-06'::date,
     'icons/Giovanni_0112_5.png',
     '["icons/Giovanni_0112_5.png","icons/Giovanni_0112_EX.png"]'::jsonb,
-    '["Ground","Kanto","Villain."]'::jsonb,
+    '["Ground","Kanto","Villain"]'::jsonb,
     '["Buddy Move","Limited","Weather","Multiple Units","isMan","Wish Zone","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeWater","MoveTypeIce","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0140_00_sakaki","internal_pokemon_name":"pm0112_00_sidon"}'::jsonb
   ),
@@ -5131,7 +5299,7 @@ values
     '2023-10-01'::date,
     'icons/Giovanni_0033_4.png',
     '["icons/Giovanni_0033_4.png","icons/Giovanni_0033_5.png","icons/Giovanni_0033_EX.png"]'::jsonb,
-    '["Poison","Kanto","Villain."]'::jsonb,
+    '["Poison","Kanto","Villain"]'::jsonb,
     '["Multiple Units","isMan","Multiple Pokemon","SyncMovePhysical","AttackMovePhysical","MoveTypePoison","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0140_00_sakaki","internal_pokemon_name":"pm0033_00_nidorino"}'::jsonb
   ),
@@ -5155,7 +5323,7 @@ values
     '2024-12-31'::date,
     'icons/Giovanni_0799_5.png',
     '["icons/Giovanni_0799_5.png","icons/Giovanni_0799_EX.png"]'::jsonb,
-    '["Dark","Johto","Villain.","Sygna Suit","Sunglasses"]'::jsonb,
+    '["Dark","Johto","Villain","Sygna Suit","Sunglasses"]'::jsonb,
     '["Ultra Beast","Grid5","Buddy Move","Limited","Wish Zone","Unique Costume","Multiple Units","isMan","Song Key","Master Passive Flag Bearer","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0140_11_sakaki","internal_pokemon_name":"pm0876_00_beastorange"}'::jsonb
   ),
@@ -5204,7 +5372,7 @@ values
     'icons/Ethan_0249_5.png',
     '["icons/Ethan_0249_5.png","icons/Ethan_0249_EX.png"]'::jsonb,
     '["Flying","Johto","Main Character","Sygna Suit","Scarf"]'::jsonb,
-    '["Limited","Multiple Units","Multiple Pokemon","Multiple Pairs","Grid5","GridExpansion","isMan","Legendary","Villain Arc","Unique Costume","Master Passive Spirit","Wish Zone","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeFlying"]'::jsonb,
+    '["Limited","Multiple Units","Multiple Pokemon","Multiple Pairs","Grid5","GridExpansion","isMan","Legendary","Unique Costume","Master Passive Spirit","Wish Zone","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeFlying"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0112_10_hibiki","internal_pokemon_name":"pm0249_00_lugia"}'::jsonb
   ),
   (
@@ -5276,8 +5444,32 @@ values
     'icons/Ethan_0243_5.png',
     '["icons/Ethan_0243_5.png","icons/Ethan_0243_EX.png"]'::jsonb,
     '["Electric","Johto","Main Character","Champion","Pokéathlete"]'::jsonb,
-    '["Legendary","Grid5","Buddy Move","Limited","Terrain","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isMan","Song Key","Neo Champion","Master Passive","SyncMovePhysical","AttackMovePhysical","MoveTypeElectric"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Terrain","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isMan","Neo Champion","Master Passive","SyncMovePhysical","AttackMovePhysical","MoveTypeElectric"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0112_91_hibiki","internal_pokemon_name":"pm0243_00_raikou"}'::jsonb
+  ),
+  (
+    '075|0130',
+    'Ethan & Gyarados Mega Evolution',
+    'Ethan',
+    null,
+    'Gyarados',
+    'Mega Evolution',
+    'field'::public.pair_role,
+    'Field',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Water',
+    'Electric',
+    'Johto',
+    '2026-09-01'::date,
+    'icons/Ethan_0130_5.png',
+    '["icons/Ethan_0130_5.png","icons/Ethan_0130_EX.png"]'::jsonb,
+    '["Water","Johto","Main Character","Pokéathlete"]'::jsonb,
+    '["Shiny","GridMega","Buddy Move","Limited","Weather","WeatherEX","Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeWater"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0112_00_hibiki","internal_pokemon_name":"pm0130_00_gyarados_rare"}'::jsonb
   ),
   (
     '076|0133',
@@ -5400,6 +5592,30 @@ values
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0017_00_leaf","internal_pokemon_name":"pm0009_00_kamex"}'::jsonb
   ),
   (
+    '076|0015',
+    'Leaf & Beedrill Mega Evolution',
+    'Leaf',
+    null,
+    'Beedrill',
+    'Mega Evolution',
+    'field'::public.pair_role,
+    'Field',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Bug',
+    'Fire',
+    'Kanto',
+    '2026-09-01'::date,
+    'icons/Leaf_0015_5.png',
+    '["icons/Leaf_0015_5.png","icons/Leaf_0015_EX.png"]'::jsonb,
+    '["Bug","Kanto","Main Character","Pallet Town"]'::jsonb,
+    '["GridMega","Buddy Move","Limited","Wish Zone","Wish ZoneEX","Multiple Units","Multiple Pokemon","isWoman","SyncMovePhysical","AttackMovePhysical","MoveTypeBug"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0017_00_leaf","internal_pokemon_name":"pm0015_00_spear"}'::jsonb
+  ),
+  (
     '077|0149',
     'Lance & Dragonite',
     'Lance',
@@ -5444,7 +5660,7 @@ values
     'icons/Lance_0130_5.png',
     '["icons/Lance_0130_5.png","icons/Lance_0130_EX.png"]'::jsonb,
     '["Flying","Kanto","Seasonal Outfit","Battle Partner"]'::jsonb,
-    '["Limited","Multiple Units","isMan","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeFlying"]'::jsonb,
+    '["Limited","Multiple Units","Multiple Pokemon","isMan","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeFlying"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0111_40_wataru","internal_pokemon_name":"pm0130_00_gyarados"}'::jsonb
   ),
   (
@@ -5612,7 +5828,7 @@ values
     'icons/Cynthia_0487_5.png',
     '["icons/Cynthia_0487_5.png","icons/Cynthia_0487_EX.png"]'::jsonb,
     '["Ghost","Sinnoh","Sygna Suit","Battle Facility Foe","Passionate Spirit"]'::jsonb,
-    '["Limited","Multiple Units","Multiple Pokemon","isWoman","Grid5","GridExpansion","Wish Zone","Legendary","Song Key","Villain Arc","Unique Costume","Master Passive Flag Bearer","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGhost"]'::jsonb,
+    '["Limited","Multiple Units","Multiple Pokemon","isWoman","Grid5","GridExpansion","Wish Zone","Legendary","Song Key","Unique Costume","Master Passive Flag Bearer","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGhost"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0091_20_shirona","internal_pokemon_name":"pm0487_11_giratina"}'::jsonb
   ),
   (
@@ -5734,6 +5950,30 @@ values
     '["Water","Sinnoh","Champion","Seasonal Outfit","Undella Town"]'::jsonb,
     '["Summer","Buddy Move","Limited","Weather","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isWoman","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0091_40_shirona","internal_pokemon_name":"pm0350_01_milokaross"}'::jsonb
+  ),
+  (
+    '078|0471',
+    'Cynthia & Glaceon',
+    'Cynthia',
+    null,
+    'Glaceon',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'general'::public.pair_premium_category,
+    'Event Reward',
+    'Ice',
+    'Fire',
+    'Sinnoh',
+    '2026-09-12'::date,
+    'icons/Cynthia_0471_5.png',
+    '["icons/Cynthia_0471_5.png","icons/Cynthia_0471_EX.png"]'::jsonb,
+    '["Ice","Sinnoh","Champion","Undella Town","Researcher"]'::jsonb,
+    '["Eeveelution","Limited","Weather","Multiple Units","Multiple Pokemon","isWoman","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeIce"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0091_00_shirona","internal_pokemon_name":"pm0471_00_glacia"}'::jsonb
   ),
   (
     '079|0745',
@@ -5924,7 +6164,7 @@ values
     'icons/Steven_0386_5.png',
     '["icons/Steven_0386_5.png","icons/Steven_0386_EX.png"]'::jsonb,
     '["Psychic","Hoenn","Champion","Sygna Suit","Space Cadet"]'::jsonb,
-    '["Limited","Multiple Units","isMan","Terrain","Mythical","Song Key","Villain Arc","Grid5","GridExpansion","Unique Costume","SyncMoveSpecial","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveType"]'::jsonb,
+    '["Limited","Multiple Units","isMan","Terrain","Mythical","Song Key","Grid5","GridExpansion","Unique Costume","SyncMoveSpecial","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveType"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0090_10_daigo","internal_pokemon_name":"pm0386_11_deoxys"}'::jsonb
   ),
   (
@@ -6164,7 +6404,7 @@ values
     'icons/Red_0143_5.png',
     '["icons/Red_0143_5.png","icons/Red_0143_EX.png"]'::jsonb,
     '["Normal","Kanto","Main Character","Pallet Town","Passionate Spirit"]'::jsonb,
-    '["Limited","Multiple Units","isMan","Villain Arc","Multiple Pokemon","Grid5","GridExpansion","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal","MoveTypeFighting"]'::jsonb,
+    '["Limited","Multiple Units","isMan","Multiple Pokemon","Grid5","GridExpansion","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal","MoveTypeFighting"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0000_80_red","internal_pokemon_name":"pm0143_00_kabigon"}'::jsonb
   ),
   (
@@ -6427,7 +6667,7 @@ values
     '2020-03-27'::date,
     'icons/Plumeria_0758_5.png',
     '["icons/Plumeria_0758_5.png","icons/Plumeria_0758_EX.png"]'::jsonb,
-    '["Poison","Alola","Villain.","Grown Woman"]'::jsonb,
+    '["Poison","Alola","Villain","Grown Woman"]'::jsonb,
     '["Multiple Units","isWoman","ZMove","Song Key","Grid3","GridExpansion","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0121_00_plumeria","internal_pokemon_name":"pm0806_00_dokutokage2"}'::jsonb
   ),
@@ -6451,7 +6691,7 @@ values
     '2024-05-11'::date,
     'icons/Plumeria_0094_5.png',
     '["icons/Plumeria_0094_5.png","icons/Plumeria_0094_EX.png"]'::jsonb,
-    '["Poison","Alola","Villain.","Beauty"]'::jsonb,
+    '["Poison","Alola","Villain","Beauty"]'::jsonb,
     '["Buddy Move","Limited","Multiple Units","Multiple Pokemon","isWoman","ZMove","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0121_00_plumeria","internal_pokemon_name":"pm0094_00_gangar"}'::jsonb
   ),
@@ -6475,7 +6715,7 @@ values
     '2020-03-27'::date,
     'icons/Guzma_0768_5.png',
     '["icons/Guzma_0768_5.png","icons/Guzma_0768_EX.png"]'::jsonb,
-    '["Bug","Alola","Villain.","Sunglasses"]'::jsonb,
+    '["Bug","Alola","Villain","Sunglasses"]'::jsonb,
     '["Multiple Units","isMan","Song Key","Grid3","GridExpansion","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeBug"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0125_00_guzma","internal_pokemon_name":"pm0867_00_gusokumushi2"}'::jsonb
   ),
@@ -6499,7 +6739,7 @@ values
     '2021-11-11'::date,
     'icons/Guzma_0794_5.png',
     '["icons/Guzma_0794_5.png","icons/Guzma_0794_EX.png"]'::jsonb,
-    '["Fighting","Alola","Villain.","Passionate Spirit","Special Costume"]'::jsonb,
+    '["Fighting","Alola","Villain","Passionate Spirit","Special Costume"]'::jsonb,
     '["Limited","Multiple Units","Multiple Pokemon","isMan","Ultra Beast","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeFighting"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0125_40_guzma","internal_pokemon_name":"pm0877_00_beastyellow"}'::jsonb
   ),
@@ -6523,7 +6763,7 @@ values
     '2024-05-09'::date,
     'icons/Guzma_0168_5.png',
     '["icons/Guzma_0168_5.png","icons/Guzma_0168_EX.png"]'::jsonb,
-    '["Bug","Alola","Villain.","Sunglasses"]'::jsonb,
+    '["Bug","Alola","Villain","Sunglasses"]'::jsonb,
     '["Limited","Multiple Units","Multiple Pokemon","isMan","ZMove","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypePoison","MoveTypeBug"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0125_00_guzma","internal_pokemon_name":"pm0168_00_ariados"}'::jsonb
   ),
@@ -7052,7 +7292,7 @@ values
     'icons/Dawn_0488_5.png',
     '["icons/Dawn_0488_5.png","icons/Dawn_0488_EX.png"]'::jsonb,
     '["Psychic","Sinnoh","Main Character","Sygna Suit"]'::jsonb,
-    '["Limited","Multiple Units","isWoman","Legendary","Villain Arc","Unique Costume","Grid5","GridExpansion","SyncMoveStatus","AttackMoveSpecial","MoveTypePsychic","MoveTypeFairy"]'::jsonb,
+    '["Limited","Multiple Units","isWoman","Legendary","Unique Costume","Grid5","GridExpansion","SyncMoveStatus","AttackMoveSpecial","MoveTypePsychic","MoveTypeFairy"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0116_10_hikari","internal_pokemon_name":"pm0488_00_cresselia"}'::jsonb
   ),
   (
@@ -7126,6 +7366,30 @@ values
     '["Steel","Sinnoh","Main Character","Scarf","Contest Lover"]'::jsonb,
     '["Starter","Buddy Move","Limited","Wish Zone","Multiple Units","Multiple Pokemon","isWoman","SyncMoveSpecial","AttackMoveSpecial","MoveTypeSteel"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0116_00_hikari","internal_pokemon_name":"pm0395_00_emperte"}'::jsonb
+  ),
+  (
+    '094|0484',
+    'Dawn (Champion) & Palkia Other Form',
+    'Dawn',
+    'Champion',
+    'Palkia',
+    'Other Form',
+    'strike'::public.pair_role,
+    'Strike (Special)',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'master_fair'::public.pair_premium_category,
+    'EX Master Fair Scout',
+    'Dragon',
+    'Fairy',
+    'Sinnoh',
+    '2026-09-12'::date,
+    'icons/Dawn_0484_5.png',
+    '["icons/Dawn_0484_5.png","icons/Dawn_0484_EX.png"]'::jsonb,
+    '["Dragon","Sinnoh","Main Character","Champion","Contest Lover"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Wish Zone","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isWoman","Neo Champion","ItemBerry","SyncMoveSpecial","AttackMoveSpecial","MoveTypeDragon"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0116_90_hikari","internal_pokemon_name":"pm0484_12_00_palkia"}'::jsonb
   ),
   (
     '095|0542',
@@ -7268,7 +7532,7 @@ values
     'icons/Serena_0658_5.png',
     '["icons/Serena_0658_5.png","icons/Serena_0658_EX.png"]'::jsonb,
     '["Water","Kalos","Main Character","Champion"]'::jsonb,
-    '["Buddy Move","isWoman","Limited","Multiple Units","Weather","Wish Zone","Rebuff","Starter","Grid5","GridExpansion","Multiple Pokemon","Unique Costume","Neo Champion","Master Passive Spirit","SyncMoveSpecial","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeNormal","MoveTypeWater","MoveTypeDark"]'::jsonb,
+    '["Buddy Move","isWoman","Limited","Multiple Units","Weather","Wish Zone","Rebuff","Starter","Grid5","GridExpansion","Multiple Pokemon","Multiple Pairs","Unique Costume","Neo Champion","Master Passive Spirit","SyncMoveSpecial","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeNormal","MoveTypeWater","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0130_90_serena","internal_pokemon_name":"pm0725_00_frog3"}'::jsonb
   ),
   (
@@ -7296,6 +7560,30 @@ values
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0130_00_serena","internal_pokemon_name":"pm0753_00_robin1"}'::jsonb
   ),
   (
+    '096|0658|2',
+    'Serena (Anniversary 2026) & Greninja Mega Evolution',
+    'Serena',
+    'Anniversary 2026',
+    'Greninja',
+    'Mega Evolution',
+    'strike'::public.pair_role,
+    'Strike (Physical)',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'master_fair'::public.pair_premium_category,
+    'EX Master Fair Scout',
+    'Dark',
+    'Bug',
+    'Kalos',
+    '2026-08-28'::date,
+    'icons/Serena_0658_2_5.png',
+    '["icons/Serena_0658_2_5.png","icons/Serena_0658_2_EX.png"]'::jsonb,
+    '["Dark","Kalos","Main Character","Seasonal Outfit","Passionate Spirit"]'::jsonb,
+    '["Starter","Grid5","GridMega","Buddy Move","Limited","Wish Zone","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","Multiple Pairs","isWoman","Anniversary","Rebuff","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeWater","MoveTypeDark"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0130_41_serena","internal_pokemon_name":"pm0725_00_frog3"}'::jsonb
+  ),
+  (
     '097|0024',
     'Jessie & Arbok',
     'Jessie',
@@ -7315,7 +7603,7 @@ values
     '2020-07-09'::date,
     'icons/Jessie_0024_3.png',
     '["icons/Jessie_0024_3.png","icons/Jessie_0024_4.png","icons/Jessie_0024_5.png"]'::jsonb,
-    '["Poison","Kanto","Villain.","Team Rocket Forever"]'::jsonb,
+    '["Poison","Kanto","Villain","Team Rocket Forever"]'::jsonb,
     '["Limited","isWoman","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":false,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0240_00_musashi","internal_pokemon_name":"pm0024_00_arbok"}'::jsonb
   ),
@@ -7436,7 +7724,7 @@ values
     'icons/Morty_0250_5.png',
     '["icons/Morty_0250_5.png","icons/Morty_0250_EX.png"]'::jsonb,
     '["Fire","Johto","Gym Leader","Sygna Suit","Supernatural"]'::jsonb,
-    '["Limited","Multiple Units","isMan","Weather","Legendary","Shiny","Grid5","GridExpansion","Villain Arc","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeFire"]'::jsonb,
+    '["Limited","Multiple Units","isMan","Weather","Legendary","Shiny","Grid5","GridExpansion","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeFire"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0148_10_matsuba","internal_pokemon_name":"pm0250_00_houou_rare"}'::jsonb
   ),
   (
@@ -7507,8 +7795,8 @@ values
     '2020-08-17'::date,
     'icons/Cyrus_0484_5.png',
     '["icons/Cyrus_0484_5.png","icons/Cyrus_0484_EX.png"]'::jsonb,
-    '["Dragon","Sinnoh","Villain.","Gadgeteer"]'::jsonb,
-    '["Legendary Adventures","Multiple Units","isMan","Legendary","Grid3","GridExpansion","Song Key","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeDragon"]'::jsonb,
+    '["Dragon","Sinnoh","Villain","Gadgeteer"]'::jsonb,
+    '["Legendary Adventures","Multiple Units","Multiple Pokemon","isMan","Legendary","Grid3","GridExpansion","Song Key","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeDragon"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0194_00_akagi","internal_pokemon_name":"pm0484_00_palkia"}'::jsonb
   ),
   (
@@ -7531,9 +7819,33 @@ values
     '2022-02-10'::date,
     'icons/Cyrus_0491_5.png',
     '["icons/Cyrus_0491_5.png","icons/Cyrus_0491_EX.png"]'::jsonb,
-    '["Dark","Sinnoh","Sygna Suit","Scarf","Villain."]'::jsonb,
-    '["Limited","Multiple Units","isMan","Wish Zone","Mythical","Villain Arc","Unique Costume","Grid5","GridExpansion","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeDark"]'::jsonb,
+    '["Dark","Sinnoh","Sygna Suit","Scarf","Villain"]'::jsonb,
+    '["Limited","Multiple Units","isMan","Wish Zone","Mythical","Unique Costume","Grid5","GridExpansion","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0194_10_akagi","internal_pokemon_name":"pm0491_00_darkrai"}'::jsonb
+  ),
+  (
+    '100|0461',
+    'Cyrus & Weavile',
+    'Cyrus',
+    null,
+    'Weavile',
+    null,
+    'field'::public.pair_role,
+    'Field',
+    'support'::public.pair_role,
+    'Support',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Ice',
+    'Fighting',
+    'Sinnoh',
+    '2026-09-16'::date,
+    'icons/Cyrus_0461_5.png',
+    '["icons/Cyrus_0461_5.png","icons/Cyrus_0461_EX.png"]'::jsonb,
+    '["Ice","Sinnoh","Villain","Gadgeteer"]'::jsonb,
+    '["Buddy Move","Limited","Wish Zone","Region Circle","Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","MoveTypeIce"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0194_00_akagi","internal_pokemon_name":"pm0461_00_manyula"}'::jsonb
   ),
   (
     '101|0795',
@@ -7555,7 +7867,7 @@ values
     '2020-09-10'::date,
     'icons/Lusamine_0795_5.png',
     '["icons/Lusamine_0795_5.png","icons/Lusamine_0795_EX.png"]'::jsonb,
-    '["Bug","Alola","Villain.","Grown Woman","Alola Adventurer"]'::jsonb,
+    '["Bug","Alola","Villain","Grown Woman","Alola Adventurer"]'::jsonb,
     '["Multiple Units","isWoman","Ultra Beast","Grid3","GridExpansion","ZMove","Song Key","First Unit","SyncMoveSpecial","AttackMovePhysical","AttackMoveSpecial","MoveTypeIce","MoveTypeBug"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0120_00_lusamine","internal_pokemon_name":"pm0879_00_beastblue"}'::jsonb
   ),
@@ -7579,7 +7891,7 @@ values
     '2021-11-30'::date,
     'icons/Lusamine_0800_5.png',
     '["icons/Lusamine_0800_5.png","icons/Lusamine_0800_EX.png"]'::jsonb,
-    '["Psychic","Alola","Villain.","Sygna Suit","Grown Woman"]'::jsonb,
+    '["Psychic","Alola","Villain","Sygna Suit","Grown Woman"]'::jsonb,
     '["Limited","Multiple Pokemon","Multiple Units","Grid5","GridExpansion","isWoman","Legendary","ZMove","Unique Costume","Master Passive Spirit","SyncMoveSpecial","AttackMoveSpecial","MoveTypePsychic","MoveTypeSteel"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0120_10_lusamine","internal_pokemon_name":"pm0865_12_prismsun"}'::jsonb
   ),
@@ -7603,7 +7915,7 @@ values
     '2024-08-28'::date,
     'icons/Lusamine_0549_4.png',
     '["icons/Lusamine_0549_4.png","icons/Lusamine_0549_5.png","icons/Lusamine_0549_EX.png"]'::jsonb,
-    '["Grass","Alola","Villain.","Grown Woman","Alola Adventurer"]'::jsonb,
+    '["Grass","Alola","Villain","Grown Woman","Alola Adventurer"]'::jsonb,
     '["Weather","Multiple Units","Multiple Pokemon","isWoman","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0120_00_lusamine","internal_pokemon_name":"pm0549_00_dredear"}'::jsonb
   ),
@@ -7627,7 +7939,7 @@ values
     '2025-08-01'::date,
     'icons/Lusamine_0350_4.png',
     '["icons/Lusamine_0350_4.png","icons/Lusamine_0350_5.png","icons/Lusamine_0350_EX.png"]'::jsonb,
-    '["Water","Alola","Villain.","Grown Woman","Alola Adventurer"]'::jsonb,
+    '["Water","Alola","Villain","Grown Woman","Alola Adventurer"]'::jsonb,
     '["Multiple Units","Multiple Pokemon","isWoman","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0120_00_lusamine","internal_pokemon_name":"pm0350_01_milokaross"}'::jsonb
   ),
@@ -7651,7 +7963,7 @@ values
     '2020-09-14'::date,
     'icons/Gladion_0773_5.png',
     '["icons/Gladion_0773_5.png","icons/Gladion_0773_EX.png"]'::jsonb,
-    '["Normal","Alola","Rival","Villain.","Alola Adventurer"]'::jsonb,
+    '["Normal","Alola","Rival","Villain","Alola Adventurer"]'::jsonb,
     '["isMan","Legendary","Grid3","GridExpansion","Multiple Units","Song Key","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0119_00_gladion","internal_pokemon_name":"pm0862_11_gryps2"}'::jsonb
   ),
@@ -7675,7 +7987,7 @@ values
     '2023-11-01'::date,
     'icons/Gladion_0042_4.png',
     '["icons/Gladion_0042_4.png","icons/Gladion_0042_5.png","icons/Gladion_0042_EX.png"]'::jsonb,
-    '["Poison","Alola","Rival","Villain.","Alola Adventurer"]'::jsonb,
+    '["Poison","Alola","Rival","Villain","Alola Adventurer"]'::jsonb,
     '["Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0119_00_gladion","internal_pokemon_name":"pm0042_00_golbat"}'::jsonb
   ),
@@ -7699,7 +8011,7 @@ values
     '2024-02-19'::date,
     'icons/Gladion_0801_5.png',
     '["icons/Gladion_0801_5.png","icons/Gladion_0801_EX.png"]'::jsonb,
-    '["Fairy","Alola","Rival","Sygna Suit","Villain."]'::jsonb,
+    '["Fairy","Alola","Rival","Sygna Suit","Villain"]'::jsonb,
     '["Mythical","Buddy Move","Grid5","GridExpansion","Limited","Multiple Units","isMan","Unique Costume","Master Passive Spirit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeFairy"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0119_10_gladion","internal_pokemon_name":"pm0882_11_maboroshi16"}'::jsonb
   ),
@@ -7723,8 +8035,8 @@ values
     '2024-06-28'::date,
     'icons/Gladion_0461_5.png',
     '["icons/Gladion_0461_5.png","icons/Gladion_0461_EX.png"]'::jsonb,
-    '["Ice","Alola","Rival","Villain.","Alola Adventurer"]'::jsonb,
-    '["Wish Zone","Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeIce"]'::jsonb,
+    '["Ice","Alola","Rival","Villain","Alola Adventurer"]'::jsonb,
+    '["Wish Zone","Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeIce"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0119_00_gladion","internal_pokemon_name":"pm0461_00_manyula"}'::jsonb
   ),
   (
@@ -7939,7 +8251,7 @@ values
     '2020-09-17'::date,
     'icons/James_0110_3.png',
     '["icons/James_0110_3.png","icons/James_0110_4.png","icons/James_0110_5.png"]'::jsonb,
-    '["Poison","Kanto","Villain.","Team Rocket Forever"]'::jsonb,
+    '["Poison","Kanto","Villain","Team Rocket Forever"]'::jsonb,
     '["Limited","isMan","Multiple Pokemon","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":false,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0241_00_kojiro","internal_pokemon_name":"pm0110_00_matadogas"}'::jsonb
   ),
@@ -8372,7 +8684,7 @@ values
     'icons/Gloria_0815_5.png',
     '["icons/Gloria_0815_5.png","icons/Gloria_0815_EX.png"]'::jsonb,
     '["Fire","Galar","Main Character","Passionate Spirit","Galar Adventurer"]'::jsonb,
-    '["Starter","Grid5","Limited","Multiple Pokemon","Multiple Units","Multiple Pairs","Weather","Wish Zone","isWoman","Rebuff","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeFire","MoveTypeFighting","MoveTypeFlying"]'::jsonb,
+    '["Starter","Grid5","Limited","Multiple Pokemon","Multiple Units","Multiple Pairs","Weather","Wish Zone","isWoman","Rebuff","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeFire","MoveTypeFighting","MoveTypeFlying"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0243_81_yuri","internal_pokemon_name":"pm0815_00_00_aceburn"}'::jsonb
   ),
   (
@@ -8419,7 +8731,7 @@ values
     '2020-12-24'::date,
     'icons/N_0644_5.png',
     '["icons/N_0644_5.png","icons/N_0644_EX.png"]'::jsonb,
-    '["Electric","Unova","Rival","Villain.","Unova Adventurer"]'::jsonb,
+    '["Electric","Unova","Rival","Villain","Unova Adventurer"]'::jsonb,
     '["Multiple Units","isMan","Limited","Terrain","Legendary","Grid5","GridExpansion","Song Key","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeElectric","MoveTypeDragon"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0089_00_n","internal_pokemon_name":"pm0644_00_zekrom"}'::jsonb
   ),
@@ -8491,7 +8803,7 @@ values
     '2022-08-25'::date,
     'icons/N_0561_4.png',
     '["icons/N_0561_4.png","icons/N_0561_5.png","icons/N_0561_EX.png"]'::jsonb,
-    '["Psychic","Unova","Rival","Villain.","Unova Adventurer"]'::jsonb,
+    '["Psychic","Unova","Rival","Villain","Unova Adventurer"]'::jsonb,
     '["Multiple Units","Limited","isMan","Multiple Pokemon","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePsychic"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0089_00_n","internal_pokemon_name":"pm0561_00_symboler"}'::jsonb
   ),
@@ -8516,7 +8828,7 @@ values
     'icons/N_0646_5.png',
     '["icons/N_0646_5.png","icons/N_0646_EX.png"]'::jsonb,
     '["Ice","Unova","Rival","Sygna Suit","Unova Adventurer"]'::jsonb,
-    '["Buddy Move","isMan","Limited","Multiple Units","Legendary","Grid5","Song Key","Villain Arc","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeIce"]'::jsonb,
+    '["Buddy Move","isMan","Limited","Multiple Units","Legendary","Grid5","Song Key","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeIce"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0089_10_n","internal_pokemon_name":"pm0646_13_kyurem"}'::jsonb
   ),
   (
@@ -8563,7 +8875,7 @@ values
     '2025-05-01'::date,
     'icons/N_0567_5.png',
     '["icons/N_0567_5.png","icons/N_0567_EX.png"]'::jsonb,
-    '["Rock","Unova","Rival","Villain.","Unova Adventurer"]'::jsonb,
+    '["Rock","Unova","Rival","Villain","Unova Adventurer"]'::jsonb,
     '["Fossil","Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeRock"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0089_00_n","internal_pokemon_name":"pm0567_00_archeos"}'::jsonb
   ),
@@ -8684,7 +8996,7 @@ values
     'icons/May_0257_5.png',
     '["icons/May_0257_5.png","icons/May_0257_EX.png"]'::jsonb,
     '["Fire","Hoenn","Main Character","Sygna Suit","Pigtails"]'::jsonb,
-    '["Limited","GridMega","Multiple Units","isWoman","Starter","Grid5","GridExpansion","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeFire","MoveTypeFighting"]'::jsonb,
+    '["Limited","GridMega","Multiple Units","isWoman","Starter","Grid5","GridExpansion","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeFire","MoveTypeFighting"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0126_10_haruka","internal_pokemon_name":"pm0257_00_bursyamo"}'::jsonb
   ),
   (
@@ -8827,7 +9139,7 @@ values
     '2021-02-11'::date,
     'icons/Lysandre_0717_5.png',
     '["icons/Lysandre_0717_5.png","icons/Lysandre_0717_EX.png"]'::jsonb,
-    '["Flying","Kalos","Villain.","Gadgeteer","Old Colleagues"]'::jsonb,
+    '["Flying","Kalos","Villain","Gadgeteer","Old Colleagues"]'::jsonb,
     '["Limited","isMan","Legendary","Multiple Units","Grid5","GridExpansion","Song Key","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeFlying","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0196_00_fleurdelis","internal_pokemon_name":"pm0769_00_pokemonY"}'::jsonb
   ),
@@ -8851,9 +9163,33 @@ values
     '2023-02-13'::date,
     'icons/Lysandre_0721_5.png',
     '["icons/Lysandre_0721_5.png","icons/Lysandre_0721_EX.png"]'::jsonb,
-    '["Water","Kalos","Villain.","Sygna Suit","Researcher"]'::jsonb,
-    '["Buddy Move","isMan","Limited","Multiple Units","Mythical","Weather","Grid5","Song Key","Villain Arc","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","MoveTypeFire","MoveTypeWater"]'::jsonb,
+    '["Water","Kalos","Villain","Sygna Suit","Researcher"]'::jsonb,
+    '["Buddy Move","isMan","Limited","Multiple Units","Mythical","Weather","Grid5","Song Key","Unique Costume","SyncMoveSpecial","AttackMoveSpecial","MoveTypeFire","MoveTypeWater"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0196_10_fleurdelis","internal_pokemon_name":"pm0773_00_steam"}'::jsonb
+  ),
+  (
+    '115|1004',
+    'Lysandre (Sygna Suit (Alt.)) & Chi-Yu Terastallization',
+    'Lysandre',
+    'Sygna Suit (Alt.)',
+    'Chi-Yu',
+    'Terastallization',
+    'field'::public.pair_role,
+    'Field',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'general'::public.pair_premium_category,
+    'EX Fair Scout',
+    'Fire',
+    'Ground',
+    'Kalos',
+    '2026-10-02'::date,
+    'icons/Lysandre_1004_5.png',
+    '["icons/Lysandre_1004_5.png","icons/Lysandre_1004_EX.png"]'::jsonb,
+    '["Fire","Kalos","Villain","Sygna Suit","Sunglasses"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Weather","Region Circle","Unique Costume","Multiple Units","isMan","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeFire"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0196_11_fleurdelis","internal_pokemon_name":"pm1004_00_00_yiyui"}'::jsonb
   ),
   (
     '116|0716',
@@ -8996,7 +9332,7 @@ values
     'icons/Piers_0435_4.png',
     '["icons/Piers_0435_4.png","icons/Piers_0435_5.png","icons/Piers_0435_EX.png"]'::jsonb,
     '["Dark","Galar","Gym Leader","Artistic"]'::jsonb,
-    '["Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeDark"]'::jsonb,
+    '["Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0256_00_nezz","internal_pokemon_name":"pm0435_00_skutank"}'::jsonb
   ),
   (
@@ -9092,7 +9428,7 @@ values
     'icons/Leon_0887_5.png',
     '["icons/Leon_0887_5.png","icons/Leon_0887_EX.png"]'::jsonb,
     '["Dragon","Galar","Champion","Battle Facility Foe","Passionate Spirit"]'::jsonb,
-    '["Grid5","Buddy Move","Limited","Multiple Units","isMan","Song Key","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeDragon"]'::jsonb,
+    '["Grid5","Buddy Move","Limited","Multiple Units","isMan","Song Key","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeDragon"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0247_80_dande","internal_pokemon_name":"pm0887_00_00_dorapult"}'::jsonb
   ),
   (
@@ -9236,7 +9572,7 @@ values
     'icons/Marnie_0454_4.png',
     '["icons/Marnie_0454_4.png","icons/Marnie_0454_5.png","icons/Marnie_0454_EX.png"]'::jsonb,
     '["Poison","Galar","Rival","Pigtails","Fancy Lady"]'::jsonb,
-    '["Multiple Units","Limited","isWoman","SyncMoveSpecial","AttackMoveSpecial","MoveTypePoison","MoveTypeGround"]'::jsonb,
+    '["Multiple Units","Multiple Pokemon","Limited","isWoman","SyncMoveSpecial","AttackMoveSpecial","MoveTypePoison","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0245_00_mary","internal_pokemon_name":"pm0454_01_dokurog"}'::jsonb
   ),
   (
@@ -9452,7 +9788,7 @@ values
     'icons/Diantha_0719_5.png',
     '["icons/Diantha_0719_5.png","icons/Diantha_0719_EX.png"]'::jsonb,
     '["Rock","Kalos","Champion","Sygna Suit","Artistic"]'::jsonb,
-    '["Buddy Move","isWoman","Limited","GridMega","Multiple Units","Wish Zone","Mythical","Shiny","Grid5","Song Key","Villain Arc","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeRock"]'::jsonb,
+    '["Buddy Move","isWoman","Limited","GridMega","Multiple Units","Wish Zone","Mythical","Shiny","Grid5","Song Key","Multiple Pokemon","Unique Costume","SyncMovePhysical","AttackMovePhysical","MoveTypeRock"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0158_10_carnet","internal_pokemon_name":"pm0772_00_pinkdiamond_rare"}'::jsonb
   ),
   (
@@ -9622,6 +9958,30 @@ values
     '["Ghost","Alola","Main Character","Champion","Nature Lover"]'::jsonb,
     '["Legendary","Shiny","Grid5","Buddy Move","Limited","Wish Zone","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isWoman","Neo Champion","Master Passive Spirit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeGhost"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0123_90_mizuki","internal_pokemon_name":"pm0865_13_prismmoon_rare"}'::jsonb
+  ),
+  (
+    '121|0730',
+    'Selene & Primarina',
+    'Selene',
+    null,
+    'Primarina',
+    null,
+    'field'::public.pair_role,
+    'Field',
+    'tech'::public.pair_role,
+    'Tech',
+    5,
+    'general'::public.pair_premium_category,
+    'Mix Scout',
+    'Fairy',
+    'Grass',
+    'Alola',
+    '2026-08-01'::date,
+    'icons/Selene_0730_5.png',
+    '["icons/Selene_0730_5.png","icons/Selene_0730_EX.png"]'::jsonb,
+    '["Fairy","Alola","Main Character","Nature Lover","Alola Adventurer"]'::jsonb,
+    '["Starter","Buddy Move","Limited","Wish Zone","Multiple Units","Multiple Pokemon","isWoman","SyncMovePhysical","AttackMovePhysical","MoveTypeFairy"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0123_00_mizuki","internal_pokemon_name":"pm0849_00_ashika3"}'::jsonb
   ),
   (
     '122|0730',
@@ -9859,9 +10219,33 @@ values
     '2021-05-04'::date,
     'icons/Ghetsis_0646_5.png',
     '["icons/Ghetsis_0646_5.png","icons/Ghetsis_0646_EX.png"]'::jsonb,
-    '["Ice","Unova","Villain.","Cape"]'::jsonb,
-    '["Legendary Adventures","isMan","Legendary","Grid3","GridExpansion","Song Key","Multiple Pokemon","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeIce","MoveTypeDragon"]'::jsonb,
+    '["Ice","Unova","Villain","Cape"]'::jsonb,
+    '["Legendary Adventures","isMan","Legendary","Grid3","GridExpansion","Song Key","Multiple Units","Multiple Pokemon","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeIce","MoveTypeDragon"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0195_00_ghetsis","internal_pokemon_name":"pm0646_11_kyurem"}'::jsonb
+  ),
+  (
+    '124|1002',
+    'Ghetsis (Sygna Suit) & Chien-Pao Terastallization',
+    'Ghetsis',
+    'Sygna Suit',
+    'Chien-Pao',
+    'Terastallization',
+    'strike'::public.pair_role,
+    'Strike (Physical)',
+    'tech'::public.pair_role,
+    'Tech',
+    5,
+    'general'::public.pair_premium_category,
+    'EX Fair Scout',
+    'Ice',
+    'Fighting',
+    'Unova',
+    '2026-09-30'::date,
+    'icons/Ghetsis_1002_5.png',
+    '["icons/Ghetsis_1002_5.png","icons/Ghetsis_1002_EX.png"]'::jsonb,
+    '["Ice","Unova","Villain","Sygna Suit","Cape"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Wish Zone","Unique Costume","Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeIce"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0195_10_ghetsis","internal_pokemon_name":"pm1002_00_00_paojian"}'::jsonb
   ),
   (
     '125|0834',
@@ -9910,6 +10294,30 @@ values
     '["Ice","Galar","Seasonal Outfit","Artistic","Grown Woman"]'::jsonb,
     '["Limited","Multiple Units","isWoman","Weather","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeIce"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0249_40_rulina","internal_pokemon_name":"pm0875_11_00_korippo"}'::jsonb
+  ),
+  (
+    '125|0847',
+    'Nessa & Barraskewda',
+    'Nessa',
+    null,
+    'Barraskewda',
+    null,
+    'field'::public.pair_role,
+    'Field',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Water',
+    'Grass',
+    'Galar',
+    '2026-08-28'::date,
+    'icons/Nessa_0847_4.png',
+    '["icons/Nessa_0847_4.png","icons/Nessa_0847_5.png","icons/Nessa_0847_EX.png"]'::jsonb,
+    '["Water","Galar","Gym Leader","Artistic"]'::jsonb,
+    '["Weather","Multiple Units","isWoman","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeWater"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0249_00_rulina","internal_pokemon_name":"pm0847_00_00_kamasujaw"}'::jsonb
   ),
   (
     '126|0865',
@@ -10003,9 +10411,33 @@ values
     '2021-05-31'::date,
     'icons/Maxie_0383_5.png',
     '["icons/Maxie_0383_5.png","icons/Maxie_0383_EX.png"]'::jsonb,
-    '["Ground","Hoenn","Villain.","Glasses","Researcher"]'::jsonb,
-    '["Grid5","GridExpansion","Limited","isMan","Weather","Legendary","Multiple Pokemon","Song Key","Master Passive Pride","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGrass","MoveTypeGround"]'::jsonb,
+    '["Ground","Hoenn","Villain","Glasses","Researcher"]'::jsonb,
+    '["Grid5","GridExpansion","Limited","isMan","Weather","Legendary","Multiple Units","Multiple Pokemon","Song Key","Master Passive Pride","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGrass","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0192_00_matsubusa","internal_pokemon_name":"pm0383_00_groudon"}'::jsonb
+  ),
+  (
+    '127|1003',
+    'Maxie (Fall 2026) & Ting-Lu Terastallization',
+    'Maxie',
+    'Fall 2026',
+    'Ting-Lu',
+    'Terastallization',
+    'support'::public.pair_role,
+    'Support',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'seasonal'::public.pair_premium_category,
+    'Seasonal Scout',
+    'Ground',
+    'Water',
+    'Hoenn',
+    '2026-10-16'::date,
+    'icons/Maxie_1003_5.png',
+    '["icons/Maxie_1003_5.png","icons/Maxie_1003_EX.png"]'::jsonb,
+    '["Ground","Hoenn","Villain","Seasonal Outfit","Glasses"]'::jsonb,
+    '["Legendary","Fall","Buddy Move","Limited","Wish Zone","Unique Costume","Multiple Units","isMan","SyncMoveSpecial","AttackMovePhysical","AttackMoveSpecial","MoveTypeGround"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0192_40_matsubusa","internal_pokemon_name":"pm1003_00_00_dinlu"}'::jsonb
   ),
   (
     '128|0382',
@@ -10027,9 +10459,33 @@ values
     '2021-06-01'::date,
     'icons/Archie_0382_5.png',
     '["icons/Archie_0382_5.png","icons/Archie_0382_EX.png"]'::jsonb,
-    '["Water","Hoenn","Villain.","Body Builder","Nature Lover"]'::jsonb,
-    '["Grid5","GridExpansion","Limited","isMan","Weather","Legendary","Multiple Pokemon","Song Key","Master Passive Spirit","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeElectric"]'::jsonb,
+    '["Water","Hoenn","Villain","Body Builder","Nature Lover"]'::jsonb,
+    '["Grid5","GridExpansion","Limited","isMan","Weather","Legendary","Multiple Units","Multiple Pokemon","Song Key","Master Passive Spirit","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeElectric"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0193_00_aogiri","internal_pokemon_name":"pm0382_00_kyogre"}'::jsonb
+  ),
+  (
+    '128|1001',
+    'Archie (Fall 2026) & Wo-Chien Terastallization',
+    'Archie',
+    'Fall 2026',
+    'Wo-Chien',
+    'Terastallization',
+    'support'::public.pair_role,
+    'Support',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'seasonal'::public.pair_premium_category,
+    'Seasonal Scout',
+    'Grass',
+    'Bug',
+    'Hoenn',
+    '2026-10-14'::date,
+    'icons/Archie_1001_5.png',
+    '["icons/Archie_1001_5.png","icons/Archie_1001_EX.png"]'::jsonb,
+    '["Grass","Hoenn","Villain","Seasonal Outfit","Body Builder"]'::jsonb,
+    '["Legendary","Fall","Buddy Move","Limited","Terrain","TerrainEX","Unique Costume","Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGrass","MoveTypeGround"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0193_40_aogiri","internal_pokemon_name":"pm1001_00_00_chionjen"}'::jsonb
   ),
   (
     '129|0752',
@@ -10076,7 +10532,7 @@ values
     'icons/Lana_0786_5.png',
     '["icons/Lana_0786_5.png","icons/Lana_0786_EX.png"]'::jsonb,
     '["Psychic","Alola","Trial Giver","Sygna Suit","Free Spirit"]'::jsonb,
-    '["Legendary","Grid5","Buddy Move","Limited","Terrain","Multiple Units","isWoman","ZMove","Villain Arc","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypePsychic","MoveTypeFairy"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Terrain","Multiple Units","isWoman","ZMove","Unique Costume","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypePsychic","MoveTypeFairy"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0160_10_suiren","internal_pokemon_name":"pm0831_00_tikichou"}'::jsonb
   ),
   (
@@ -10724,7 +11180,7 @@ values
     'icons/Sidney_0359_5.png',
     '["icons/Sidney_0359_5.png","icons/Sidney_0359_EX.png"]'::jsonb,
     '["Dark","Hoenn","Elite Four","Passionate Spirit"]'::jsonb,
-    '["GridMega","Multiple Pokemon","isMan","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeDark"]'::jsonb,
+    '["GridMega","Grid3","GridExpansion","Multiple Pokemon","isMan","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0135_00_kagetsu","internal_pokemon_name":"pm0359_00_absol"}'::jsonb
   ),
   (
@@ -11012,7 +11468,7 @@ values
     'icons/Lucas_0483_5.png',
     '["icons/Lucas_0483_5.png","icons/Lucas_0483_EX.png"]'::jsonb,
     '["Dragon","Sinnoh","Main Character","Scarf","Knowledgeable"]'::jsonb,
-    '["Limited","isMan","Wish Zone","Legendary","Grid5","GridExpansion","Multiple Units","Villain Arc","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeDragon"]'::jsonb,
+    '["Limited","isMan","Wish Zone","Legendary","Grid5","GridExpansion","Multiple Units","Multiple Pokemon","Multiple Pairs","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeDragon"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0162_00_koki","internal_pokemon_name":"pm0483_00_dialga"}'::jsonb
   ),
   (
@@ -11064,6 +11520,30 @@ values
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0162_00_koki","internal_pokemon_name":"pm0389_00_dodaitose"}'::jsonb
   ),
   (
+    '145|0483|2',
+    'Lucas (Champion) & Dialga Other Form',
+    'Lucas',
+    'Champion',
+    'Dialga',
+    'Other Form',
+    'support'::public.pair_role,
+    'Support',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'master_fair'::public.pair_premium_category,
+    'EX Master Fair Scout',
+    'Dragon',
+    'Ground',
+    'Sinnoh',
+    '2026-09-14'::date,
+    'icons/Lucas_0483_2_5.png',
+    '["icons/Lucas_0483_2_5.png","icons/Lucas_0483_2_EX.png"]'::jsonb,
+    '["Dragon","Sinnoh","Main Character","Champion","Knowledgeable"]'::jsonb,
+    '["Legendary","Grid5","Buddy Move","Limited","Wish Zone","Wish ZoneEX","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","Multiple Pairs","isMan","Neo Champion","SyncMoveSpecial","AttackMoveSpecial","MoveTypeDragon"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0162_90_koki","internal_pokemon_name":"pm0483_12_00_dialga"}'::jsonb
+  ),
+  (
     '146|0416',
     'Aaron & Vespiquen',
     'Aaron',
@@ -11084,8 +11564,32 @@ values
     'icons/Aaron_0416_5.png',
     '["icons/Aaron_0416_5.png","icons/Aaron_0416_EX.png"]'::jsonb,
     '["Bug","Sinnoh","Elite Four","Nature Lover"]'::jsonb,
-    '["isMan","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeBug"]'::jsonb,
+    '["Multiple Units","isMan","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeBug"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0152_00_ryo","internal_pokemon_name":"pm0416_00_beequen"}'::jsonb
+  ),
+  (
+    '146|0269',
+    'Aaron & Dustox',
+    'Aaron',
+    null,
+    'Dustox',
+    null,
+    'tech'::public.pair_role,
+    'Tech',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Bug',
+    'Flying',
+    'Sinnoh',
+    '2026-08-28'::date,
+    'icons/Aaron_0269_4.png',
+    '["icons/Aaron_0269_4.png","icons/Aaron_0269_5.png","icons/Aaron_0269_EX.png"]'::jsonb,
+    '["Bug","Sinnoh","Elite Four","Nature Lover"]'::jsonb,
+    '["Multiple Units","isMan","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeBug"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0152_00_ryo","internal_pokemon_name":"pm0269_00_dokucale"}'::jsonb
   ),
   (
     '147|0450',
@@ -11108,7 +11612,7 @@ values
     'icons/Bertha_0450_5.png',
     '["icons/Bertha_0450_5.png","icons/Bertha_0450_EX.png"]'::jsonb,
     '["Ground","Sinnoh","Elite Four","Scarf","Veteran Trainer"]'::jsonb,
-    '["isWoman","Weather","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGround"]'::jsonb,
+    '["isWoman","Weather","Grid3","GridExpansion","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0154_00_kikuno","internal_pokemon_name":"pm0450_01_kabaldon"}'::jsonb
   ),
   (
@@ -11132,7 +11636,7 @@ values
     'icons/Lucian_0203_5.png',
     '["icons/Lucian_0203_5.png","icons/Lucian_0203_EX.png"]'::jsonb,
     '["Psychic","Sinnoh","Elite Four","Glasses","Knowledgeable"]'::jsonb,
-    '["isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePsychic"]'::jsonb,
+    '["isMan","First Unit","Multiple Pokemon","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePsychic"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0176_00_goyo","internal_pokemon_name":"pm0203_00_kirinriki"}'::jsonb
   ),
   (
@@ -11300,7 +11804,7 @@ values
     'icons/Looker_0453_5.png',
     '["icons/Looker_0453_5.png","icons/Looker_0453_EX.png"]'::jsonb,
     '["Poison","Sinnoh","Veteran Trainer"]'::jsonb,
-    '["isMan","Song Key","Villain Arc","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypePoison"]'::jsonb,
+    '["isMan","Song Key","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0217_00_handsome","internal_pokemon_name":"pm0453_00_gureggru"}'::jsonb
   ),
   (
@@ -11323,8 +11827,8 @@ values
     '2022-08-05'::date,
     'icons/Courtney_0323_5.png',
     '["icons/Courtney_0323_5.png","icons/Courtney_0323_EX.png"]'::jsonb,
-    '["Ground","Hoenn","Villain.","Battle Partner"]'::jsonb,
-    '["Grid3","GridExpansion","GridMega","Multiple Pokemon","isWoman","Wish Zone","Villain Arc","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeGround"]'::jsonb,
+    '["Ground","Hoenn","Villain","Battle Partner"]'::jsonb,
+    '["Grid3","GridExpansion","GridMega","Multiple Pokemon","isWoman","Wish Zone","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0222_00_kagari","internal_pokemon_name":"pm0323_00_bakuuda"}'::jsonb
   ),
   (
@@ -11612,7 +12116,7 @@ values
     'icons/Hugh_0626_5.png',
     '["icons/Hugh_0626_5.png","icons/Hugh_0626_EX.png"]'::jsonb,
     '["Normal","Unova","Rival","Unova Adventurer","Passionate Spirit"]'::jsonb,
-    '["isMan","Song Key","Villain Arc","First Unit","Grid3","GridExpansion","Multiple Units","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal"]'::jsonb,
+    '["isMan","Song Key","First Unit","Grid3","GridExpansion","Multiple Units","SyncMovePhysical","AttackMovePhysical","MoveTypeNormal"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0147_00_hugh","internal_pokemon_name":"pm0626_00_buffron"}'::jsonb
   ),
   (
@@ -11683,8 +12187,8 @@ values
     '2022-11-17'::date,
     'icons/Colress_0601_5.png',
     '["icons/Colress_0601_5.png","icons/Colress_0601_EX.png"]'::jsonb,
-    '["Steel","Unova","Villain.","Glasses","Researcher"]'::jsonb,
-    '["isMan","Song Key","Villain Arc","First Unit","SyncMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeSteel"]'::jsonb,
+    '["Steel","Unova","Villain","Glasses","Researcher"]'::jsonb,
+    '["isMan","GridExpansion","Grid3","Song Key","First Unit","SyncMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeSteel"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0191_00_achroma","internal_pokemon_name":"pm0601_00_gigigiaru"}'::jsonb
   ),
   (
@@ -11732,7 +12236,7 @@ values
     'icons/Shauna_0652_5.png',
     '["icons/Shauna_0652_5.png","icons/Shauna_0652_EX.png"]'::jsonb,
     '["Grass","Kalos","Rival","Pigtails"]'::jsonb,
-    '["isWoman","Starter","Multiple Units","Villain Arc","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
+    '["isWoman","Starter","Multiple Units","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0139_00_sana","internal_pokemon_name":"pm0722_00_hedgehog3"}'::jsonb
   ),
   (
@@ -11828,7 +12332,7 @@ values
     'icons/Anabel_0143_5.png',
     '["icons/Anabel_0143_5.png","icons/Anabel_0143_EX.png"]'::jsonb,
     '["Normal","Alola","Grown Woman"]'::jsonb,
-    '["isWoman","Limited","Grid5","Villain Arc","Multiple Pokemon","First Unit","Wish Zone","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeNormal"]'::jsonb,
+    '["isWoman","Limited","Grid5","Multiple Pokemon","First Unit","Wish Zone","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeNormal"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0178_00_lira","internal_pokemon_name":"pm0143_00_kabigon"}'::jsonb
   ),
   (
@@ -11852,7 +12356,7 @@ values
     'icons/Emma_0169_5.png',
     '["icons/Emma_0169_5.png","icons/Emma_0169_EX.png"]'::jsonb,
     '["Poison","Kalos","Passionate Spirit"]'::jsonb,
-    '["Buddy Move","isWoman","Limited","Rebuff","Grid5","Song Key","Villain Arc","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypePoison"]'::jsonb,
+    '["Buddy Move","isWoman","Limited","Rebuff","Grid5","Song Key","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0220_00_matiere","internal_pokemon_name":"pm0169_00_crobat"}'::jsonb
   ),
   (
@@ -12163,8 +12667,8 @@ values
     '2023-07-14'::date,
     'icons/Rose_0879_5.png',
     '["icons/Rose_0879_5.png","icons/Rose_0879_EX.png"]'::jsonb,
-    '["Steel","Galar","Villain.","Passionate Spirit"]'::jsonb,
-    '["Grid5","Limited","Weather","isMan","Song Key","Villain Arc","Multiple Units","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeGround","MoveTypeRock","MoveTypeSteel"]'::jsonb,
+    '["Steel","Galar","Villain","Passionate Spirit"]'::jsonb,
+    '["Grid5","Limited","Weather","isMan","Song Key","Multiple Units","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeGround","MoveTypeRock","MoveTypeSteel"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0262_00_rose","internal_pokemon_name":"pm0879_00_00_daioudou"}'::jsonb
   ),
   (
@@ -12187,7 +12691,7 @@ values
     '2024-08-28'::date,
     'icons/Rose_0863_4.png',
     '["icons/Rose_0863_4.png","icons/Rose_0863_5.png","icons/Rose_0863_EX.png"]'::jsonb,
-    '["Steel","Galar","Villain.","Passionate Spirit"]'::jsonb,
+    '["Steel","Galar","Villain","Passionate Spirit"]'::jsonb,
     '["Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeSteel"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0262_00_rose","internal_pokemon_name":"pm0863_00_31_nyaiking"}'::jsonb
   ),
@@ -12211,8 +12715,8 @@ values
     '2023-07-16'::date,
     'icons/Oleana_0569_5.png',
     '["icons/Oleana_0569_5.png","icons/Oleana_0569_EX.png"]'::jsonb,
-    '["Poison","Galar","Villain.","Researcher","Grown Woman"]'::jsonb,
-    '["Grid5","Limited","isWoman","Rebuff","Song Key","Multiple Pokemon","Villain Arc","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypePoison"]'::jsonb,
+    '["Poison","Galar","Villain","Researcher","Grown Woman"]'::jsonb,
+    '["Grid5","Limited","isWoman","Rebuff","Song Key","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0263_00_olea","internal_pokemon_name":"pm0569_00_00_dustdas"}'::jsonb
   ),
   (
@@ -12404,7 +12908,7 @@ values
     'icons/Paulo_0745_5.png',
     '["icons/Paulo_0745_5.png","icons/Paulo_0745_EX.png"]'::jsonb,
     '["Rock","Rival","Knowledgeable","Pasio"]'::jsonb,
-    '["Grid5","Buddy Move","Limited","Weather","Wish Zone","isMan","Song Key","Villain Arc","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeRock"]'::jsonb,
+    '["Grid5","Buddy Move","Limited","Weather","Wish Zone","isMan","Song Key","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeRock"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0064_01_rival","internal_pokemon_name":"pm0745_13_00_lugarugan"}'::jsonb
   ),
   (
@@ -12428,7 +12932,7 @@ values
     'icons/Tina_0136_4.png',
     '["icons/Tina_0136_4.png","icons/Tina_0136_5.png","icons/Tina_0136_EX.png"]'::jsonb,
     '["Fire","Free Spirit","Passionate Spirit","Pasio"]'::jsonb,
-    '["Eeveelution","Limited","isWoman","Villain Arc","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeFire"]'::jsonb,
+    '["Eeveelution","Limited","isWoman","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeFire"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0105_01_rival2","internal_pokemon_name":"pm0136_00_booster"}'::jsonb
   ),
   (
@@ -12451,7 +12955,7 @@ values
     '2023-09-06'::date,
     'icons/Archer_0229_5.png',
     '["icons/Archer_0229_5.png","icons/Archer_0229_EX.png"]'::jsonb,
-    '["Dark","Johto","Villain."]'::jsonb,
+    '["Dark","Johto","Villain"]'::jsonb,
     '["Limited","isMan","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeFire","MoveTypeDark"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0141_00_apollo","internal_pokemon_name":"pm0229_00_hellgar"}'::jsonb
   ),
@@ -12475,7 +12979,7 @@ values
     '2023-09-06'::date,
     'icons/Ariana_0024_5.png',
     '["icons/Ariana_0024_5.png","icons/Ariana_0024_EX.png"]'::jsonb,
-    '["Poison","Johto","Villain."]'::jsonb,
+    '["Poison","Johto","Villain"]'::jsonb,
     '["Limited","isWoman","Multiple Pokemon","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0142_00_athena","internal_pokemon_name":"pm0024_00_arbok"}'::jsonb
   ),
@@ -12499,7 +13003,7 @@ values
     '2023-09-06'::date,
     'icons/Petrel_0110_5.png',
     '["icons/Petrel_0110_5.png","icons/Petrel_0110_EX.png"]'::jsonb,
-    '["Poison","Johto","Villain."]'::jsonb,
+    '["Poison","Johto","Villain"]'::jsonb,
     '["Limited","isMan","Multiple Pokemon","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0143_00_lambda","internal_pokemon_name":"pm0110_00_matadogas"}'::jsonb
   ),
@@ -12523,7 +13027,7 @@ values
     '2023-09-06'::date,
     'icons/Proton_0042_5.png',
     '["icons/Proton_0042_5.png","icons/Proton_0042_EX.png"]'::jsonb,
-    '["Flying","Johto","Villain."]'::jsonb,
+    '["Flying","Johto","Villain"]'::jsonb,
     '["Limited","Multiple Pokemon","isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeFlying"]'::jsonb,
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0144_00_lance","internal_pokemon_name":"pm0042_00_golbat"}'::jsonb
   ),
@@ -13340,8 +13844,32 @@ values
     'icons/Jacq_0981_5.png',
     '["icons/Jacq_0981_5.png","icons/Jacq_0981_EX.png"]'::jsonb,
     '["Psychic","Paldea","Knowledgeable","Gadgeteer","Free Spirit"]'::jsonb,
-    '["Grid5","Buddy Move","Limited","isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypePsychic","ItemBerry"]'::jsonb,
+    '["Multiple Units","Grid5","Buddy Move","Limited","isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypePsychic","ItemBerry"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0298_00_zinnia","internal_pokemon_name":"pm0981_00_00_rikikirin"}'::jsonb
+  ),
+  (
+    '200|0750',
+    'Jacq & Mudsdale',
+    'Jacq',
+    null,
+    'Mudsdale',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Ground',
+    'Water',
+    'Paldea',
+    '2026-08-28'::date,
+    'icons/Jacq_0750_4.png',
+    '["icons/Jacq_0750_4.png","icons/Jacq_0750_5.png","icons/Jacq_0750_EX.png"]'::jsonb,
+    '["Ground","Paldea","Knowledgeable","Gadgeteer","Free Spirit"]'::jsonb,
+    '["Multiple Units","Multiple Pokemon","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","MoveTypeGround","MoveTypeRock"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0298_00_zinnia","internal_pokemon_name":"pm0840_00_roba2"}'::jsonb
   ),
   (
     '201|0980',
@@ -14328,6 +14856,30 @@ values
     '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0287_40_svgirl","internal_pokemon_name":"pm1024_11_00_terapagos"}'::jsonb
   ),
   (
+    '224|0358',
+    'Juliana & Chimecho',
+    'Juliana',
+    null,
+    'Chimecho',
+    null,
+    'tech'::public.pair_role,
+    'Tech',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'general'::public.pair_premium_category,
+    'Event Reward',
+    'Psychic',
+    'Ghost',
+    'Paldea',
+    '2026-07-31'::date,
+    'icons/Juliana_0358_5.png',
+    '["icons/Juliana_0358_5.png","icons/Juliana_0358_EX.png"]'::jsonb,
+    '["Psychic","Paldea","Main Character","Cook","Free Spirit"]'::jsonb,
+    '["Limited","Terrain","Region Circle","Multiple Units","isWoman","Academy Sync Pair","SyncMoveSpecial","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypePsychic"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"Academy","internal_trainer_name":"ch0287_00_svgirl","internal_pokemon_name":"pm0358_00_chirean"}'::jsonb
+  ),
+  (
     '225|1008',
     'Florian & Miraidon Other Form',
     'Florian',
@@ -14422,6 +14974,30 @@ values
     '["Grass","Paldea","Main Character","Seasonal Outfit","Knowledgeable"]'::jsonb,
     '["Legendary","Grid5","Buddy Move","Limited","Terrain","Unique Costume","Multiple Units","isMan","Anniversary","Rebuff","Song Key","Master Passive","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeGrass"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0286_40_svboy","internal_pokemon_name":"pm1017_11_00_ogerpon"}'::jsonb
+  ),
+  (
+    '225|0469',
+    'Florian (Alt.) & Yanmega Terastallization',
+    'Florian',
+    'Alt.',
+    'Yanmega',
+    'Terastallization',
+    'strike'::public.pair_role,
+    'Strike (Physical)',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'general'::public.pair_premium_category,
+    'EX Fair Scout',
+    'Bug',
+    'Rock',
+    'Paldea',
+    '2026-07-31'::date,
+    'icons/Florian_0469_5.png',
+    '["icons/Florian_0469_5.png","icons/Florian_0469_EX.png"]'::jsonb,
+    '["Bug","Paldea","Main Character","Cook","Knowledgeable"]'::jsonb,
+    '["Grid5","Buddy Move","Limited","Wish Zone","Unique Costume","Multiple Units","isMan","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeBug"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0286_80_svboy","internal_pokemon_name":"pm0469_00_00_megayanma"}'::jsonb
   ),
   (
     '226|0927',
@@ -14710,6 +15286,30 @@ values
     '["Poison","Paldea","Rival","Sygna Suit"]'::jsonb,
     '["Mythical","Grid5","Buddy Move","Limited","Wish Zone","Region Circle","Unique Costume","Multiple Units","isWoman","Song Key","Master Passive","SyncMoveSpecial","AttackMoveSpecial","MoveTypePoison"]'::jsonb,
     '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"MasterEX","internal_trainer_name":"ch0356_10_zeiyu","internal_pokemon_name":"pm1025_00_00_momowarou"}'::jsonb
+  ),
+  (
+    '233|0262',
+    'Carmine (Alt.) & Mightyena',
+    'Carmine',
+    'Alt.',
+    'Mightyena',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'general'::public.pair_premium_category,
+    'EX Fair Scout',
+    'Dark',
+    'Fairy',
+    'Paldea',
+    '2026-07-31'::date,
+    'icons/Carmine_0262_5.png',
+    '["icons/Carmine_0262_5.png","icons/Carmine_0262_EX.png"]'::jsonb,
+    '["Dark","Paldea","Rival","Battle Partner","Blueberry Academy"]'::jsonb,
+    '["Grid5","Buddy Move","Limited","Wish Zone","Region Circle","Unique Costume","Multiple Units","Multiple Pokemon","isWoman","SyncMovePhysical","AttackMovePhysical","MoveTypeDark"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0356_80_zeiyu","internal_pokemon_name":"pm0262_00_graena"}'::jsonb
   ),
   (
     '234|1019',
@@ -15118,6 +15718,246 @@ values
     '["Ground","Sinnoh","Pigtails","Supernatural"]'::jsonb,
     '["Grid5","Buddy Move","Limited","Wish Zone","Region Circle","isWoman","Hisui","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeGround"]'::jsonb,
     '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0315_00_wasabi","internal_pokemon_name":"pm0464_01_dosidon"}'::jsonb
+  ),
+  (
+    '248|0160',
+    'Harmony & Feraligatr Mega Evolution',
+    'Harmony',
+    null,
+    'Feraligatr',
+    'Mega Evolution',
+    'sprint'::public.pair_role,
+    'Sprint',
+    'strike'::public.pair_role,
+    'Strike (Physical)',
+    5,
+    'general'::public.pair_premium_category,
+    'EX Fair Scout',
+    'Water',
+    'Electric',
+    'Kalos',
+    '2026-08-14'::date,
+    'icons/Harmony_0160_5.png',
+    '["icons/Harmony_0160_5.png","icons/Harmony_0160_EX.png"]'::jsonb,
+    '["Water","Kalos","Main Character","Sweet Tooth"]'::jsonb,
+    '["Starter","Grid5","GridMega","Buddy Move","Limited","Region Circle","Multiple Pokemon","isWoman","Lumiose City","Song Key","First Unit","SyncMovePhysical","AttackMovePhysical","MoveTypeWater"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0366_00_zagirl","internal_pokemon_name":"pm0160_00_ordile"}'::jsonb
+  ),
+  (
+    '249|0154',
+    'Urbain & Meganium Mega Evolution',
+    'Urbain',
+    null,
+    'Meganium',
+    'Mega Evolution',
+    'strike'::public.pair_role,
+    'Strike (Special)',
+    'tech'::public.pair_role,
+    'Tech',
+    5,
+    'general'::public.pair_premium_category,
+    'EX Fair Scout',
+    'Grass',
+    'Poison',
+    'Kalos',
+    '2026-08-16'::date,
+    'icons/Urbain_0154_5.png',
+    '["icons/Urbain_0154_5.png","icons/Urbain_0154_EX.png"]'::jsonb,
+    '["Grass","Kalos","Rival","Passionate Spirit"]'::jsonb,
+    '["Starter","Grid5","GridMega","Buddy Move","Limited","Terrain","Region Circle","Multiple Units","Multiple Pokemon","isMan","Lumiose City","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeGrass"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":true,"sync_pair_icon":"none","internal_trainer_name":"ch0367_00_gai","internal_pokemon_name":"pm0154_00_meganium"}'::jsonb
+  ),
+  (
+    '249|0713',
+    'Urbain & Avalugg',
+    'Urbain',
+    null,
+    'Avalugg',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    null,
+    null,
+    4,
+    'general'::public.pair_premium_category,
+    'Trainer Lodge Exchange',
+    'Ice',
+    'Fire',
+    'Kalos',
+    '2026-09-01'::date,
+    'icons/Urbain_0713_4.png',
+    '["icons/Urbain_0713_4.png","icons/Urbain_0713_5.png","icons/Urbain_0713_EX.png"]'::jsonb,
+    '["Ice","Kalos","Rival","Passionate Spirit"]'::jsonb,
+    '["Limited","Multiple Units","Multiple Pokemon","isMan","Lumiose City","SyncMovePhysical","AttackMovePhysical","AttackMoveStatus","MoveTypeIce"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":false,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0367_00_gai","internal_pokemon_name":"pm0751_00_ice3"}'::jsonb
+  ),
+  (
+    '250|0144',
+    'Brandon & Articuno',
+    'Brandon',
+    null,
+    'Articuno',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    null,
+    null,
+    5,
+    'general'::public.pair_premium_category,
+    'Battle Points Exchange',
+    'Flying',
+    'Rock',
+    'Hoenn',
+    '2026-08-28'::date,
+    'icons/Brandon_0144_5.png',
+    '["icons/Brandon_0144_5.png","icons/Brandon_0144_EX.png"]'::jsonb,
+    '["Flying","Hoenn","Battle Facility Foe","Passionate Spirit","Knowledgeable"]'::jsonb,
+    '["Legendary","Multiple Pokemon","isMan","Master Passive Teamwork","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeFlying"]'::jsonb,
+    '{"pokemon_gender":"","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"Master","internal_trainer_name":"ch0201_00_jindai","internal_pokemon_name":"pm0144_00_freezer"}'::jsonb
+  ),
+  (
+    '251|0432',
+    'Mars & Purugly',
+    'Mars',
+    null,
+    'Purugly',
+    null,
+    'sprint'::public.pair_role,
+    'Sprint',
+    'tech'::public.pair_role,
+    'Tech',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Normal',
+    'Fighting',
+    'Sinnoh',
+    '2026-09-16'::date,
+    'icons/Mars_0432_5.png',
+    '["icons/Mars_0432_5.png","icons/Mars_0432_EX.png"]'::jsonb,
+    '["Normal","Sinnoh","Villain","Battle Partner"]'::jsonb,
+    '["Limited","isWoman","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeNormal"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0225_00_mars","internal_pokemon_name":"pm0432_00_bunyatto"}'::jsonb
+  ),
+  (
+    '252|0435',
+    'Jupiter & Skuntank',
+    'Jupiter',
+    null,
+    'Skuntank',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    'field'::public.pair_role,
+    'Field',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Poison',
+    'Ground',
+    'Sinnoh',
+    '2026-09-16'::date,
+    'icons/Jupiter_0435_5.png',
+    '["icons/Jupiter_0435_5.png","icons/Jupiter_0435_EX.png"]'::jsonb,
+    '["Poison","Sinnoh","Villain","Battle Partner"]'::jsonb,
+    '["Limited","Wish Zone","Multiple Pokemon","isWoman","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypePoison"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0226_00_jupiter","internal_pokemon_name":"pm0435_00_skutank"}'::jsonb
+  ),
+  (
+    '253|0454',
+    'Saturn & Toxicroak',
+    'Saturn',
+    null,
+    'Toxicroak',
+    null,
+    'tech'::public.pair_role,
+    'Tech',
+    'support'::public.pair_role,
+    'Support',
+    5,
+    'variety'::public.pair_premium_category,
+    'Variety Scout',
+    'Fighting',
+    'Psychic',
+    'Sinnoh',
+    '2026-09-16'::date,
+    'icons/Saturn_0454_5.png',
+    '["icons/Saturn_0454_5.png","icons/Saturn_0454_EX.png"]'::jsonb,
+    '["Fighting","Sinnoh","Villain","Knowledgeable"]'::jsonb,
+    '["Limited","Multiple Pokemon","isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeFighting"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0227_00_saturn","internal_pokemon_name":"pm0454_01_dokurog"}'::jsonb
+  ),
+  (
+    '254|0323',
+    'Tabitha & Camerupt',
+    'Tabitha',
+    null,
+    'Camerupt',
+    null,
+    'support'::public.pair_role,
+    'Support',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'general'::public.pair_premium_category,
+    'Spotlight Scout / General Pool',
+    'Ground',
+    'Water',
+    'Hoenn',
+    '2026-10-21'::date,
+    'icons/Tabitha_0323_5.png',
+    '["icons/Tabitha_0323_5.png","icons/Tabitha_0323_EX.png"]'::jsonb,
+    '["Ground","Hoenn","Villain","Battle Partner"]'::jsonb,
+    '["Region Circle","Multiple Pokemon","isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","AttackMoveStatus","MoveTypeGround"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0221_00_homura","internal_pokemon_name":"pm0323_00_bakuuda"}'::jsonb
+  ),
+  (
+    '255|0319',
+    'Shelly & Sharpedo',
+    'Shelly',
+    null,
+    'Sharpedo',
+    null,
+    'sprint'::public.pair_role,
+    'Sprint',
+    'tech'::public.pair_role,
+    'Tech',
+    5,
+    'general'::public.pair_premium_category,
+    'Spotlight Scout / General Pool',
+    'Water',
+    'Bug',
+    'Hoenn',
+    '2026-10-21'::date,
+    'icons/Shelly_0319_5.png',
+    '["icons/Shelly_0319_5.png","icons/Shelly_0319_EX.png"]'::jsonb,
+    '["Water","Hoenn","Villain","Battle Partner"]'::jsonb,
+    '["Weather","Multiple Pokemon","isWoman","First Unit","SyncMovePhysical","AttackMovePhysical","AttackMoveSpecial","AttackMoveStatus","MoveTypeWater"]'::jsonb,
+    '{"pokemon_gender":"♀","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0224_00_izumi","internal_pokemon_name":"pm0319_00_samehader"}'::jsonb
+  ),
+  (
+    '256|0319',
+    'Matt & Sharpedo Mega Evolution',
+    'Matt',
+    null,
+    'Sharpedo',
+    'Mega Evolution',
+    'support'::public.pair_role,
+    'Support',
+    'sprint'::public.pair_role,
+    'Sprint',
+    5,
+    'general'::public.pair_premium_category,
+    'Spotlight Scout / General Pool',
+    'Water',
+    'Grass',
+    'Hoenn',
+    '2026-10-21'::date,
+    'icons/Matt_0319_5.png',
+    '["icons/Matt_0319_5.png","icons/Matt_0319_EX.png"]'::jsonb,
+    '["Water","Hoenn","Villain","Battle Partner"]'::jsonb,
+    '["Region Circle","Multiple Pokemon","GridMega","isMan","First Unit","SyncMoveSpecial","AttackMoveSpecial","MoveTypeWater","MoveTypeDark"]'::jsonb,
+    '{"pokemon_gender":"♂","sync_pair_ex_pose":true,"sync_pair_ex_color":true,"sync_pair_superawakening":false,"sync_pair_icon":"none","internal_trainer_name":"ch0223_00_ushio","internal_pokemon_name":"pm0319_00_samehader"}'::jsonb
   )
 on conflict (id) do update
 set

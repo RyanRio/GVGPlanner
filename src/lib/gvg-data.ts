@@ -1,6 +1,7 @@
 import { supabase } from "./supabase";
 import type {
   CatalogPair,
+  DamageCategory,
   GymChallenge,
   ImportedMember,
   ImportedPair,
@@ -240,6 +241,7 @@ function mapChallenge(record: {
     battle_3_effect: string | null;
     gym_challenge_leader_pairs:
       | Array<{
+          damage_category: DamageCategory;
           sync_pairs:
             | {
                 id: string;
@@ -486,10 +488,10 @@ function mapChallenge(record: {
         battle2Effect: leader.battle_2_effect ?? "",
         battle3Effect: leader.battle_3_effect ?? "",
         importantPairs: (leader.gym_challenge_leader_pairs ?? [])
-          .map((entry) =>
-            mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs)
-          )
-          .filter((pair): pair is CatalogPair => Boolean(pair))
+          .flatMap((entry) => {
+            const pair = mapCatalogPair(Array.isArray(entry.sync_pairs) ? entry.sync_pairs[0] : entry.sync_pairs);
+            return pair ? [{ ...pair, damageCategory: entry.damage_category }] : [];
+          })
           .sort((a, b) => a.label.localeCompare(b.label)),
         rebuffPairs: (leader.gym_challenge_leader_setup_pairs ?? [])
           .map((entry) =>
@@ -550,6 +552,7 @@ const challengeSelect = `
       battle_2_effect,
       battle_3_effect,
     gym_challenge_leader_pairs (
+      damage_category,
       sync_pairs (
         id,
         display_label,
@@ -688,6 +691,7 @@ export async function saveGymChallenge(challenge: {
       battle_2_effect: leader.battle2Effect,
       battle_3_effect: leader.battle3Effect,
       important_pair_ids: leader.importantPairs.map((pair) => pair.pairId),
+      important_pairs: leader.importantPairs.map((pair) => ({ pair_id: pair.pairId, damage_category: pair.damageCategory ?? "unclassified" })),
       rebuff_pair_ids: leader.rebuffPairs.map((pair) => pair.pairId)
     })),
     p_modifier_1: challenge.modifiers.modifier1,

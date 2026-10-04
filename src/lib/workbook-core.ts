@@ -1,3 +1,4 @@
+import { importantPairLabel } from "./important-pairs";
 import XLSX from "xlsx-js-style";
 import type { GreedyAssignmentPlan, GymChallenge, ImportedMember, LeaderRecommendation } from "../types";
 
@@ -187,7 +188,7 @@ function appendLeaderMatrixSheet(
     ["Auto Secondary", autoAssignment?.secondary?.memberName ?? "Uncovered"],
     ["Manual Primary", manualAssignment.primary || "None"],
     ["Manual Secondary", manualAssignment.secondary || "None"],
-    ["Important Pairs", leader.importantPairs.map((pair) => pair.label).join(", ") || "None"],
+    ["Important Pairs", leader.importantPairs.map(importantPairLabel).join(", ") || "None"],
     [
       "Top Recommendations",
       recommendation?.recommendationMembers
@@ -199,7 +200,7 @@ function appendLeaderMatrixSheet(
     ["Pair", ...sortMembers(members).map((member) => member.displayName)]
   ];
 
-  const sections = [{ title: "Important pairs", pairs: leader.importantPairs }];
+  const sections = [{ title: "Important pairs (damage type)", pairs: leader.importantPairs.map((pair) => ({ ...pair, label: importantPairLabel(pair) })) }];
   const rebuffSections = [{ title: "Rebuff", pairs: leader.rebuffPairs }];
   const { rows, sectionRows, memberColumns, ownedCells, missingCells } = buildMatrixRows(members, sections);
   const {
@@ -358,7 +359,7 @@ function buildOverviewSheet(options: {
     if (leader.importantPairs.length) {
       leader.importantPairs.forEach((pair) => {
         const rowIndex = rows.length;
-        const row: string[] = ["", pair.label];
+        const row: string[] = ["", importantPairLabel(pair)];
         memberColumns.forEach((member, memberIndex) => {
           const owns = memberOwnsPair(member, pair.pairId);
           row.push("");

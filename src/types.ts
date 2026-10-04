@@ -67,6 +67,12 @@ export interface AuthProfile {
   appRole: AppRole;
 }
 
+export type DamageCategory = "physical" | "special" | "both" | "sub_dps" | "unclassified";
+
+export interface ImportantPair extends CatalogPair {
+  damageCategory?: DamageCategory;
+}
+
 export interface GymChallengeLeader {
   id?: string;
   slotNumber: number;
@@ -76,7 +82,7 @@ export interface GymChallengeLeader {
   battle1Effect: string;
   battle2Effect: string;
   battle3Effect: string;
-  importantPairs: CatalogPair[];
+  importantPairs: ImportantPair[];
   rebuffPairs: CatalogPair[];
 }
 
@@ -136,7 +142,7 @@ export interface LeaderRecommendationMember {
   memberId: string;
   memberName: string;
   score: number;
-  matchedImportantPairs: CatalogPair[];
+  matchedImportantPairs: ImportantPair[];
   fallbackPairs: CatalogPair[];
   reasons: string[];
 }

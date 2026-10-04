@@ -1,3 +1,5 @@
+import { addImportantPair, removeImportantPair, inDamageCategory, importantPairLabel, damageLabels } from "./lib/important-pairs";
+import type { DamageCategory } from "./types";
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from "react";
 import { fetchCurrentProfile, getSession, onAuthStateChange, signIn, signOut } from "./lib/auth";
 import {
@@ -37,15 +39,10 @@ interface ChallengeDraft {
   leaders: GymChallengeLeader[];
   modifiers: GymChallengeModifiers;
   roundStats: GymChallenge["roundStats"];
-  setupPairs: {
-    physicalBreakPairs: GymChallengeLeader["importantPairs"];
-    specialBreakPairs: GymChallengeLeader["importantPairs"];
-    debuffChipPairs: GymChallengeLeader["importantPairs"];
-    offTypePairs: GymChallengeLeader["importantPairs"];
-  };
+  setupPairs: GymChallenge["setupPairs"];
 }
 
-type LeaderPairInputs = Record<number, string>;
+type LeaderPairInputs = Record<string, string>;
 type LeaderRebuffInputs = Record<number, string>;
 type SetupPairInputs = Record<SetupPairBucket, string>;
 type LeaderNotesMap = Record<number, string>;
@@ -162,7 +159,9 @@ function formatNumber(value: number) {
 
 function buildLeaderPairInputs() {
   return Array.from({ length: 8 }, (_, index) => index + 1).reduce<LeaderPairInputs>((inputs, slotNumber) => {
-    inputs[slotNumber] = "";
+    inputs[`${slotNumber}-physical`] = "";
+    inputs[`${slotNumber}-special`] = "";
+    inputs[`${slotNumber}-sub_dps`] = "";
     return inputs;
   }, {});
 }
@@ -308,7 +307,7 @@ function ChallengeReadOnly({
                 <div className="badge-row">
                   {leader.importantPairs.map((pair) => (
                     <span className="badge muted-badge" key={pair.pairId}>
-                      {pair.label}
+                      {importantPairLabel(pair)}
                     </span>
                   ))}
                 </div>
@@ -501,7 +500,7 @@ function GymChallengeWorkspace({
                 <div className="badge-row">
                   {selectedLeader.importantPairs.map((pair) => (
                     <span className="badge muted-badge" key={pair.pairId}>
-                      {pair.label}
+                      {importantPairLabel(pair)}
                     </span>
                   ))}
                 </div>
@@ -644,7 +643,7 @@ function GymChallengeWorkspace({
                         <div className="badge-row">
                           {recommendation.matchedImportantPairs.map((pair) => (
                             <span className="badge muted-badge" key={`${recommendation.memberId}-${pair.pairId}`}>
-                              {pair.label}
+                              {importantPairLabel(pair)}
                             </span>
                           ))}
                         </div>
@@ -1036,10 +1035,10 @@ function App() {
     setError("");
   }
 
-  function handleLeaderPairInputChange(slotNumber: number, value: string) {
+  function handleLeaderPairInputChange(slotNumber: number, category: "physical" | "special" | "sub_dps", value: string) {
     setLeaderPairInputs((current) => ({
       ...current,
-      [slotNumber]: value
+      [`${slotNumber}-${category}`]: value
     }));
   }
 
@@ -1161,8 +1160,8 @@ function App() {
     );
   }
 
-  function handleAddImportantPair(slotNumber: number) {
-    const inputValue = leaderPairInputs[slotNumber]?.trim() ?? "";
+  function handleAddImportantPair(slotNumber: number, category: "physical" | "special" | "sub_dps") {
+    const inputValue = leaderPairInputs[`${slotNumber}-${category}`]?.trim() ?? "";
     if (!inputValue || !catalog) return;
 
     const pair = findCatalogPair(inputValue);
@@ -1178,9 +1177,7 @@ function App() {
         leader.slotNumber === slotNumber
           ? {
               ...leader,
-              importantPairs: leader.importantPairs.some((importantPair) => importantPair.pairId === pair.pairId)
-                ? leader.importantPairs
-                : [...leader.importantPairs, pair].sort((a, b) => a.label.localeCompare(b.label))
+              importantPairs: addImportantPair(leader.importantPairs, pair, category)
             }
           : leader
       )
@@ -1188,7 +1185,7 @@ function App() {
 
     setLeaderPairInputs((current) => ({
       ...current,
-      [slotNumber]: ""
+      [`${slotNumber}-${category}`]: ""
     }));
     setError("");
   }
@@ -1277,14 +1274,14 @@ function App() {
     }));
   }
 
-  function handleRemoveImportantPair(slotNumber: number, pairId: string) {
+  function handleRemoveImportantPair(slotNumber: number, pairId: string, category: DamageCategory) {
     setChallengeDraft((current) => ({
       ...current,
       leaders: current.leaders.map((leader) =>
         leader.slotNumber === slotNumber
           ? {
               ...leader,
-              importantPairs: leader.importantPairs.filter((pair) => pair.pairId !== pairId)
+              importantPairs: removeImportantPair(leader.importantPairs, pairId, category)
             }
           : leader
       )
@@ -1882,44 +1879,64 @@ function App() {
                         />
                       </label>
 
-                      <div className="field">
-                        <span>Important sync pairs</span>
-                        <div className="pair-picker-row">
-                          <input
-                            list="sync-pair-options"
-                            type="text"
-                            value={leaderPairInputs[leader.slotNumber] ?? ""}
-                            onChange={(event) =>
-                              handleLeaderPairInputChange(leader.slotNumber, event.target.value)
-                            }
-                            placeholder="Search by pair name"
-                          />
-                          <button
-                            className="ghost-button"
-                            onClick={() => handleAddImportantPair(leader.slotNumber)}
-                            type="button"
-                          >
-                            Add
-                          </button>
-                        </div>
-
-                        {leader.importantPairs.length ? (
+                      {(["physical", "special", "sub_dps"] as const).map((category) => (
+                        <div className="field" key={category}>
+                          <label htmlFor={`important-${leader.slotNumber}-${category}`}>
+                            Important sync pairs: {damageLabels[category]}{category === "sub_dps" ? "" : " damage"}
+                          </label>
+                          {category === "sub_dps" && (
+                            <p className="helper">Pairs that provide important effects, such as EX zones, without being the main damage dealer.</p>
+                          )}
+                          <div className="pair-picker-row">
+                            <input
+                              id={`important-${leader.slotNumber}-${category}`}
+                              list="sync-pair-options"
+                              type="text"
+                              value={leaderPairInputs[`${leader.slotNumber}-${category}`] ?? ""}
+                              onChange={(event) => handleLeaderPairInputChange(leader.slotNumber, category, event.target.value)}
+                              placeholder="Search by pair name"
+                            />
+                            <button className="ghost-button" type="button"
+                              onClick={() => handleAddImportantPair(leader.slotNumber, category)}>
+                              Add
+                            </button>
+                          </div>
                           <div className="badge-row">
-                            {leader.importantPairs.map((pair) => (
-                              <button
-                                className="badge removable-badge"
-                                key={pair.pairId}
-                                onClick={() => handleRemoveImportantPair(leader.slotNumber, pair.pairId)}
-                                type="button"
-                              >
+                            {leader.importantPairs.filter((pair) => inDamageCategory(pair, category)).map((pair) => (
+                              <button className="badge removable-badge" key={pair.pairId} type="button"
+                                aria-label={`Remove ${pair.label} from ${damageLabels[category]}`}
+                                onClick={() => handleRemoveImportantPair(leader.slotNumber, pair.pairId, category)}>
                                 {pair.label} x
                               </button>
                             ))}
                           </div>
-                        ) : (
-                          <p className="helper">No important pairs chosen yet.</p>
-                        )}
-                      </div>
+                        </div>
+                      ))}
+                      <p className="helper">Add a mixed attacker to both damage lists when appropriate. Sub DPS is for important effects such as EX zones; adding a pair there moves it out of the primary damage lists.</p>
+                      {leader.importantPairs.some((pair) => inDamageCategory(pair, "unclassified")) && (
+                        <div className="field">
+                          <span>Unclassified important sync pairs</span>
+                          <p className="helper">Existing selections are preserved. Choose Physical, Special, or Sub DPS to classify each pair.</p>
+                          {leader.importantPairs.filter((pair) => inDamageCategory(pair, "unclassified")).map((pair) => (
+                            <div className="pair-picker-row" key={pair.pairId}>
+                              <span>{pair.label}</span>
+                              {(["physical", "special", "sub_dps"] as const).map((category) => (
+                                <button className="ghost-button" type="button" key={category}
+                                  onClick={() => setChallengeDraft((current) => ({ ...current,
+                                    leaders: current.leaders.map((entry) => entry.slotNumber === leader.slotNumber
+                                      ? { ...entry, importantPairs: addImportantPair(entry.importantPairs, pair, category) } : entry)
+                                  }))}>
+                                  {damageLabels[category]}
+                                </button>
+                              ))}
+                              <button className="ghost-button" type="button"
+                                onClick={() => handleRemoveImportantPair(leader.slotNumber, pair.pairId, "unclassified")}>
+                                Remove
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      )}
 
                       <div className="field">
                         <span>Rebuff setup pairs</span>

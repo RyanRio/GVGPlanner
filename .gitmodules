@@ -1,0 +1,3 @@
+[submodule "vendor/pokemas-datamine"]
+	path = vendor/pokemas-datamine
+	url = https://github.com/absolutelypm/pokemas-datamine.git

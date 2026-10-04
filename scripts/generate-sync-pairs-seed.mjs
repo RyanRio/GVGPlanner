@@ -1,7 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { SYNCPAIRS } from "../../GauntletPlanner/SyncPairsTracker/js/syncpairs.js";
+
+const { SYNCPAIRS } = JSON.parse(await readFile(
+  new URL("../../GauntletPlanner/SyncPairsTracker/js/syncpairs.json", import.meta.url),
+  "utf8"
+));
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

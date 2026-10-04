@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { createClient } from "@supabase/supabase-js";
 import XLSX from "xlsx-js-style";
 import type { CatalogPair, ImportedMember, PremiumCategory } from "../src/types";
+import { displayMoveLevel } from "../gym-roster-browser/src/move-level.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -452,7 +453,7 @@ function buildWorkbook(challengeName: string, members: ImportedMember[], ordered
   const merges: XLSX.Range[] = [];
 
   const memberPairs = new Map(
-    members.map((member) => [member.id, new Map(member.pairs.map((pair) => [pair.pairId, pair.syncLevel]))])
+    members.map((member) => [member.id, new Map(member.pairs.map((pair) => [pair.pairId, displayMoveLevel(pair)]))])
   );
 
   let currentRow = 0;

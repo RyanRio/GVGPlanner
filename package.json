@@ -18,7 +18,10 @@
     "browser:data": "node scripts/build-static-roster-browser-data.mjs",
     "browser:dev": "npm --prefix gym-roster-browser run dev",
     "browser:build": "npm --prefix gym-roster-browser run build",
-    "browser:deploy": "npm --prefix gym-roster-browser run deploy"
+    "browser:deploy": "npm --prefix gym-roster-browser run deploy",
+    "datamine:sync": "node scripts/sync-gvg-datamine.mjs",
+    "import:gvg-local": "tsx scripts/apply-current-gvg-metadata.ts",
+    "test:gvg-datamine": "node --test scripts/lib/gvg-datamine.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",

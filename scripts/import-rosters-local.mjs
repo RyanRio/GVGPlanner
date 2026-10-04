@@ -134,7 +134,7 @@ async function main() {
   const publishableKey = env.VITE_SUPABASE_ANON_KEY ?? "sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH";
   const memberEmail = env.LOCAL_MEMBER_EMAIL ?? "member@gvgplanner.local";
   const memberPassword = env.LOCAL_MEMBER_PASSWORD ?? "GauntletMember123!";
-  const inputDir = path.resolve(process.argv[2] ?? path.resolve(projectRoot, "..", "GauntletPlanner"));
+  const inputDir = path.resolve(process.argv[2] ?? path.resolve(projectRoot, "mastersofdiscord"));
 
   const client = createClient(supabaseUrl, publishableKey);
 
